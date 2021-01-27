@@ -4,7 +4,7 @@
 function manifest()
     myManifest = {
         name          = "Chn2Esp",
-        comment       = "Convert Chinese VSQX for Spanish bank",
+        comment       = "Convert Chinese VSQX for Spanish voice bank",
         author        = "Slidingwall",
         pluginID      = "{A03FEF7A-4524-4446-A12F-92E54EE5D41T}",
         pluginVersion = "1.0.0.0",
