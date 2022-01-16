@@ -1,13 +1,13 @@
--- Chn2Esp.lua
--- Mapping of Chinese VSQ(X)'s to Spanish phonetics.
+-- Chn2Maika.lua
+-- Mapping of Chinese VSQ(X)'s to extended Spanish phonetics to be used with Maika voice bank.
 
 function manifest()
     myManifest = {
-        name          = "Chinese to Spanish",
-        comment       = "Convert Chinese VSQX for Spanish libraries.",
+        name          = "Chinese to Spanish Extra",
+        comment       = "Convert Chinese VSQX for use with MAIKA voice library.",
         author        = "Slidingwall",
-        pluginID      = "{A03FEF7A-4524-3456-A12F-92E54EE5D41T}",
-        pluginVersion = "For Bruno&Clara",
+        pluginID      = "{A03FEF7A-1234-4446-A12F-92E54EE5D41T}",
+        pluginVersion = "For Maika",
         apiVersion    = "3.0.1.0"
     }
     
@@ -32,55 +32,52 @@ function main(processParam, envParam)
 	local retCode
 	local idx
 	
-	mapping["7"]	= "o"
-	mapping["i"]	= "i"
-	mapping["u"]	= "u"
+	mapping["7"]	= "@"
 	mapping["y"]	= "j u"
-	mapping["@`"]	= "a l"
-	mapping["i\\"]	= "i"
+	mapping["@`"]	= "@ r\\"
+	mapping["i\\"]	= "I0"
 	mapping["i`"]	= "u"
 	mapping["aI"]	= "a I"
 	mapping["ei"]	= "e I"
 	mapping["AU"]	= "a U"
 	mapping["@U"]	= "o U"
 	mapping["ia"]	= "j a"
-	mapping["iE_r"]	= "j e"
+	mapping["iE_r"]	= "j E"
 	mapping["ua"]	= "w a"
 	mapping["uo"]	= "w o"
-	mapping["yE_r"]	= "j u e e e"
+	mapping["yE_r"]	= "j u E"
 	mapping["iAU"]	= "j a U"
 	mapping["i@U"]	= "j o U"
-	mapping["uaI"]	= "u a I"
-	mapping["uei"]	= "u e I"
+	mapping["uaI"]	= "w a I"
+	mapping["uei"]	= "w e I"
 	mapping["a_n"]	= "a n"
-	mapping["@_n"]	= "e n"
+	mapping["@_n"]	= "@ n"
 	mapping["i_n"]	= "i n"
-	mapping["iE_n"]	= "j e n"
-	mapping["ua_n"]	= "u a n"
-	mapping["u@_n"]	= "u e n"
+	mapping["iE_n"]	= "j E n"
+	mapping["ua_n"]	= "w a n"
+	mapping["u@_n"]	= "w @ n"
 	mapping["y_n"]	= "j u n"
-	mapping["y{_n"]	= "j u e n"
-	mapping["AN"]	= "a n"
-	mapping["@N"]	= "o n"
-	mapping["iN"]	= "I n"
-	mapping["iAN"]	= "j a n"
-	mapping["uAN"]	= "u a n"
-	mapping["u@N"]	= "u o n"
-	mapping["UN"]	= "o U n"
-	mapping["iUN"]	= "j o U n"
+	mapping["y{_n"]	= "j u E n"
+	mapping["AN"]	= "a N"
+	mapping["@N"]	= "@ N"
+	mapping["iN"]	= "i N"
+	mapping["iAN"]	= "j a N"
+	mapping["uAN"]	= "w a N"
+	mapping["u@N"]	= "w @ N"
+	mapping["UN"]	= "o U N"
+	mapping["iUN"]	= "j o U N"
 	mapping["p_h"]	= "p"
+	mapping["m"]	= "m"
 	mapping["t_h"]	= "T"
-	mapping["n"]	= "n"
 	mapping["k"]	= "g"
 	mapping["k_h"]	= "k"
-	mapping["ts"]	= "t s"
-	mapping["ts\\"]	= "t s"
+	mapping["ts\\"]	= "dZ"
 	mapping["ts\\_h"]	= "tS"
-	mapping["s\\"]	= "s"
-	mapping["ts`"]	= "tS"
+	mapping["s\\"]	= "S"
+	mapping["ts`"]	= "dZ"
 	mapping["ts`_h"]	= "tS"
-	mapping["s`"]	= "s"
-	mapping["z`"]	= "r"
+	mapping["s`"]	= "S"
+	mapping["z`"]	= "Z"
 	mapping["ts_h"]	= "t s"
 
 	mapping["Sil"]	= "Sil"
