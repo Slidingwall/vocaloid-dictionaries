@@ -9,7 +9,7 @@ function manifest()
         author        = "Slidingwall",
         pluginID      = "{1385A759-3A16-46df-8078-1145143829CE}",
         pluginVersion = "For Bruno&Clara",
-        apiVersion    = "3.0.0.1"
+        apiVersion    = "3.0.1.0"
     }
     
     return myManifest
