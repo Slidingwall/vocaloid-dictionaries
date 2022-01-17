@@ -55,7 +55,8 @@ function main(processParam, envParam)
 	mapping["g'"]	= "g"
 	mapping["k"]	= "kh"
 	mapping["n"]	= "n"
-	mapping["D"]    = "D"
+	mapping["D"]    = "n"
+		mapping2["D e"] = {"D", "e"}
 	mapping["d"]	= "dh"
 	mapping["d'"]	= "d"
 	mapping["t"]	= "th"
