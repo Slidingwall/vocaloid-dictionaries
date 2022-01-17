@@ -2,9 +2,9 @@
 
 # 让跨语种更简单。
 
-The "vocaloid-dictionaries" project, as well as its is companion repository "[synthv-dictionaries](https://slidingwall.github.io/synthv-dictionaries/)", devoted to make those single-language voicebank of Vocaloid can singing songs in another language precisely.
+The "vocaloid-dictionaries" project, as well as its is companion repository "[synthv-dictionaries](/synthv-dictionaries/)", devoted to make those single-language voicebank of Vocaloid can singing songs in another language precisely.
 
-"vocaoid-dictionaries"项目，正如它的姐妹项目"synthv-dictionaries"一样，致力于让单语言的Vocaloid语音库能够地道的唱出另一种语言的歌曲。
+"vocaoid-dictionaries"项目，正如它的姐妹项目"[synthv-dictionaries](/synthv-dictionaries/)"一样，致力于让单语言的Vocaloid语音库能够地道的唱出另一种语言的歌曲。
 
 ## How to use 如何使用
 
