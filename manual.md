@@ -1,6 +1,6 @@
 # How to use / 如何使用
 
-**Note: Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.   
+**Note: Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.**   
 
 **Note: Phonemes shaped like `a_0` are not converted by the plugin. You may need to refer to the phoneme table for manual conversion.**
 
