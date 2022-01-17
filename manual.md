@@ -53,3 +53,5 @@ Once the import is complete, the dictionary can be selected in the list and used
 导入完成后，即可在列表中选中字典并使用。
 
 ![](/assets/udc3.jpg)
+
+[Back to home](/vocaloid-dictionaries/index)
