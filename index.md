@@ -6,7 +6,7 @@ The "vocaloid-dictionaries" project, as well as its is companion repository "[sy
 
 "vocaoid-dictionaries"项目，正如它的姐妹项目"[synthv-dictionaries](/synthv-dictionaries/)"一样，致力于让单语言的Vocaloid语音库能够地道的唱出另一种语言的歌曲。
 
-## How to use 如何使用
+## [How to use 如何使用](/vocaloid-dictionaries/manual)
 
 ## Downloads 下载
 
