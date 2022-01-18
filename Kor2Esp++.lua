@@ -38,41 +38,23 @@ function main(processParam, envParam)
 	local retCode
 	local idx
 	
-	-- define japanese-to-korean phoneme mapping
-	mapping["a"]	= "a"
 	mapping["ja"]	= "j a"
 	mapping["7"]	= "Q"
 	mapping["j7"]	= "j Q"
-	mapping["e"]	= "e"
-	mapping["je"]	= "j e"
-	mapping["o"]	= "o"
-	mapping["oa"]	= "w a"
 	mapping["jo"]	= "j o"
-	mapping["u"]	= "u"
 	mapping["ju"]	= "j u"
+	mapping["M"]	= "U"
+	mapping["je"]	= "j e"
+	mapping["oa"]	= "w a"
 	mapping["u7"]	= "w Q"
 	mapping["ue"]	= "w e"
 	mapping["ui"]	= "u i"
-	mapping["M"]	= "U"
 	mapping["Mi"]	= "U i"
-	mapping["i"]	= "i"
 
-	mapping["h"]	= "h"
-	mapping["g"]	= "g"
 	mapping["g'"]	= "g"
-	mapping["k"]	= "k"
-	mapping["n"]	= "n"
 	mapping["D"]    = "D"
-	mapping["d"]	= "d"
 	mapping["d'"]	= "d"
-	mapping["t"]	= "t"
-	mapping["r"]	= "r"
-	mapping["l"]	= "l"
-	mapping["m"]	= "m"
-	mapping["b"]	= "b"
 	mapping["b'"]	= "b"
-	mapping["p"]	= "p"
-	mapping["s"]	= "s"
 	mapping["sh"]	= "S"
 	mapping["s'"]	= "s"
 	mapping["sh'"]	= "S"
@@ -88,11 +70,8 @@ function main(processParam, envParam)
 	mapping["mp"]	= "m"
 	mapping["Np"]	= "N"
 
-
-	mapping["@r"]	= "@ r\"
+	mapping["@r"]	= "@ r\\"
 	mapping["C"]	= "S"
-	mapping["z"]	= "z"
-	mapping["v"]	= "v"
 
 	mapping["Sil"]	= "Sil"
 	-- get list of notes
