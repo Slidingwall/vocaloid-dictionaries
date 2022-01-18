@@ -1,6 +1,6 @@
 # Phoneme / 音素表
-
-## Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua
+<details><summary>
+## Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua </summary>
 
 | Chinese X-SAMPA | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | --------------- | --------------- | --------------- | ------------------------ |
@@ -63,8 +63,8 @@
 | ts              | z               | t s             | ts                       |
 | ts_h            | t s             | t s             | t s                      |
 | s               | s               | s               | s                        |
-
-## Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua
+</details><details><summary>
+## Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua </summary>
 
 | Korean X-SAMPA     | Chinese X-SAMPA   | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | ------------------ | ----------------- | --------------- | --------------- | ------------------------ |
@@ -73,7 +73,7 @@
 | 7                  | AU                | V               | a o             | Q                        |
 | j7                 | iAU               | j V             | j a o           | j Q                      |
 | o                  | o                 | O:              | o               | o                        |
-| jo                 | [i@U](mailto:i@U) | j O:            | j o             | j o                      |
+| jo                 | i@U               | j O:            | j o             | j o                      |
 | u                  | u                 | u:              | u               | u                        |
 | ju                 | y                 | j u:            | j u             | j u                      |
 | M                  | u                 | u:              | U               | U                        |
@@ -119,7 +119,7 @@
 | z *                | ts                | z               | t s             | z                        |
 | f *                | f                 | f               | f               | f                        |
 | v *                | u                 | v               | w               | v                        |
-| [@r *](mailto:*@r) | @`                | @r              | a l             | @ r\                     |
+| @r *               | @`                | @r              | a l             | @ r\                     |
 
 > *: Extended Korean phonemes in SeeU's voicebank.
 >
@@ -128,3 +128,5 @@
 > ^: Corresponds to a number of front and back nasals in Mandarin.
 >
 > ^: 对应着普通话中的多个前、后鼻音。
+  </details>
+[Back to home](/vocaloid-dictionaries/)
