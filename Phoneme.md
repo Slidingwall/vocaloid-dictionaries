@@ -1,6 +1,5 @@
 # Phoneme / 音素表
-<details><summary>
-  <h2>Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua</h2> </summary>
+##Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua
 
 | Chinese X-SAMPA | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | --------------- | --------------- | --------------- | ------------------------ |
@@ -63,9 +62,8 @@
 | ts              | z               | t s             | ts                       |
 | ts_h            | t s             | t s             | t s                      |
 | s               | s               | s               | s                        |
-</details><details><summary>
-  <h2>Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua</h2> </summary>
 
+##Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua
 | Korean X-SAMPA     | Chinese X-SAMPA   | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | ------------------ | ----------------- | --------------- | --------------- | ------------------------ |
 | a                  | a                 | {               | a               | a                        |
@@ -128,6 +126,6 @@
 > ^: Corresponds to a number of front and back nasals in Mandarin.
 >
 > ^: 对应着普通话中的多个前、后鼻音。
-  </details>
+
   
 [Back to home](/vocaloid-dictionaries/)
