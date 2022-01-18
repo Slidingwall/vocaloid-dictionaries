@@ -12,7 +12,7 @@ The "vocaloid-dictionaries" project, as well as its is companion repository "[sy
 
 ## Demos and Examples 演示和用例
 
-## Phonemes 音素表
+## [Phonemes 音素表](/vocaloid-dictionaries/Phoneme)
 
 ## About  关于
 
