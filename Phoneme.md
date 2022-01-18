@@ -1,5 +1,5 @@
 # Phoneme / 音素表
-##Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua
+## Chinese.udc,  Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua
 
 | Chinese X-SAMPA | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | --------------- | --------------- | --------------- | ------------------------ |
@@ -63,7 +63,7 @@
 | ts_h            | t s             | t s             | t s                      |
 | s               | s               | s               | s                        |
 
-##Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua
+## Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua
 | Korean X-SAMPA     | Chinese X-SAMPA   | English X-SAMPA | Spanish X-SAMPA | Extended Spanish X-SAMPA |
 | ------------------ | ----------------- | --------------- | --------------- | ------------------------ |
 | a                  | a                 | {               | a               | a                        |
