@@ -8,7 +8,7 @@ The "vocaloid-dictionaries" project, as well as its is companion repository "[sy
 
 ## [How to use 如何使用](/vocaloid-dictionaries/manual)
 
-## Downloads 下载
+## [Downloads 下载](/vocaloid-dictionaries/Downloads)
 
 ## Demos and Examples 演示和用例
 
