@@ -7,8 +7,10 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 
 ## How to use 如何使用
 
-The first language in the file name represents the language used in the project file, i.e. the language you want the voice bank to sing in; the second language is the language used by the voice bank.`*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).   
-文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。`*.lua`文件可作为VOCALOID的任务插件导入，`*.udc`文件可作为VOCALOID的用户字典导入（仅支持英文声库）。
+The first language in the file name represents the language used in the project file, i.e. the language you want the voice bank to sing in; the second language is the language used by the voice bank.  
+`*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).   
+文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。  
+`*.lua`文件可作为VOCALOID的任务插件导入，`*.udc`文件可作为VOCALOID的用户字典导入（仅支持英文声库）。
 
 For detail instruction, please see the manual on our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries/manual).  
 详细教程，请查看[GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries/manual)。  
