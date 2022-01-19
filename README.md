@@ -14,7 +14,7 @@ For detail instruction, please see the manual on our [GitHub Pages](https://slid
 详细教程，请查看[GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries/manual)。  
 
 ## Released Dictionaries 已公开字典
-| File Name 文件名称 | Oringinal Language (Voice library)<br />原始语言 (语音库) | Target Language (Lyrics)<br />目标语言 (歌词) |
+| File Name<br />文件名称 | Oringinal Language (Voice library)<br />原始语言 (语音库) | Target Language (Lyrics)<br />目标语言 (歌词) |
 | ------------------ | --------------------------------------------------------- | --------------------------------------------- |
 | Chinese.udc        | English 英语                                              | Chinese 中文                                  |
 | Chn2Eng.lua        | English 英语                                              | Chinese 中文                                  |
