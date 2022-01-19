@@ -10,7 +10,7 @@ The "vocaloid-dictionaries" project, as well as its is companion repository "[sy
 
 ## [Downloads 下载](/vocaloid-dictionaries/Downloads)
 
-## Demos and Examples 演示和用例
+## [Demos and Examples 演示和用例](vocaloid-dictionaries/demo)
 
 ## [Phonemes 音素表](/vocaloid-dictionaries/Phoneme)
 
