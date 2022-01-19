@@ -16,6 +16,8 @@ For detail instruction, please see the manual on our [GitHub Pages](https://slid
 详细教程，请查看[GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries/manual)。  
 
 ## Released Dictionaries 已公开字典
+Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictionaries/demo).
+音频样本可以在[这里](https://slidingwall.github.io/vocaloid-dictionaries/demo)听到。
 | File Name<br />文件名称 | Oringinal Language (Voice library)<br />原始语言 (语音库) | Target Language (Lyrics)<br />目标语言 (歌词) |
 | ------------------ | --------------------------------------------------------- | --------------------------------------------- |
 | Chinese.udc        | English 英语                                              | Chinese 中文                                  |
