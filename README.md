@@ -20,10 +20,9 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 音频样本可以在[这里](https://slidingwall.github.io/vocaloid-dictionaries/demo)听到。
 | Voicebank Language<br />语音库语言 | Chinese Lyrics<br />中文歌词 | Korean Lyrics<br />韩文歌词 |
 | ------------------ | --------------------------------------------------------- | --------------------------------------------- |
-| English 英语        | Chinese.udc / Chn2Eng.lua      | Kor2Eng.lua                                  |
-| Spanish 西班牙语        | Chn2Esp.lua                | Kor2Esp.lua                                  |
-| Spanish 西班牙语 (Maika)   | Chn2Esp++.lua         | Kor2Esp++.lua                                  |
-| Korean 韩语  | Kor2Chn.lua       | N/A |
+| English 英语  | Chinese.udc<br />Chn2Eng.lua  | Kor2Eng.lua  |
+| Spanish 西班牙语<br />Spanish(Maika)  | Chn2Esp.lua<br />Chn2Esp++.lua  | Kor2Esp.lua<br />Kor2Esp++.lua  |
+| Korean 韩语  | Kor2Chn.lua   | N/A |
 
 
 #### Any contributions are welcome. / 欢迎任何形式的贡献。
