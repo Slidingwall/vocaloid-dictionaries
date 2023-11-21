@@ -7,7 +7,7 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 
 ## How to use 如何使用
 
-The first language in the file name represents the language used in the project file, i.e. the language you want the voice bank to sing in; the second language is the language used by the voice bank.  
+The first language in the file name represents the language used in the project file, i.e. the language you want the voicebank to sing in; the second language is the language used by the voicebank.  
 `*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).   
 文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。  
 `*.lua`文件可作为VOCALOID的任务插件导入，`*.udc`文件可作为VOCALOID的用户字典导入（仅支持英文声库）。
@@ -18,16 +18,13 @@ For detail instruction, please see the manual on our [GitHub Pages](https://slid
 ## Released Dictionaries 已公开字典
 Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictionaries/demo).
 音频样本可以在[这里](https://slidingwall.github.io/vocaloid-dictionaries/demo)听到。
-| File Name<br />文件名称 | Oringinal Language (Voice library)<br />原始语言 (语音库) | Target Language (Lyrics)<br />目标语言 (歌词) |
+| Voicebank Language<br />语音库语言 | Chinese Lyrics<br />中文歌词 | Korean Lyrics<br />韩文歌词 |
 | ------------------ | --------------------------------------------------------- | --------------------------------------------- |
-| Chinese.udc        | English 英语                                              | Chinese 中文                                  |
-| Chn2Eng.lua        | English 英语                                              | Chinese 中文                                  |
-| Chn2Esp.lua        | Spanish 西班牙语                                          | Chinese 中文                                  |
-| Chn2Esp++.lua      | Spanish 西班牙语 (Maika)                                  | Chinese 中文                                  |
-| Kor2Chn.lua        | Chinese 中文                                              | Korean 朝鲜语                                 |
-| Kor2Eng.lua        | English 英语                                              | Korean 朝鲜语                                 |
-| Kor2Esp.lua        | Spanish 西班牙语                                          | Korean 朝鲜语                                 |
-| Kor2Esp++.lua      | Spanish 西班牙语 (Maika)                                  | Korean 朝鲜语                                 |
+| English 英语        | Chinese.udc / Chn2Eng.lua      | Kor2Eng.lua                                  |
+| Spanish 西班牙语        | Chn2Esp.lua                | Kor2Esp.lua                                  |
+| Spanish 西班牙语 (Maika)   | Chn2Esp++.lua         | Kor2Esp++.lua                                  |
+| Korean 韩语  | Kor2Chn.lua       | N/A |
+
 
 #### Any contributions are welcome. / 欢迎任何形式的贡献。
 
