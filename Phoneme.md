@@ -39,8 +39,8 @@
 | **n** | n | n | n || **l** | l | l | l |
 | **k** | k | g | g || **k_h** | kh | k | k |
 | **ts\\** | dZ | t s | dZ || **ts\\_h** | tS | tS | tS |
-| **ts`** | dZ | tS | dZ || **ts`_h** | tS | tS | tS |
-| **s`** | S | s | S || **z`** | Z | r | Z |
+| **ts\`** | dZ | tS | dZ || **ts\`_h** | tS | tS | tS |
+| **s\`** | S | s | S || **z\`** | Z | r | Z |
 | **ts** | z | t s | ts || **ts_h** | t s | t s | t s |
 | **s** | s | s | s || **s\\** | S | s | S |
 | **x** | h | x | x |
