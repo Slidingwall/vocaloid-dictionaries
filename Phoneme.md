@@ -3,8 +3,8 @@
 > `CHN` = Chinese X-SAMPA  
 > `ENG` = English X-SAMPA  
 > `KOR` = Korean X-SAMPA  
-> `ESP` = Spanichi X-SAMPA  
-> `MAI` = Extended Spanishi X-SAMPA for Maika
+> `ESP` = Spanish X-SAMPA  
+> `MAI` = Extended Spanish X-SAMPA for Maika
 
 - [Phoneme / 音素表](#phoneme--音素表)
   - [Chinese](#chinese)
