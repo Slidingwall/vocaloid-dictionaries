@@ -38,7 +38,7 @@
  |**uaI** |w aI |u a I |w a I | |**s** |s |s |s |
  |**uei** |w eI |u e I |w e I |
  |**a_n** |{ n |a n |a n | |**AN** |Q N |a n |a N |
- |**@_n** |@ n |e n |‘@ n | |**@N** |@ N |o n |@ N |
+ |**@_n** |@ n |e n |@ n | |**@N** |@ N |o n |@ N |
  |**i_n** |i: n |i n |i n | |**iN** |i: N |i n |i N |
  |**iE_n** |i: e n |j e n |j E n | |**iAN** |j Q N |j a n |j a N |
  |**ua_n** |w { n |u a n |w a n | |**uAN** |w Q N |u a n |w a N |
