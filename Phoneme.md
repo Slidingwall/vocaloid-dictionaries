@@ -1,8 +1,19 @@
 # Phoneme / 音素表
 
-## Chinese.udc, Chn2Eng.lua, Chn2Esp.lua, Chn2Esp++.lua
+> `CHN` = Chinese X-SAMPA  
+> `ENG` = English X-SAMPA
+> `KOR` = Korean X-SAMPA
+> `ESP` = Spanichi X-SAMPA
+> `MAI` = Extended Spanishi X-SAMPA for Maika
 
- |Chinese<br />X-SAMPA |English<br />X-SAMPA |Spanish<br />X-SAMPA |Extended Spanish<br />X-SAMPA |
+- [Phoneme / 音素表](#phoneme--音素表)
+  - [Chinese](#chinese)
+  - [Korean](#korean)
+
+
+## Chinese
+
+ |CHN |ENG |ESP |MAI |
  |:----: |:----: |:----: |:----: |
  |a |{ |a |a |
  |o |O: |o |o |
@@ -64,9 +75,9 @@
  |ts_h |t s |t s |t s |
  |s |s |s |s |
 
-## Kor2Chn.lua, Kor2Eng.lua, Kor2Esp.lua, Kor2Esp++.lua
+## Korean
 
- |Korean<br />X-SAMPA |Chinese<br />X-SAMPA |English<br />X-SAMPA |Spanish<br />X-SAMPA |Extended Spanish<br />X-SAMPA |
+ |KOR |CHN |ENG |ESP |MAI |
  |:----: |:----: |:----: |:----: |:----: |
  |a |a |{ |a |a |
  |ja |ia |j { |j a |j a |
