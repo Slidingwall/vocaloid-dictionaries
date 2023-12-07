@@ -1,0 +1,35 @@
+1,ja,j a
+1,7,a o
+1,j7,j a o
+1,jo,j o
+1,ju,j u
+1,M,u
+1,je,j e
+1,oa,w a
+1,u7,w o
+1,ue,w e
+1,ui,u i
+1,Mi,u i
+1,h,x
+1,g',g
+1,d',d
+1,b',b
+1,p,p
+1,sh,s
+1,s',s
+1,sh',tS
+1,c,t s
+1,c',t s
+1,ch,tS
+1,gp,g
+1,dp,d
+1,rp,l
+1,bp,b
+1,np,n
+1,mp,m
+1,Np,n
+1,N,n
+1,@r,a l
+1,C,s
+1,z,t s
+1,v,w
