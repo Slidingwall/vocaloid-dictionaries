@@ -16,22 +16,22 @@
 1,yE_r,j u e
 1,iAU,j a U
 1,i@U,j o U
-1,uaI,u a I
-1,uei,u e I
+1,uaI,w a I
+1,uei,w e I
 1,a_n,a n
 1,@_n,e n
 1,i_n,i n
 1,iE_n,j e n
-1,ua_n,u a n
-1,u@_n,u e n
+1,ua_n,w a n
+1,u@_n,w e n
 1,y_n,j u n
 1,y{_n,j u e n
 1,AN,a n
 1,@N,o n
 1,iN,i n
 1,iAN,j a n
-1,uAN,u a n
-1,u@N,u o n
+1,uAN,w a n
+1,u@N,w o n
 1,UN,o U n
 1,iUN,j o U n
 1,p_h,p

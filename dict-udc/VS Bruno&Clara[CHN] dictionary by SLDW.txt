@@ -1,0 +1,441 @@
+a,a
+o,o
+e,o
+u,u
+v,j u
+yu,j u
+yi,i
+i,i
+er,a l
+ai,a I
+ei,e I
+ao,a U
+ou,o U
+an,a n
+en,e n
+ya,j a
+ia,j a
+ye,j e
+ie,j e
+yin,i n
+in,i n
+yong,j o U n
+iong,j o U n
+wu,u
+wa,w a
+ua,w a
+wo,w o
+uo,w o
+wen,w e n
+uen,w e n
+un,w e n
+yue,j u e
+ve,j u e
+u:e,j u e
+yuan,j u e n
+van,j u e n
+u:an,j u e n
+yun,j u n
+vn,j u n
+u:n,j u n
+u:,j u
+ang,a n
+yao,j a U
+iao,j a U
+you,j o U
+iou,j o U
+iu,j o U
+wai,w a I
+uai,w a I
+wei,w e I
+uei,w e I
+ui,w e I
+weng,w e n
+ueng,w e n
+yan,j e n
+ian,j e n
+wan,w a n
+uan,w a n
+ying,i n
+ing,i n
+wang,w a n
+uang,w a n
+yang,j a n
+iang,j a n
+ba,p a
+pa,p a
+ma,m a
+fa,f a
+da,t a
+ta,t a
+na,n a
+la,l a
+ga,g a
+ka,h a
+ha,x a
+zha,tS a
+cha,tS a
+sha,s a
+za,t s a
+ca,t s a
+sa,s a
+bo,p o
+po,p o
+mo,m o
+fo,f o
+lo,l o
+me,m o
+de,t o
+te,t o
+ne,n o
+le,l o
+ge,g o
+ke,h o
+he,x o
+zhe,tS o
+che,tS o
+she,s o
+re,r o
+ze,t s o
+ce,t s o
+se,s o
+zhi,tS u
+chi,tS u
+shi,s u
+ri,r u
+zi,t s i
+ci,t s i
+si,s i
+bu,p u
+pu,p u
+mu,m u
+fu,f u
+du,t u
+tu,t u
+nu,n u
+lu,l u
+gu,g u
+ku,h u
+hu,x u
+zhu,tS u
+chu,tS u
+shu,s u
+ru,r u
+zu,t s u
+cu,t s u
+su,s u
+bei,p e I
+pei,p e I
+mei,m e I
+fei,f e I
+dei,t e I
+nei,n e I
+lei,l e I
+gei,g e I
+kei,h e I
+hei,x e I
+zhei,tS e I
+shei,s e I
+zei,t s e I
+bao,p a U
+pao,p a U
+mao,m a U
+dao,t a U
+tao,t a U
+nao,n a U
+lao,l a U
+gao,g a U
+kao,h a U
+hao,x a U
+zhao,tS a U
+chao,tS a U
+shao,s a U
+rao,r a U
+zao,t s a U
+cao,t s a U
+sao,s a U
+pou,p o U
+mou,m o U
+fou,f o U
+dou,t o U
+tou,t o U
+nou,n o U
+lou,l o U
+gou,g o U
+kou,h o U
+hou,x o U
+zhou,tS o U
+chou,tS o U
+shou,s o U
+rou,r o U
+zou,t s o U
+cou,t s o U
+sou,s o U
+ban,p a n
+pan,p a n
+man,m a n
+fan,f a n
+dan,t a n
+tan,t a n
+nan,n a n
+lan,l a n
+gan,g a n
+kan,h a n
+han,x a n
+zhan,tS a n
+chan,tS a n
+shan,s a n
+ran,r a n
+zan,t s a n
+can,t s a n
+san,s a n
+ben,p e n
+pen,p e n
+men,m e n
+fen,f e n
+den,t e n
+nen,n e n
+gen,g e n
+ken,h e n
+hen,x e n
+zhen,tS e n
+chen,tS e n
+shen,s e n
+ren,r e n
+zen,t s e n
+cen,t s e n
+sen,s e n
+dong,t o U n
+tong,t o U n
+nong,n o U n
+long,l o U n
+gong,g o U n
+kong,h o U n
+hong,x o U n
+zhong,tS o U n
+chong,tS o U n
+rong,r o U n
+zong,t s o U n
+cong,t s o U n
+song,s o U n
+bi,p i
+pi,p i
+mi,m i
+di,t i
+ti,t i
+ni,n i
+li,l i
+ji,t s i
+qi,tS i
+xi,s i
+gua,g w a
+kua,h w a
+hua,x w a
+zhua,tS w a
+chua,tS w a
+shua,s w a
+dun,t w e n
+tun,t w e n
+lun,l w e n
+gun,g w e n
+kun,h w e n
+hun,x w e n
+zhun,tS w e n
+chun,tS w e n
+shun,s w e n
+run,r w e n
+zun,t s w e n
+cun,t s w e n
+sun,s w e n
+nu:,n j u
+lu:,l j u
+nv,n j u
+lv,l j u
+ju,t s j u
+qu,tS j u
+xu,s j u
+bai,p a I
+pai,p a I
+mai,m a I
+dai,t a I
+tai,t a I
+nai,n a I
+lai,l a I
+gai,g a I
+kai,h a I
+hai,x a I
+zhai,tS a I
+chai,tS a I
+shai,s a I
+zai,t s a I
+cai,t s a I
+sai,s a I
+duo,t w o
+tuo,t w o
+nuo,n w o
+luo,l w o
+guo,g w o
+kuo,h w o
+huo,x w o
+zhuo,tS w o
+chuo,tS w o
+shuo,s w o
+ruo,r w o
+zuo,t s w o
+cuo,t s w o
+suo,s w o
+biao,p j a U
+piao,p j a U
+miao,m j a U
+diao,t j a U
+tiao,t j a U
+niao,n j a U
+liao,l j a U
+jiao,t s j a U
+qiao,tS j a U
+xiao,s j a U
+miu,m j o U
+diu,t j o U
+niu,n j o U
+liu,l j o U
+jiu,t s j o U
+qiu,tS j o U
+xiu,s j o U
+guai,g w a I
+kuai,h w a I
+huai,x w a I
+zhuai,tS w a I
+chuai,tS w a I
+shuai,s w a I
+dui,t w e I
+tui,t w e I
+gui,g w e I
+kui,h w e I
+hui,x w e I
+zhui,tS w e I
+chui,tS w e I
+shui,s w e I
+rui,r w e I
+zui,t s w e I
+cui,t s w e I
+sui,s w e I
+bang,p a n
+pang,p a n
+mang,m a n
+fang,f a n
+dang,t a n
+tang,t a n
+nang,n a n
+lang,l a n
+gang,g a n
+kang,h a n
+hang,x a n
+zhang,tS a n
+chang,tS a n
+shang,s a n
+rang,r a n
+zang,t s a n
+cang,t s a n
+sang,s a n
+beng,p e n
+peng,p e n
+meng,m e n
+feng,f e n
+deng,t e n
+teng,t e n
+neng,n e n
+leng,l e n
+geng,g e n
+keng,h e n
+heng,x e n
+zheng,tS e n
+cheng,tS e n
+sheng,s e n
+reng,r e n
+zeng,t s e n
+ceng,t s e n
+seng,s e n
+dia,t j a
+lia,l j a
+jia,t s j a
+qia,tS j a
+xia,s j a
+bie,p j e
+pie,p j e
+mie,m j e
+die,t j e
+tie,t j e
+nie,n j e
+lie,l j e
+jie,t s j e
+qie,tS j e
+xie,s j e
+bin,p i n
+pin,p i n
+min,m i n
+nin,n i n
+lin,l i n
+jin,t s i n
+qin,tS i n
+xin,s i n
+juan,t s j u e n
+quan,tS j u e n
+xuan,s j u e n
+nve,n j u e
+lve,l j u e
+jue,t s j u e
+que,tS j u e
+xue,s j u e
+nu:e,n j u e
+lu:e,l j u e
+duan,t w a n
+tuan,t w a n
+nuan,n w a n
+luan,l w a n
+guan,g w a n
+kuan,h w a n
+huan,x w a n
+zhuan,tS w a n
+chuan,tS w a n
+shuan,s w a n
+ruan,r w a n
+zuan,t s w a n
+cuan,t s w a n
+suan,s w a n
+jun,t s j u n
+qun,tS j u n
+xun,s j u n
+bing,p i n
+ping,p i n
+ming,m i n
+ding,t i n
+ting,t i n
+ning,n i n
+ling,l i n
+jing,t s i n
+qing,tS i n
+xing,s i n
+jiong,t s j o U n
+qiong,tS j o U n
+xiong,s j o U n
+guang,g w a n
+kuang,h w a n
+huang,x w a n
+zhuang,tS w a n
+chuang,tS w a n
+shuang,s w a n
+bian,p j e n
+pian,p j e n
+mian,m j e n
+dian,t j e n
+tian,t j e n
+nian,n j e n
+lian,l j e n
+jian,t s j e n
+qian,tS j e n
+xian,s j e n
+niang,n j a n
+liang,l j a n
+jiang,t s j a n
+qiang,tS j a n
+xiang,s j a n

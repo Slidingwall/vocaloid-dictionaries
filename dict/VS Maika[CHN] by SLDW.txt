@@ -30,8 +30,8 @@
 1,iAN,j a N
 1,uAN,w a N
 1,u@N,w @ N
-1,UN,o U N
-1,iUN,j o U N
+1,UN,U N
+1,iUN,j U N
 1,p_h,p
 1,m,m
 1,t_h,t
