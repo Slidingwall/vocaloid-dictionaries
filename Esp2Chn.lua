@@ -33,6 +33,11 @@ function main(processParam, envParam)
     local retCode
     local idx
 
+    mapping3["j a I"]   = { "ia aI" }
+    mapping3["j e I"]   = { "iE_r ei" }
+    mapping3["w a I"]   = { "uaI" }
+    mapping3["w e I"]   = { "uei" }
+
     mapping["L"]        = "i"
     mapping["j\\"]      = "i"
     mapping2["L a"]     = { "ia" }
