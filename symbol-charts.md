@@ -2,7 +2,7 @@
 
 ## Vowels / 元音
 
-![Used phonemes](/assets/vowels-01.svg)
+![Used phonemes](/assets/vowels-02.svg)
 
 ![Full Chart](/assets/vowels-01.svg)
 
