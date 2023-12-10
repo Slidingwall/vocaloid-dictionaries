@@ -39,7 +39,7 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|CHN VB|N/A|Progressing|FBO|√||
+|CHN VB|N/A|Progressing|FBO|√|Progressing|
 |ENG VB|√|N/A|FBO|√||
 |JPN VB|FBO|FBO|N/A|FBO|FBO|
 |KOR VB|FBO|FBO|FBO|N/A|FBO|
