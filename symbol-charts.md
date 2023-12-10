@@ -10,5 +10,5 @@
 
 ![Full Chart](/assets/consonants-01.svg)
 
-[Back to vocaloid-dictionaries](/vocaloid-dictionaries/index)
+[Back to vocaloid-dictionaries](/vocaloid-dictionaries/index)  
 [Back to synthv-dictionaries](/synthv-dictionaries/index)
