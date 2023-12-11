@@ -3,10 +3,10 @@
 
 function manifest()
 	myManifest = {
-		name          = "Chinese to Spanish Extra",
-		comment       = "Convert Chinese VSQX for use with MAIKA voice library.",
+		name          = "CHN->MAIKA",
+		comment       = "Convert Chinese VSQX for MAIKA.",
 		author        = "Slidingwall",
-		pluginID      = "{A03FEF7A-1234-4446-A12F-92E54EE5D41T}",
+		pluginID      = "{CHINESE0-SILD-INGW-ALL0-SPANISHMAIKA}",
 		pluginVersion = "For Maika",
 		apiVersion    = "3.0.1.0"
 	}

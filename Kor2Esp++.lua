@@ -4,10 +4,10 @@
 --
 function manifest()
 	myManifest = {
-		name          = "Korean to Spanish Extra",
-		comment       = "Convert Korean VSQX for Maika voice library.",
+		name          = "KOR->MAIKA",
+		comment       = "Convert Korean VSQX for MAIKA.",
 		author        = "Slidingwall",
-		pluginID      = "{11451419-1981-06df-8078-1145143829CE}",
+		pluginID      = "{KOREAN00-SILD-INGW-ALL0-SPANISHMAIKA}",
 		pluginVersion = "For Maika",
 		apiVersion    = "3.0.1.0"
 	}

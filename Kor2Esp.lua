@@ -3,18 +3,17 @@
 -- Mapping of Korean VSQ(X)'s to Spanish phonetics to be used with Spanish voice bank.
 --
 function manifest()
-    myManifest = {
-        name          = "Korean to Spanish",
-        comment       = "Convert Korean VSQX for Spanish voice bank",
-        author        = "Slidingwall",
-        pluginID      = "{1385A759-3A16-46df-8078-1145143829CE}",
-        pluginVersion = "For Bruno&Clara",
-        apiVersion    = "3.0.1.0"
-    }
-    
-    return myManifest
-end
+	myManifest = {
+		name          = "KOR->ESP",
+		comment       = "Convert Korean VSQX for Spanish Libraries",
+		author        = "Slidingwall",
+		pluginID      = "{KOREAN00-SILD-INGW-ALL0-00000SPANISH}",
+		pluginVersion = "For Bruno&Clara",
+		apiVersion    = "3.0.1.0"
+	}
 
+	return myManifest
+end
 
 --
 -- Main
@@ -29,7 +28,7 @@ function main(processParam, envParam)
 	-- local scriptDir  = envParam.scriptDir	-- script folder
 	-- local scriptName = envParam.scriptName	-- script name
 	-- local tempDir    = envParam.tempDir		-- temporary folder
-	
+
 	local mapping    = {}
 	local mapping2   = {} -- exceptions to general rules using two phoneme input string
 	local noteEx     = {}
@@ -37,48 +36,48 @@ function main(processParam, envParam)
 	local noteCount
 	local retCode
 	local idx
-	
+
 	-- define japanese-to-korean phoneme mapping
-	mapping["ja"]	= "j a"
-	mapping["7"]	= "a o"
-	mapping["j7"]	= "j a o"
-	mapping["jo"]	= "j o"
-	mapping["ju"]	= "j u"
-	mapping["M"]	= "u"
-	mapping["je"]	= "j e"
-	mapping["oa"]	= "w a"
-	mapping["u7"]	= "w o"
-	mapping["ue"]	= "w e"
-	mapping["ui"]	= "u i"
-	mapping["Mi"]	= "u i"
+	mapping["ja"]    = "j a"
+	mapping["7"]     = "a o"
+	mapping["j7"]    = "j a o"
+	mapping["jo"]    = "j o"
+	mapping["ju"]    = "j u"
+	mapping["M"]     = "u"
+	mapping["je"]    = "j e"
+	mapping["oa"]    = "w a"
+	mapping["u7"]    = "w o"
+	mapping["ue"]    = "w e"
+	mapping["ui"]    = "u i"
+	mapping["Mi"]    = "u i"
 
-	mapping["h"]	= "x"
-	mapping["g'"]	= "g"
-	mapping["d'"]	= "d"
-	mapping["b'"]	= "b"
-	mapping["p"]	= "p"
-	mapping["sh"]	= "s"
-	mapping["s'"]	= "s"
-	mapping["sh'"]	= "tS"
-	mapping["c"]	= "t s"
-	mapping["c'"]	= "t s"
-	mapping["ch"]	= "tS"
+	mapping["h"]     = "x"
+	mapping["g'"]    = "g"
+	mapping["d'"]    = "d"
+	mapping["b'"]    = "b"
+	mapping["p"]     = "p"
+	mapping["sh"]    = "s"
+	mapping["s'"]    = "s"
+	mapping["sh'"]   = "tS"
+	mapping["c"]     = "t s"
+	mapping["c'"]    = "t s"
+	mapping["ch"]    = "tS"
 
-	mapping["gp"]	= "g"
-	mapping["dp"]	= "d"
-	mapping["rp"]	= "l"
-	mapping["bp"]	= "b"
-	mapping["np"]	= "n"
-	mapping["mp"]	= "m"
-	mapping["Np"]	= "n"
-	mapping["N"]	= "n"
+	mapping["gp"]    = "g"
+	mapping["dp"]    = "d"
+	mapping["rp"]    = "l"
+	mapping["bp"]    = "b"
+	mapping["np"]    = "n"
+	mapping["mp"]    = "m"
+	mapping["Np"]    = "n"
+	mapping["N"]     = "n"
 
-	mapping["@r"]	= "a l"
-	mapping["C"]	= "s"
-	mapping["z"]	= "t s"
-	mapping["v"]	= "w"
+	mapping["@r"]    = "a l"
+	mapping["C"]     = "s"
+	mapping["z"]     = "t s"
+	mapping["v"]     = "w"
 
-	mapping["Sil"]	= "Sil"
+	mapping["Sil"]   = "Sil"
 	-- get list of notes
 	VSSeekToBeginNote()
 	idx = 1
@@ -95,32 +94,32 @@ function main(processParam, envParam)
 		VSMessageBox("No notes to process!", 0)
 		return 0
 	end
-	
+
 	-- transform notes
 	for idx = 1, noteCount do
 		local updNoteEx = {}
 		updNoteEx = noteExList[idx]
-		
+
 		-- split on whitespace
 		local phns = {}
 		for token in string.gmatch(updNoteEx.phonemes, "[^%s]+") do
-			 table.insert(phns, token)
+			table.insert(phns, token)
 		end
-		
+
 		-- do phoneme-by-phoneme mapping
 		for i = 1, table.getn(phns) do
 			-- try exceptions first
 			local mapped = false
-			if i+1 <= table.getn(phns) then
-				twophn = phns[i] .. " " .. phns[i+1]
+			if i + 1 <= table.getn(phns) then
+				twophn = phns[i] .. " " .. phns[i + 1]
 				if mapping2[twophn] then
 					phns[i] = mapping2[twophn][1]
-					phns[i+1] = mapping2[twophn][2]
+					phns[i + 1] = mapping2[twophn][2]
 					-- (in this case no need to increment i because mapping2[twophn][2] is always "i", so will map to "i" on next iteration)
 					mapped = true -- there's no continue in lua
 				end
 			end
-			
+
 			-- general mapping second
 			if not mapped then
 				if mapping[phns[i]] then
@@ -128,10 +127,10 @@ function main(processParam, envParam)
 				end
 			end
 		end
-		
+
 		-- join by space
 		updNoteEx.phonemes = table.concat(phns, " ");
-		
+
 		-- update note
 		retCode = VSUpdateNoteEx(updNoteEx);
 		if (retCode ~= 1) then

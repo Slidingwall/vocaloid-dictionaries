@@ -3,10 +3,10 @@
 
 function manifest()
 	myManifest = {
-		name          = "Chinese to Spanish",
+		name          = "CHN->ESP",
 		comment       = "Convert Chinese VSQX for Spanish libraries.",
 		author        = "Slidingwall",
-		pluginID      = "{A03FEF7A-4524-3456-A12F-92E54EE5D41T}",
+		pluginID      = "{CHINESE0-SILD-INGW-ALL0-00000SPANISH}",
 		pluginVersion = "For Bruno&Clara",
 		apiVersion    = "3.0.1.0"
 	}

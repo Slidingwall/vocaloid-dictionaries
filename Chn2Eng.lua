@@ -3,10 +3,10 @@
 
 function manifest()
 	myManifest = {
-		name          = "Chinese to English",
-		comment       = "Convert Chinese VSQX for English voice banks",
+		name          = "CHN->ENG",
+		comment       = "Convert Chinese VSQX for English Libraries",
 		author        = "Slidingwall",
-		pluginID      = "{A03FEF7A-1234-3456-A12F-92E54EE5D41T}",
+		pluginID      = "{CHINESE0-SILD-INGW-ALL0-00000ENGLISH}",
 		pluginVersion = "For English Libraries",
 		apiVersion    = "3.0.1.0"
 	}
