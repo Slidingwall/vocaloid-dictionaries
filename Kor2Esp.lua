@@ -1,7 +1,5 @@
---
 -- Kor2Esp.lua
--- Mapping of Korean VSQ(X)'s to Spanish phonetics to be used with Spanish voice bank.
---
+-- Mapping of Korean VSQ(X)'s to Spanish phonetics.
 function manifest()
 	myManifest = {
 		name          = "KOR->ESP",
@@ -37,7 +35,6 @@ function main(processParam, envParam)
 	local retCode
 	local idx
 
-	-- define japanese-to-korean phoneme mapping
 	mapping["ja"]    = "j a"
 	mapping["7"]     = "a o"
 	mapping["j7"]    = "j a o"

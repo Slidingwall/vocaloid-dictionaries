@@ -1,5 +1,5 @@
 -- Chn2Maika.lua
--- Mapping of Chinese VSQ(X)'s to extended Spanish phonetics to be used with Maika voice bank.
+-- Mapping of Chinese VSQ(X)'s to Maika phonetics.
 
 function manifest()
 	myManifest = {

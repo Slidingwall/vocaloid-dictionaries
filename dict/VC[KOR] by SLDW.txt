@@ -1,0 +1,384 @@
+1,@r,@`
+1,7,AU
+1,b,p
+1,b',p
+1,bp,p
+1,c,ts
+1,C,ts
+1,c',ts
+1,ch,ts_h
+1,D,n
+1,d,t
+1,d',t
+1,dp,t
+1,e,ei
+1,g,k
+1,g',k
+1,gp,k
+1,h,x
+1,j7,iAU
+1,ja,i a
+1,je,iE_r
+1,jo,i@U
+1,ju,i u
+1,k,k_h
+1,l,l
+1,m,m
+1,M,u
+1,Mi,u i
+1,n,n
+1,o,@U
+1,oa,u a
+1,p,p_h
+1,r,l
+1,rp,l
+1,s,s
+1,s',s
+1,sh,s\
+1,sh',s\
+1,Sil,Sil
+1,t,t_h
+1,u7,uo
+1,ue,uei
+1,ui,u i
+1,v,u
+1,z,ts
+2,7 mp,AN m
+2,7 Np,AN
+2,7 np,AN
+2,a mp,a_n m
+2,a np,a_n
+2,a Np,AN
+2,b jo,p 7_0 i@U
+2,b' jo,p 7_0 i@U
+2,b o,p o
+2,b o,p o
+2,b' o,p o
+2,b' o,p o
+2,b ue,p u ei
+2,b' ue,p u ei
+2,c i,ts\ i
+2,c' i,ts\ i
+2,c j7,ts\ iAU
+2,c' j7,ts\ iAU
+2,c ja,ts\ ia
+2,c' ja,ts\ ia
+2,c je,ts\ iE_r
+2,c' je,ts\ iE_r
+2,c jo,ts\ i@U
+2,c' jo,ts\ i@U
+2,ch e,ts_h 7 ei
+2,ch i,ts\_h i
+2,ch j7,ts\_h iAU
+2,ch ja,ts\_h ia
+2,ch je,ts\_h iE_r
+2,ch jo,ts\_h i@U
+2,d ja,t ia
+2,d' ja,t ia
+2,e np,@_n
+2,e Np,@N
+2,g i,k 7_0 i
+2,g' i,k 7_0 i
+2,g j7,k 7_0 iAU
+2,g' j7,k 7_0 iAU
+2,g ja,k 7_0 ia
+2,g' ja,k 7_0 ia
+2,g je,k 7_0 iE_r
+2,g' je,k 7_0 iE_r
+2,g jo,k 7_0 i@U
+2,g' jo,k 7_0 i@U
+2,g ju,k 7_0 y
+2,g' ju,k 7_0 y
+2,g oa,k ua
+2,g' oa,k ua
+2,h i,x 7_0 i
+2,h j7,x 7_0 iAU
+2,h ja,x 7_0 ia
+2,h je,x 7_0 iE_r
+2,h jo,x 7_0 i@U
+2,h ju,x 7_0 y
+2,h oa,x ua
+2,i mp,i_n m
+2,i np,i_n
+2,i Np,iN
+2,j7 mp,iAN m
+2,j7 Np,iAN
+2,j7 np,iAN
+2,ja mp,iE_r @_n m
+2,ja Np,iAN
+2,ja np,iE_r @_n
+2,je mp,iE_n m
+2,je np,iE_n
+2,je Np,iE_r @N
+2,jo np,i iUN m
+2,jo Np,i iUN
+2,jo np,i iUN
+2,ju np,i iUN m
+2,ju Np,i iUN
+2,ju np,i iUN
+2,k i,k_h 7_0 i
+2,k j7,k_h 7_0 iAU
+2,k ja,k_h 7_0 ia
+2,k je,k_h 7_0 iE_r
+2,k jo,k_h 7_0 i@U
+2,k ju,k_h 7_0 y
+2,k oa,k_h ua
+2,l e np,l 7 @_n
+2,l ja,l ia
+2,l ue,l u ei
+2,M mp,UN m
+2,M Np,UN
+2,M np,UN
+2,m o,m o
+2,m ue,m u ei
+2,n ue,n u ei
+2,o mp,UN m
+2,o Np,UN
+2,o np,UN
+2,oa mp,ua_n
+2,oa Np,u AN
+2,oa np,UN
+2,p jo,p_h 7_0 i@U
+2,p ue,p_h u ei
+2,r e np,l 7 @_n
+2,r ja,l ia
+2,r ue,l u ei
+2,sh ja,s\ ia
+2,sh' ja,s\ ia
+2,sh ui,s\ y
+2,sh' ui,s\ y
+2,t e np,t_h 7 @_n
+2,t jo,t_h 7_0 i@U
+2,u mp,UN m
+2,u Np,UN
+2,u np,UN
+2,u7 mp,u AN m
+2,u7 Np,u AN
+2,u7 np,u AN
+2,ue mp,u@_n m
+2,ue Np,u @N
+2,ue np,u@_n
+2,ui np,u i_n m
+2,ui np,u i_n
+2,ui Np,u iN
+3,b j7 mp,p i AN m
+3,b' j7 mp,p i AN m
+3,b j7 Np,p i AN
+3,b j7 np,p i AN
+3,b' j7 Np,p i AN
+3,b' j7 np,p i AN
+3,b ja Np,p i AN
+3,b' ja Np,p i AN
+3,b M mp,p u UN m
+3,b' M mp,p u UN m
+3,b M Np,p u UN
+3,b M np,p u UN
+3,b' M Np,p u UN
+3,b' M np,p u UN
+3,b o mp,p o UN m
+3,b' o mp,p o UN m
+3,b o Np,p o UN
+3,b o np,p o UN
+3,b' o Np,p o UN
+3,b' o np,p o UN
+3,b oa mp,p ua_n m
+3,b' oa mp,p ua_n m
+3,b oa np,p ua_n
+3,b' oa np,p ua_n
+3,b u mp,p u UN m
+3,b' u mp,p u UN m
+3,b u Np,p u UN
+3,b u np,p u UN
+3,b' u Np,p u UN
+3,b' u np,p u UN
+3,b ue mp,p u @_n m
+3,b' ue mp,p u @_n m
+3,b ue np,p u @_n
+3,b' ue np,p u @_n
+3,c jo np,ts\ iUN m
+3,c jo Np,ts\ iUN
+3,c jo np,ts\ iUN
+3,c' jo np,ts\ iUN m
+3,c' jo Np,ts\ iUN
+3,c' jo np,ts\ iUN
+3,c ju np,ts\ iUN m
+3,c ju Np,ts\ iUN
+3,c ju np,ts\ iUN
+3,c' ju np,ts\ iUN m
+3,c' ju Np,ts\ iUN
+3,c' ju np,ts\ iUN
+3,c ui mp,ts\ y_n m
+3,c' ui mp,ts\ y_n m
+3,c ui Np,ts\ y_n
+3,c ui np,ts\ y_n
+3,c' ui Np,ts\ y_n
+3,c' ui np,ts\ y_n
+3,ch jo np,ts\_h iUN m
+3,ch jo Np,ts\_h iUN
+3,ch jo np,ts\_h iUN
+3,ch ju np,ts\_h iUN m
+3,ch ju Np,ts\_h iUN
+3,ch ju np,ts\_h iUN
+3,ch ui mp,ts\_h y_n m
+3,ch ui Np,ts\_h y_n
+3,ch ui np,ts\_h y_n
+3,d i mp,d 7_0 i_n m
+3,d' i mp,d 7_0 i_n m
+3,d i np,d 7_0 i_n
+3,d' i np,d 7_0 i_n
+3,d j7 mp,t ia AN m
+3,d' j7 mp,t ia AN m
+3,d j7 Np,t ia AN
+3,d j7 np,t ia AN
+3,d' j7 Np,t ia AN
+3,d' j7 np,t ia AN
+3,d ja Np,t ia AN
+3,d' ja Np,t ia AN
+3,g i mp,k 7_0 i_n m
+3,g' i mp,k 7_0 i_n m
+3,g i np,k 7_0 i_n
+3,g i Np,k 7_0 iN
+3,g' i np,k 7_0 i_n
+3,g' i Np,k 7_0 iN
+3,g j7 mp,k 7_0 iAN m
+3,g' j7 mp,k 7_0 iAN m
+3,g j7 Np,k 7_0 iAN
+3,g j7 np,k 7_0 iAN
+3,g' j7 Np,k 7_0 iAN
+3,g' j7 np,k 7_0 iAN
+3,g ja mp,k 7_0 iE_r @_n m
+3,g' ja mp,k 7_0 iE_r @_n m
+3,g ja Np,k 7_0 iAN
+3,g ja np,k 7_0 iE_r @_n
+3,g' ja Np,k 7_0 iAN
+3,g' ja np,k 7_0 iE_r @_n
+3,g je mp,k 7_0 iE_n m
+3,g' je mp,k 7_0 iE_n m
+3,g je np,k 7_0 iE_n
+3,g je Np,k 7_0 iE_r @N
+3,g' je np,k 7_0 iE_n
+3,g' je Np,k 7_0 iE_r @N
+3,g jo np,k 7_0 iUN m
+3,g jo Np,k 7_0 iUN
+3,g jo np,k 7_0 iUN
+3,g' jo np,k 7_0 iUN m
+3,g' jo Np,k 7_0 iUN
+3,g' jo np,k 7_0 iUN
+3,g ju np,k 7_0 iUN m
+3,g ju Np,k 7_0 iUN
+3,g ju np,k 7_0 iUN
+3,g' ju np,k 7_0 iUN m
+3,g' ju Np,k 7_0 iUN
+3,g' ju np,k 7_0 iUN
+3,g oa Np,k uAN
+3,g' oa Np,k uAN
+3,g u7 mp,k uAN m
+3,g' u7 mp,k uAN m
+3,g u7 Np,k uAN
+3,g u7 np,k uAN
+3,g' u7 Np,k uAN
+3,g' u7 np,k uAN
+3,h i mp,x 7_0 i_n m
+3,h i np,x 7_0 i_n
+3,h i Np,x 7_0 iN
+3,h j7 mp,x 7_0 iAN m
+3,h j7 Np,x 7_0 iAN
+3,h j7 np,x 7_0 iAN
+3,h ja mp,x 7_0 iE_r @_n m
+3,h ja Np,x 7_0 iAN
+3,h ja np,x 7_0 iE_r @_n
+3,h je mp,x 7_0 iE_n m
+3,h je np,x 7_0 iE_n
+3,h je Np,x 7_0 iE_r @N
+3,h jo np,x 7_0 iUN m
+3,h jo Np,x 7_0 iUN
+3,h jo np,x 7_0 iUN
+3,h ju np,x 7_0 iUN m
+3,h ju Np,x 7_0 iUN
+3,h ju np,x 7_0 iUN
+3,h oa Np,x uAN
+3,h u7 mp,x uAN m
+3,h u7 Np,x uAN
+3,h u7 np,x uAN
+3,k i mp,k_h 7_0 i_n m
+3,k i np,k_h 7_0 i_n
+3,k i Np,k_h 7_0 iN
+3,k j7 mp,k_h 7_0 iAN m
+3,k j7 Np,k_h 7_0 iAN
+3,k j7 np,k_h 7_0 iAN
+3,k ja mp,k_h 7_0 iE_r @_n m
+3,k ja Np,k_h 7_0 iAN
+3,k ja np,k_h 7_0 iE_r @_n
+3,k je mp,k_h 7_0 iE_n m
+3,k je np,k_h 7_0 iE_n
+3,k je Np,k_h 7_0 iE_r @N
+3,k jo np,k_h 7_0 iUN m
+3,k jo Np,k_h 7_0 iUN
+3,k jo np,k_h 7_0 iUN
+3,k ju np,k_h 7_0 iUN m
+3,k ju Np,k_h 7_0 iUN
+3,k ju np,k_h 7_0 iUN
+3,k oa Np,k_h uAN
+3,k u7 mp,k_h uAN m
+3,k u7 Np,k_h uAN
+3,k u7 np,k_h uAN
+3,m j7 mp,m i AN m
+3,m j7 Np,m i AN
+3,m j7 np,m i AN
+3,m ja Np,m i AN
+3,m M mp,m u UN m
+3,m M Np,m u UN
+3,m M np,m u UN
+3,m o mp,m o UN m
+3,m o Np,m o UN
+3,m o np,m o UN
+3,m oa mp,m ua_n m
+3,m oa np,m ua_n
+3,m u mp,m u UN m
+3,m u Np,m u UN
+3,m u np,m u UN
+3,m ue mp,m u @_n m
+3,m ue np,m u @_n
+3,n ue mp,n u @_n m
+3,n ue np,n u @_n
+3,p j7 mp,p_h i AN m
+3,p j7 Np,p_h i AN
+3,p j7 np,p_h i AN
+3,p ja Np,p_h i AN
+3,p M mp,p_h u UN m
+3,p M Np,p_h u UN
+3,p M np,p_h u UN
+3,p o mp,p_h o UN m
+3,p o Np,p_h o UN
+3,p o np,p_h o UN
+3,p oa mp,p_h ua_n m
+3,p oa np,p_h ua_n
+3,p u mp,p_h u UN m
+3,p u Np,p_h u UN
+3,p u np,p_h u UN
+3,p ue mp,p_h u @_n m
+3,p ue np,p_h u @_n
+3,sh jo np,s\ iUN m
+3,sh jo Np,s\ iUN
+3,sh jo np,s\ iUN
+3,sh' jo np,s\ iUN m
+3,sh' jo Np,s\ iUN
+3,sh' jo np,s\ iUN
+3,sh ju np,s\ iUN m
+3,sh ju Np,s\ iUN
+3,sh ju np,s\ iUN
+3,sh' ju np,s\ iUN m
+3,sh' ju Np,s\ iUN
+3,sh' ju np,s\ iUN
+3,sh ui mp,s\ y_n m
+3,sh' ui mp,s\ y_n m
+3,sh ui Np,s\ y_n
+3,sh ui np,s\ y_n
+3,sh' ui Np,s\ y_n
+3,sh' ui np,s\ y_n
+3,t i mp,t_h 7_0 i_n m
+3,t i np,t_h 7_0 i_n
+3,t j7 mp,t_h ia AN m
+3,t j7 Np,t_h ia AN
+3,t j7 np,t_h ia AN
+3,t ja Np,t_h ia AN

@@ -1,7 +1,6 @@
---
 -- Kor2Maika.lua
--- Mapping of Korean VSQ(X)'s to Extend Spanish phonetics to be used with Maika voice bank.
---
+-- Mapping of Korean VSQ(X)'s to Maika phonetics.
+
 function manifest()
 	myManifest = {
 		name          = "KOR->MAIKA",
