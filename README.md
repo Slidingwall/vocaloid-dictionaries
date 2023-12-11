@@ -11,7 +11,7 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 The first language in the file name represents the language used in the project file, i.e. the language you want the voicebank to sing in; the second language is the language used by the voicebank.
 文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。
 
-`*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).
+`*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).  
  `*.lua`文件可作为VOCALOID的任务插件导入，`*.udc`文件可作为VOCALOID的用户字典导入（仅支持英文声库）。
 
 Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu).  
@@ -27,13 +27,6 @@ For detail instruction, please see the manual on our [GitHub Pages](https://slid
 
 Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictionaries/demo).
 音频样本可以在[这里](https://slidingwall.github.io/vocaloid-dictionaries/demo)听到。
-| Voicebank Language<br />语音库语言 | Chinese Lyrics<br />中文歌词 | Korean Lyrics<br />韩文歌词 |
-|:----:|:----:|:----:|
-| English 英语  | Chinese.udc<br />Chn2Eng.lua  | Kor2Eng.lua  |
-| Spanish 西班牙语<br />Spanish(Maika)  | Chn2Esp.lua<br />Chn2Esp++.lua  | Kor2Esp.lua<br />Kor2Esp++.lua  |
-| Korean 韩语  | Kor2Chn.lua   | N/A |
-
-## Dictionary Guide / 字典指南
 
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成  
 
@@ -43,11 +36,12 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 |ENG VB|√|N/A|FBO|√||
 |JPN VB|FBO|FBO|N/A|FBO|FBO|
 |KOR VB|FBO|FBO|FBO|N/A|FBO|
-|ESP VB|√|FBO|FBO|√|N/A|
+|ESP VB|√|Progressing|FBO|√|N/A|
+|MAIKA|√|FBO|FBO|√|N/A|
 
-#### Any contributions are welcome. / 欢迎任何形式的贡献
+**Any contributions are welcome. / 欢迎任何形式的贡献**
 
-***
+---
 
 Author: Slidingwall ([Bilibili](https://space.bilibili.com/141232009))  
 作者：Slidingwall（[哔哩哔哩](https://space.bilibili.com/141232009)）  
