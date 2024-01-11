@@ -5,6 +5,8 @@
 The "vocaloid-dictionaries" project, as well as its is companion repository "[synthv-dictionaries](/synthv-dictionaries/)", devoted to make those single-language voicebank of Vocaloid can singing songs in another language precisely.  
 "vocaoid-dictionaries"项目，正如它的姐妹项目"[synthv-dictionaries](/synthv-dictionaries/)"一样，致力于让单语言的Vocaloid语音库能够地道的唱出另一种语言的歌曲。
 
+My projects:    [synthv-dictionaries](/synthv-dictionaries/)    [mandarin-reclist](/mandarin-reclist/)
+
 ## [How to use 如何使用](/vocaloid-dictionaries/manual)
 
 ## [Demos and Examples 演示和用例](/vocaloid-dictionaries/demo)
@@ -45,7 +47,3 @@ This project maintained by Slidingwall. To contact me, you can [PM me on Bilibil
 这是一个由Slidingwall维护的项目。您可以通过[哔哩哔哩](https://space.bilibili.com/141232009)或者[电子邮件](mailto:slidingwall@outlook.com)联系我
 
 ---
-
-## Link / 链接
-
-My projects:    [synthv-dictionaries](/synthv-dictionaries/)    [mandarin-reclist](/mandarin-reclist/)
