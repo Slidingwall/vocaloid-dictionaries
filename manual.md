@@ -1,3 +1,7 @@
+---
+nav_order: 2
+---
+
 # How to use / 如何使用
 
 **Note: Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.**  
@@ -5,6 +9,14 @@
 
 **Note: Phonemes shaped like `a_0` are not converted by the plugin. You may need to refer to the [phoneme table](/vocaloid-dictionaries/phoneme) for manual conversion.**  
 **注意：形如`a_0`的音素并不能被插件转换。可能需要参考[音素表](/vocaloid-dictionaries/phoneme)进行手动转换。**
+
+- [How to use / 如何使用](#how-to-use--如何使用)
+  - [Install and use the plugin / 安装并使用插件](#install-and-use-the-plugin--安装并使用插件)
+  - [Install and use the dictionary / 安装并使用字典](#install-and-use-the-dictionary--安装并使用字典)
+  - [General Job-Plugin support / 通用插件支持](#general-job-plugin-support--通用插件支持)
+    - [General cross-lingual Job Plugin / 通用跨语种插件](#general-cross-lingual-job-plugin--通用跨语种插件)
+    - [General user dictionary Job Plugin / 用户词典插件](#general-user-dictionary-job-plugin--用户词典插件)
+
 
 ## Install and use the plugin / 安装并使用插件
 
@@ -38,7 +50,7 @@ Once the import is complete, the dictionary can be selected in the list and used
 导入完成后，即可在列表中选中字典并使用。  
 ![dictionary can be selected in the list](/assets/udc3.png)
 
-## General Job-Plugin usage / 通用插件用法
+## General Job-Plugin support / 通用插件支持
 
 ### General cross-lingual Job Plugin / 通用跨语种插件
 
@@ -102,4 +114,4 @@ After adding, save and re-add the Job-Plugin and now you can finish converting.
 Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7736635/) by [atonyxu](https://github.com/atonyxu).  
 `/dict-udc`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[用户词典插件](https://www.bilibili.com/read/cv7732403/)相兼容。
 
-[Back to home](/vocaloid-dictionaries/index)
+

@@ -1,3 +1,8 @@
+---
+nav_order: 4
+has_children: true
+---
+
 # Phoneme / 音素表
 
 See also:[Symbol Charts](/vocaloid-dictionaries/symbol-charts)  
@@ -85,4 +90,4 @@ See also:[Symbol Charts](/vocaloid-dictionaries/symbol-charts)
 > ^: Corresponds to a number of front and back nasals in Mandarin.  
 > ^: 对应着普通话中的多个前、后鼻音。  
 
-[back to home](/vocaloid-dictionaries/)
+

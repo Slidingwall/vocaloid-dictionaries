@@ -1,3 +1,7 @@
+---
+parent: Phoneme / 音素表
+---
+
 # Symbol Charts / 发音记号表
 
 ## Vowels / 元音
@@ -10,6 +14,5 @@
 
 ![Full Chart](/assets/consonants-01.svg)
 
-[Back to vocaloid-dictionaries](/vocaloid-dictionaries/index)
-[Back to synthv-dictionaries](/synthv-dictionaries/index)
-[Back to mandarin-reclist](/mandarin-reclist/index)
+[Back to synthv-dictionaries](/synthv-dictionaries/index){: .btn }
+[Back to mandarin-reclist](/mandarin-reclist/index){: .btn }

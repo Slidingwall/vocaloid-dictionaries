@@ -1,3 +1,6 @@
+---
+nav_order: 3
+---
 # Demos and Examples / 演示和用例
 
 | Chinese 中文 |Korean 韩文 |
@@ -8,4 +11,4 @@
 |<audio controls><source src="/vocaloid-dictionaries/assets/Chn2Esp demo1.0.ogg" type="audio/ogg">您的浏览器不支持 audio 元素。</audio><br />Chn2Esp.lua|<audio controls><source src="/vocaloid-dictionaries/assets/Kor2Esp demo1.0.ogg" type="audio/ogg">您的浏览器不支持 audio 元素。</audio><br />Kor2Esp.lua|
 |<audio controls><source src="/vocaloid-dictionaries/assets/Chn2Esp++ demo1.0.ogg" type="audio/ogg">您的浏览器不支持 audio 元素。</audio><br />Chn2Esp++.lua|<audio controls><source src="/vocaloid-dictionaries/assets/Kor2Esp++ demo1.0.ogg" type="audio/ogg">您的浏览器不支持 audio 元素。</audio><br />Kor2Esp++.lua|
 
-[Back to home](/vocaloid-dictionaries/)
+
