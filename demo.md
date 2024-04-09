@@ -1,7 +1,7 @@
 ---
-nav_order: 3
+nav_order: 5
 ---
-# Demos and Examples / 演示和用例
+# Demos / 演示
 
 | Chinese 中文 |Korean 韩文 |
 |:----:|:----:|

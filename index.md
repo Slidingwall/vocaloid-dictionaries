@@ -8,13 +8,11 @@ nav_order: 1
 让跨语种更简单  
 {: .fs-9 }
 {: .fs-6 .fw-300 } 
-The "vocaloid-dictionaries" project, as well as its is companion repository "[synthv-dictionaries](/synthv-dictionaries/)", devoted to make those single-language voicebank of Vocaloid can singing songs in another language precisely.  
-"vocaoid-dictionaries"项目，正如它的姐妹项目"[synthv-dictionaries](/synthv-dictionaries/)"一样，致力于让单语言的Vocaloid语音库能够地道的唱出另一种语言的歌曲。
+"vocaloid-dictionaries" is a project devoted to make those single-language voicebanks of Vocaloid can singing another language precisely.  
+"vocaoid-dictionaries"项目致力于让单语言Vocaloid语音库能够地道的唱出另一种语言。
 {: .fs-6 .fw-300 } 
 
-[View on Github](https://github.com/Slidingwall/synthv-dictionaries/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
-My projects:    [synthv-dictionaries](/synthv-dictionaries/){: .btn }    [mandarin-reclist](/mandarin-reclist/){: .btn }
+[View on Github](https://github.com/Slidingwall/synthv-dictionaries/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [synthv-dictionaries](/synthv-dictionaries/){: .btn .fs-5 .mb-4 .mb-md-0 }    [mandarin-reclist](/mandarin-reclist/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .highlight }
 > 这个网站还托管 / This website also hosts:  

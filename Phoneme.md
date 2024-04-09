@@ -1,5 +1,5 @@
 ---
-nav_order: 4
+nav_order: 6
 has_children: true
 ---
 
@@ -84,6 +84,7 @@ See also:[Symbol Charts](/vocaloid-dictionaries/symbol-charts)
 | **z #** | ts | z | t s | z | | **f #** | f | f | f | f |
 | **v #** | u | v | w | v | | **@r #** | @` | @r | a l | @ r\ |
 
+{: .note }
 > #: Extended Korean phonemes in SeeU's voicebank.  
 > #：SeeU语音库里包含的扩展韩语发音记号。  
 >
