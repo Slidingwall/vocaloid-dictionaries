@@ -22,7 +22,7 @@ First, open `通用跨语种插件.lua` and add lines after these contents:
 
 line 34:
 
-```
+```lua
     local mapping3 = {}
 ```
 
@@ -30,7 +30,7 @@ line 34:
 
 line 72:
 
-```
+```lua
         elseif lineData[1] == '3' then
             mapping3[lineData[2]] = lineData[3]
 ```
@@ -39,7 +39,7 @@ line 72:
 
 line 103:
 
-```
+```lua
             if i + 2 <= table.getn(phns) then
                 threephn = phns[i] .. " " .. phns[i + 1] .. " " .. phns[i + 2]
                 if mapping3[threephn] then
@@ -57,7 +57,7 @@ line 103:
 
 line 122:
 
-```
+```lua
             end
 ```
 
