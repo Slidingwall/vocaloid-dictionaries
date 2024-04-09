@@ -5,9 +5,15 @@ has_children: true
 
 # Phoneme / 音素表
 
-See also:[Symbol Charts](/vocaloid-dictionaries/symbol-charts)  
-参见：[发音记号表](/vocaloid-dictionaries/symbol-charts)
+{: .important-title }
+> See also / 参见
+> 
+> [Symbol Charts 发音记号表](/vocaloid-dictionaries/symbol-charts){: .btn .btn-blue .mr-2 }  
 
+
+{: .new-title }
+> List of Abbreviations / 简称列表
+>
 > `CHN` = Chinese X-SAMPA  
 > `ENG` = English X-SAMPA  
 > `KOR` = Korean X-SAMPA  

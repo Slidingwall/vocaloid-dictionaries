@@ -12,7 +12,7 @@ nav_order: 1
 "vocaoid-dictionaries"项目致力于让单语言Vocaloid语音库能够地道的唱出另一种语言。
 {: .fs-6 .fw-300 } 
 
-[View on Github](https://github.com/Slidingwall/synthv-dictionaries/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [synthv-dictionaries](/synthv-dictionaries/){: .btn .fs-5 .mb-4 .mb-md-0 }    [mandarin-reclist](/mandarin-reclist/){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View on Github](https://github.com/Slidingwall/vocaloid-dictionaries/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [synthv-dictionaries](/synthv-dictionaries/){: .btn .fs-5 .mb-4 .mb-md-0 }    [mandarin-reclist](/mandarin-reclist/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .important-title }
 > 这个网站还托管 / This website also hosts: 
