@@ -1,8 +1,25 @@
-title: vocaloid-dictionaries
+title: Vocaloid Dictionaries
 description: Interlingual user dictionaries and Job Plugins for VOCALOID.
 remote_theme: just-the-docs/just-the-docs
 
 url: https://just-the-docs.github.io
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Back to my works: https://slidingwall.github.io/works/
+
+callouts:
+  warning:
+    title: Warning / 注意
+    color: red
+  highlight:
+    title: 
+    color: yellow
+  new:
+    title: New / 新功能
+    color: yellow
+  note:
+    title: Note / 注记
+    color: purple
+  important:
+    title: Important / 重要
+    color: purple

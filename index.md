@@ -19,7 +19,7 @@ My projects:    [synthv-dictionaries](/synthv-dictionaries/){: .btn }    [mandar
 {: .highlight }
 > 这个网站还托管 / This website also hosts:  
 > [Vocaloid Sample Parts](/vocaloid-dictionaries/Vocaloid-Sample-Parts){: .btn .btn-blue .mr-2 }[Symbol Charts](/vocaloid-dictionaries/symbol-charts){: .btn .btn-blue }
-{: .highlight }
+
 
 
 ## About  关于
@@ -31,7 +31,8 @@ By then there were already many excellent cross-language plugins circulating in 
 那时已经有许多优秀的跨语种插件在社区中流传，像是开发这款插件的VoctroLabs，或是pastro99、GobouP等对这系列插件做出巨大贡献的用户。尽管如此，仍然有许多语言之间的转换插件没有建立。因此，在完成`synthv-dictionaries`后，我便开始了这个计划。2021年9月，我注意到了sae开发的插件phQli:glQt。这些插件很好的填补了韩语语音库想要唱出其他语言的空白，给了我很大的启发，也让我有更多的动力去继续开发剩余的插件。
 
 ---
-This project maintained by Slidingwall.   
+
+This project maintained by Slidingwall.  
 这是一个由Slidingwall维护的项目。  
 
 [Bilibili](https://space.bilibili.com/141232009){: .btn .btn-purple .mr-2 }  [E-mail](mailto:slidingwall@outlook.com){: .btn .btn-green }
