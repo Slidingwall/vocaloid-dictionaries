@@ -56,7 +56,7 @@ function main(processParam, envParam)
 	mapping["a_n"]    = "{ n"
 	mapping["@_n"]    = "@ n"
 	mapping["i_n"]    = "i: n"
-	mapping["iE_n"]   = "i: e n"
+	mapping["iE_n"]   = "j e n"
 	mapping["ua_n"]   = "w { n"
 	mapping["u@_n"]   = "w @ n"
 	mapping["y_n"]    = "j u: n"
