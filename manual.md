@@ -5,10 +5,10 @@ nav_order: 2
 # How to use / 如何使用
 
 {: .warning}
-> Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.
+> Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.  
 > Vocaloid 5 不再支持 Job Plugin 插件，工程需要先在Vocaloid 3 或 4 中进行转换。
 >
-> Phonemes shaped like `a_0` are not converted by the plugin. You may need to refer to the [phoneme table](/vocaloid-dictionaries/phoneme) for manual conversion.
+> Phonemes shaped like `a_0` are not converted by the plugin. You may need to refer to the [phoneme table](/vocaloid-dictionaries/phoneme) for manual conversion.  
 > 形如`a_0`的音素并不能被插件转换。可能需要参考[音素表](/vocaloid-dictionaries/phoneme)进行手动转换。
 
 

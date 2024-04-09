@@ -14,8 +14,9 @@ nav_order: 1
 
 [View on Github](https://github.com/Slidingwall/synthv-dictionaries/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [synthv-dictionaries](/synthv-dictionaries/){: .btn .fs-5 .mb-4 .mb-md-0 }    [mandarin-reclist](/mandarin-reclist/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-{: .highlight }
-> 这个网站还托管 / This website also hosts:  
+{: .important-title }
+> 这个网站还托管 / This website also hosts: 
+>  
 > [Vocaloid Sample Parts](/vocaloid-dictionaries/Vocaloid-Sample-Parts){: .btn .btn-blue .mr-2 }[Symbol Charts](/vocaloid-dictionaries/symbol-charts){: .btn .btn-blue }
 
 

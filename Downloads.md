@@ -14,7 +14,7 @@ nav_order: 4
 |ESP VB|[Chn2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Esp.lua)|[Eng2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Eng2Esp.lua)|FBO|[Kor2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Esp.lua)|N/A|
 |MAIKA|[Chn2Esp++.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Esp%2B%2B.lua)|FBO|FBO|[Kor2Esp++.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Esp%2B%2B.lua)|N/A|
 
-{: .highlight}
+{: .note}
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成  
 
   
