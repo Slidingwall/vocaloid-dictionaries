@@ -3,7 +3,7 @@
 1,j7,j Q
 1,jo,j o
 1,ju,j u
-1,M,u7
+1,M,u
 1,je,j e
 1,oa,w a
 1,u7,w Q

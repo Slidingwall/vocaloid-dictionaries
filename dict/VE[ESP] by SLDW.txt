@@ -1,0 +1,17 @@
+2,e I,eI
+2,a I,aI
+2,o I,OI
+2,a U,aU
+2,o U,@U
+1,a,{
+1,i,i:
+1,o,O:
+1,u,u:
+1,B,v
+1,G,gh
+1,x,h
+1,J,ny
+1,l,l0
+1,rr,r
+1,L,j
+1,j\,j

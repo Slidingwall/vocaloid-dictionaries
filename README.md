@@ -40,11 +40,11 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|CHN VB|N/A|Progressing|FBO|√|Progressing|
+|CHN VB|N/A|√|FBO|√|√|
 |ENG VB|√|N/A|FBO|√||
 |JPN VB|FBO|FBO|N/A|FBO|FBO|
 |KOR VB|FBO|FBO|FBO|N/A|FBO|
-|ESP VB|√|Progressing|FBO|√|N/A|
+|ESP VB|√|√|FBO|√|N/A|
 |MAIKA|√|FBO|FBO|√|N/A|
 
 **Any contributions are welcome. / 欢迎任何形式的贡献**

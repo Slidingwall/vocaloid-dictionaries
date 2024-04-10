@@ -41,7 +41,7 @@ function main(processParam, envParam)
 	mapping["j7"]    = "j Q"
 	mapping["jo"]    = "j o"
 	mapping["ju"]    = "j u"
-	mapping["M"]     = "u7"
+	mapping["M"]     = "u"
 	mapping["je"]    = "j e"
 	mapping["oa"]    = "w a"
 	mapping["u7"]    = "w Q"
