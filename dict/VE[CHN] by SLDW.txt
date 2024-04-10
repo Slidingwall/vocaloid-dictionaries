@@ -5,7 +5,7 @@
 1,u,u:
 1,y,j u:
 1,@`,@r
-1,i\\,I
+1,i\,I
 1,i`,u:
 1,aI,aI
 1,ei,eI
@@ -40,9 +40,9 @@
 1,t_h,th
 1,k_h,kh
 1,x,h
-1,ts\\,dZ
-1,ts\\_h,tS
-1,s\\,S
+1,ts\,dZ
+1,ts\_h,tS
+1,s\,S
 1,ts`,dZ
 1,ts`_h,tS
 1,s`,S
