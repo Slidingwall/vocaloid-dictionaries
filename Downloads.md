@@ -8,7 +8,7 @@ nav_order: 4
 | **VB \ Lyrics** | CHN Lyrics | ENG Lyrics | KOR Lyrics | ESP Lyrics |
 |:---:|:---:|:---:|:---:|:---:|
 | **CHN VB** | N/A | [Eng2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Eng2Chn.lua) | [Kor2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Chn.lua) | [Esp2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Esp2Chn.lua) |
-| **ENG VB** | [Chinese.udc](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chinese.udc)<br />[Chn2Eng.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Eng.lua) | N/A | [Kor2Eng.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Eng.lua) |  |
+| **ENG VB** | [Chinese.udc](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chinese.udc)<br />[Chn2Eng.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Eng.lua) | N/A | [Kor2Eng.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Eng.lua) |[Esp2Eng.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Esp2Eng.lua)|
 | **ESP VB** | [Chn2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Esp.lua) | [Eng2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Eng2Esp.lua) | [Kor2Esp.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Esp.lua) | N/A |
 | **MAIKA** | [Chn2Esp++.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Chn2Esp%2B%2B.lua) | FBO | [Kor2Esp++.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/Kor2Esp%2B%2B.lua) | N/A |
 
