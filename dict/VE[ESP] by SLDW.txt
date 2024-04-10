@@ -15,3 +15,10 @@
 1,rr,r
 1,L,j
 1,j\,j
+1,O,O:
+1,E,e
+1,I0,I
+1,r\,r
+1,L0,l
+1,ts,t s
+1,dz,d z

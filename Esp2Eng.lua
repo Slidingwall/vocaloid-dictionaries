@@ -49,7 +49,13 @@ function main(processParam, envParam)
     mapping["rr"]     = "r"
     mapping["L"]     = "j"
     mapping["j\\"]     = "j"
-
+    mapping["O"]     = "O:"
+    mapping["E"]     = "e"
+    mapping["I0"]     = "I"
+    mapping["r\\"]     = "r"
+    mapping["L0"]     = "l"
+    mapping["ts"]     = "t s"
+    mapping["dz"]     = "d z"
 
     -- get list of notes
     VSSeekToBeginNote()
