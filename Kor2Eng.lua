@@ -69,10 +69,10 @@ function main(processParam, envParam)
 	mapping["c'"]    = "t s"
 	mapping["ch"]    = "tS"
 
-	mapping["gp"]    = "g"
-	mapping["dp"]    = "d"
+	mapping["gp"]    = "k_0"
+	mapping["dp"]    = "t_0"
 	mapping["rp"]    = "l"
-	mapping["bp"]    = "b"
+	mapping["bp"]    = "p_0"
 	mapping["np"]    = "n"
 	mapping["mp"]    = "m"
 	mapping["Np"]    = "N"

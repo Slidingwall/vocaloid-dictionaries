@@ -88,6 +88,7 @@ function main(processParam, envParam)
     mapping["h\\"]    = "x"
     mapping["j"]      = "i"
 
+    mapping2["- N"]   = "- @N"
     mapping2["t s"]   = "ts"
     mapping2["th s"]  = "ts_h"
     mapping2["t S"]   = "ts`"

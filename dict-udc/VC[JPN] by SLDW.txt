@@ -1,0 +1,602 @@
+a,a
+ba,p a
+be,p ei
+bi,p i
+bo,p o
+bu,p u
+bya,p i a
+bye,p iE_r
+byo,p iAU
+byu,p i @U
+cha,ts`_h a
+che,ts`_h 7 ei
+chi,ts\_h i
+cho,ts`_h @U
+chu,ts`_h u
+da,t a
+de,t ei
+di,t i
+do,t @U
+du,t u
+dya,t ia
+dye,t iE_r
+dyo,t iAU
+dyu,t i@U
+e,ei
+fa,f a
+fe,f ei
+fi,f o i
+fo,f o
+fu,f u
+fya,f o ia
+fyu,f o i@U
+ga,k a
+ge,k ei
+gi,k 7 i
+go,k @U
+gu,k u
+gya,k 7 ia
+gye,k 7 iE_r
+gyo,k 7 iAU
+gyu,k 7 i@U
+ha,x a
+he,x ei
+hi,x 7 i
+ho,x @U
+hya,x 7 ia
+hye,x 7 iE_r
+hyo,x 7 iAU
+hyu,x 7 i@U
+i,i
+ja,ts` a
+je,ts` ei
+ji,ts\ i
+ji,ts\ i
+jo,ts` @U
+ju,ts` u
+ka,k_h a
+ke,k_h ei
+ki,k_h 7 i
+ko,k_h @U
+ku,k_h u
+kya,k_h 7 ia
+kye,k_h 7 iE_r
+kyo,k_h 7 iAU
+kyu,k_h 7 i@U
+ltsu,Sil
+ltu,Sil
+ma,m a
+me,m ei
+mi,m i
+mo,m o
+mu,m u
+mya,m i a
+mye,m iE_r
+myo,m iAU
+myu,m i@U
+na,n a
+ne,n ei
+ni,n i
+no,n @U
+nu,n u
+nya,n i a
+nye,n iE_r
+nyo,n iAU
+nyu,n i@U
+o,o
+pa,p_h a
+pe,p_h ei
+pi,p_h i
+po,p_h o
+pu,p_h u
+pya,p_h i a
+pye,p_h iE_r
+pyo,p_h iAU
+pyu,p_h i @U
+ra,l a
+re,l ei
+ri,l i
+ro,l o
+ru,l u
+rya,l ia
+rye,l iE_r
+ryo,l iAU
+ryu,l i@U
+sa,s a
+se,s ei
+sha,s` a
+she,s` ei
+shi,s\ i
+sho,s` @U
+shu,s` u
+si,s i\ i
+so,s @U
+su,s u
+ta,t_h a
+te,t_h ei
+ti,t_h i
+to,t_h @U
+tsa,ts_h a
+tse,ts_h 7 ei
+tsi,ts_h i\ i
+tso,ts_h @U
+tsu,ts_h u
+tu,t_h u
+tya,t_h i a
+tye,t_h iE_r
+tyo,t_h iAU
+tyu,t_h i @U
+u,u
+wa,ua
+we,uei
+wi,u i
+wo,uo
+xtsu,Sil
+xtu,Sil
+ya,ia
+ye,iE_r
+yo,iAU
+yu,i@U
+za,ts a
+ze,ts ei
+zi,ts i\ i
+zo,ts @U
+zu,ts u
+zu,ts u
+ァ,a
+ぁ,a
+ア,a
+あ,a
+ィ,i
+ぃ,i
+イ,i
+い,i
+イェ,iE_r
+イぇ,iE_r
+いェ,iE_r
+いぇ,iE_r
+ゥ,u
+ぅ,u
+ウ,u
+う,u
+ヴ,p u
+ウィ,u i
+ウぃ,u i
+うィ,u i
+うぃ,u i
+ウェ,uei
+ウぇ,uei
+うェ,uei
+うぇ,uei
+ウォ,uo
+ウぉ,uo
+うォ,uo
+うぉ,uo
+ェ,ei
+ぇ,ei
+エ,ei
+え,ei
+ォ,o
+ぉ,o
+オ,o
+お,o
+ヵ,k_h a
+カ,k_h a
+か,k_h a
+ガ,k a
+が,k a
+キ,k_h 7 i
+き,k_h 7 i
+ギ,k 7 i
+ぎ,k 7 i
+キェ,k_h 7 iE_r
+キぇ,k_h 7 iE_r
+きェ,k_h 7 iE_r
+きぇ,k_h 7 iE_r
+ギェ,k 7 iE_r
+ギぇ,k 7 iE_r
+ぎェ,k 7 iE_r
+ぎぇ,k 7 iE_r
+キャ,k_h 7 ia
+キゃ,k_h 7 ia
+きャ,k_h 7 ia
+きゃ,k_h 7 ia
+ギャ,k 7 ia
+ギゃ,k 7 ia
+ぎャ,k 7 ia
+ぎゃ,k 7 ia
+キュ,k_h 7 i@U
+キゅ,k_h 7 i@U
+きュ,k_h 7 i@U
+きゅ,k_h 7 i@U
+ギュ,k 7 i@U
+ギゅ,k 7 i@U
+ぎュ,k 7 i@U
+ぎゅ,k 7 i@U
+キョ,k_h 7 iAU
+キょ,k_h 7 iAU
+きョ,k_h 7 iAU
+きょ,k_h 7 iAU
+ギョ,k 7 iAU
+ギょ,k 7 iAU
+ぎョ,k 7 iAU
+ぎょ,k 7 iAU
+ク,k_h u
+く,k_h u
+グ,k u
+ぐ,k u
+ヶ,k_h ei
+ケ,k_h ei
+け,k_h ei
+ゲ,k ei
+げ,k ei
+コ,k_h @U
+こ,k_h @U
+ゴ,k @U
+ご,k @U
+サ,s a
+さ,s a
+ザ,ts a
+ざ,ts a
+シ,s\ i
+し,s\ i
+ジ,ts\ i
+じ,ts\ i
+シェ,s` ei
+シぇ,s` ei
+しェ,s` ei
+しぇ,s` ei
+ジェ,ts` ei
+ジぇ,ts` ei
+じェ,ts` ei
+じぇ,ts` ei
+シャ,s` a
+シゃ,s` a
+しャ,s` a
+しゃ,s` a
+ジャ,ts` a
+ジゃ,ts` a
+じャ,ts` a
+じゃ,ts` a
+シュ,s` u
+シゅ,s` u
+しュ,s` u
+しゅ,s` u
+ジュ,ts` u
+ジゅ,ts` u
+じュ,ts` u
+じゅ,ts` u
+ショ,s` @U
+シょ,s` @U
+しョ,s` @U
+しょ,s` @U
+ジョ,ts` @U
+ジょ,ts` @U
+じョ,ts` @U
+じょ,ts` @U
+ス,s u
+す,s u
+ズ,ts u
+ず,ts u
+スィ,s i\ i
+スぃ,s i\ i
+すィ,s i\ i
+すぃ,s i\ i
+ズィ,ts i\ i
+ズぃ,ts i\ i
+ずィ,ts i\ i
+ずぃ,ts i\ i
+セ,s ei
+せ,s ei
+ゼ,ts ei
+ぜ,ts ei
+ソ,s @U
+そ,s @U
+ゾ,ts @U
+ぞ,ts @U
+タ,t_h a
+た,t_h a
+ダ,t a
+だ,t a
+チ,ts\_h i
+ち,ts\_h i
+ヂ,ts\ i
+ぢ,ts\ i
+チェ,ts`_h 7 ei
+チぇ,ts`_h 7 ei
+ちェ,ts`_h 7 ei
+ちぇ,ts`_h 7 ei
+チャ,ts`_h a
+チゃ,ts`_h a
+ちャ,ts`_h a
+ちゃ,ts`_h a
+チュ,ts`_h u
+チゅ,ts`_h u
+ちュ,ts`_h u
+ちゅ,ts`_h u
+チョ,ts`_h @U
+チょ,ts`_h @U
+ちョ,ts`_h @U
+ちょ,ts`_h @U
+ッ,Sil
+っ,Sil
+ツ,ts_h u
+つ,ts_h u
+ヅ,ts u
+づ,ts u
+ツァ,ts_h a
+ツぁ,ts_h a
+つァ,ts_h a
+つぁ,ts_h a
+ツィ,ts_h i\ i
+ツぃ,ts_h i\ i
+つィ,ts_h i\ i
+つぃ,ts_h i\ i
+ツェ,ts_h 7 ei
+ツぇ,ts_h 7 ei
+つェ,ts_h 7 ei
+つぇ,ts_h 7 ei
+ツォ,ts_h @U
+ツぉ,ts_h @U
+つォ,ts_h @U
+つぉ,ts_h @U
+テ,t_h ei
+て,t_h ei
+デ,t ei
+で,t ei
+ティ,t_h i
+テぃ,t_h i
+てィ,t_h i
+てぃ,t_h i
+ディ,t i
+デぃ,t i
+でィ,t i
+でぃ,t i
+テェ,t_h iE_r
+テぇ,t_h iE_r
+てェ,t_h iE_r
+てぇ,t_h iE_r
+デェ,t iE_r
+デぇ,t iE_r
+でェ,t iE_r
+でぇ,t iE_r
+テャ,t_h i a
+テゃ,t_h i a
+てャ,t_h i a
+てゃ,t_h i a
+デャ,t ia
+デゃ,t ia
+でャ,t ia
+でゃ,t ia
+テュ,t_h i @U
+テゅ,t_h i @U
+てュ,t_h i @U
+てゅ,t_h i @U
+デュ,t i@U
+デゅ,t i@U
+でュ,t i@U
+でゅ,t i@U
+テョ,t_h iAU
+テょ,t_h iAU
+てョ,t_h iAU
+てょ,t_h iAU
+デョ,t iAU
+デょ,t iAU
+でョ,t iAU
+でょ,t iAU
+ト,t_h @U
+と,t_h @U
+ド,t @U
+ど,t @U
+トゥ,t_h u
+トぅ,t_h u
+とゥ,t_h u
+とぅ,t_h u
+ドゥ,t u
+ドぅ,t u
+どゥ,t u
+どぅ,t u
+ナ,n a
+な,n a
+ニ,n i
+に,n i
+ニェ,n iE_r
+ニぇ,n iE_r
+にェ,n iE_r
+にぇ,n iE_r
+ニャ,n i a
+ニゃ,n i a
+にャ,n i a
+にゃ,n i a
+ニュ,n i@U
+ニゅ,n i@U
+にュ,n i@U
+にゅ,n i@U
+ニョ,n iAU
+ニょ,n iAU
+にョ,n iAU
+にょ,n iAU
+ヌ,n u
+ぬ,n u
+ネ,n ei
+ね,n ei
+ノ,n @U
+の,n @U
+ハ,x a
+は,x a
+バ,p a
+ば,p a
+パ,p_h a
+ぱ,p_h a
+ヒ,x 7 i
+ひ,x 7 i
+ビ,p i
+び,p i
+ピ,p_h i
+ぴ,p_h i
+ヒェ,x 7 iE_r
+ヒぇ,x 7 iE_r
+ひェ,x 7 iE_r
+ひぇ,x 7 iE_r
+ビェ,p iE_r
+ビぇ,p iE_r
+びェ,p iE_r
+びぇ,p iE_r
+ピェ,p_h iE_r
+ピぇ,p_h iE_r
+ぴェ,p_h iE_r
+ぴぇ,p_h iE_r
+ヒャ,x 7 ia
+ヒゃ,x 7 ia
+ひャ,x 7 ia
+ひゃ,x 7 ia
+ビャ,p i a
+ビゃ,p i a
+びャ,p i a
+びゃ,p i a
+ピャ,p_h i a
+ピゃ,p_h i a
+ぴャ,p_h i a
+ぴゃ,p_h i a
+ヒュ,x 7 i@U
+ヒゅ,x 7 i@U
+ひュ,x 7 i@U
+ひゅ,x 7 i@U
+ビュ,p i @U
+ビゅ,p i @U
+びュ,p i @U
+びゅ,p i @U
+ピュ,p_h i @U
+ピゅ,p_h i @U
+ぴュ,p_h i @U
+ぴゅ,p_h i @U
+ヒョ,x 7 iAU
+ヒょ,x 7 iAU
+ひョ,x 7 iAU
+ひょ,x 7 iAU
+ビョ,p iAU
+ビょ,p iAU
+びョ,p iAU
+びょ,p iAU
+ピョ,p_h iAU
+ピょ,p_h iAU
+ぴョ,p_h iAU
+ぴょ,p_h iAU
+フ,f u
+ふ,f u
+ブ,p u
+ぶ,p u
+プ,p_h u
+ぷ,p_h u
+ファ,f a
+フぁ,f a
+ふァ,f a
+ふぁ,f a
+フィ,f o i
+フぃ,f o i
+ふィ,f o i
+ふぃ,f o i
+フェ,f ei
+フぇ,f ei
+ふェ,f ei
+ふぇ,f ei
+フォ,f o
+フぉ,f o
+ふォ,f o
+ふぉ,f o
+フャ,f o ia
+フゃ,f o ia
+ふャ,f o ia
+ふゃ,f o ia
+フュ,f o i@U
+フゅ,f o i@U
+ふュ,f o i@U
+ふゅ,f o i@U
+ヘ,x ei
+へ,x ei
+ベ,p ei
+べ,p ei
+ペ,p_h ei
+ぺ,p_h ei
+ホ,x @U
+ほ,x @U
+ボ,p o
+ぼ,p o
+ポ,p_h o
+ぽ,p_h o
+マ,m a
+ま,m a
+ミ,m i
+み,m i
+ミェ,m iE_r
+ミぇ,m iE_r
+みェ,m iE_r
+みぇ,m iE_r
+ミャ,m i a
+ミゃ,m i a
+みャ,m i a
+みゃ,m i a
+ミュ,m i@U
+ミゅ,m i@U
+みュ,m i@U
+みゅ,m i@U
+ミョ,m iAU
+ミょ,m iAU
+みョ,m iAU
+みょ,m iAU
+ム,m u
+む,m u
+メ,m ei
+め,m ei
+モ,m o
+も,m o
+ャ,ia
+ゃ,ia
+ヤ,ia
+や,ia
+ュ,i@U
+ゅ,i@U
+ユ,i@U
+ゆ,i@U
+ョ,iAU
+ょ,iAU
+ヨ,iAU
+よ,iAU
+ラ,l a
+ら,l a
+リ,l i
+り,l i
+リェ,l iE_r
+リぇ,l iE_r
+りェ,l iE_r
+りぇ,l iE_r
+リャ,l ia
+リゃ,l ia
+りャ,l ia
+りゃ,l ia
+リュ,l i@U
+リゅ,l i@U
+りュ,l i@U
+りゅ,l i@U
+リョ,l iAU
+リょ,l iAU
+りョ,l iAU
+りょ,l iAU
+ル,l u
+る,l u
+レ,l ei
+れ,l ei
+ロ,l o
+ろ,l o
+ヮ,ua
+ゎ,ua
+ワ,ua
+わ,ua
+ヰ,u i
+ゐ,u i
+ヱ,uei
+ゑ,uei
+ヲ,o
+を,o
+ん,@N
+n,@N

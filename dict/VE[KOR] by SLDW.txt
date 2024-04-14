@@ -17,7 +17,7 @@
 1,g,gh
 1,g',g
 1,k,kh
-1,D]    = n
+1,D,n
 1,d,dh
 1,d',d
 1,t,th
@@ -33,10 +33,10 @@
 1,c,t s
 1,c',t s
 1,ch,tS
-1,gp,g
-1,dp,d
+1,gp,k_0
+1,dp,t_0
 1,rp,l
-1,bp,b
+1,bp,p_0
 1,np,n
 1,mp,m
 1,Np,N

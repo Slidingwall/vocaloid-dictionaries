@@ -1,0 +1,441 @@
+a,a
+o,o
+e,7
+u,u
+v,ui
+yu,ui
+yi,i
+i,i
+er,a rp
+ai,a i
+ei,e i
+ao,7 M
+ou,o M
+an,a np
+en,7 np
+ya,ja
+ia,ja
+ye,je
+ie,je
+yin,i np
+in,i np
+yong,ju Np
+iong,ju Np
+wu,u
+wa,oa
+ua,oa
+wo,u7
+uo,u7
+wen,u7 np
+uen,u7 np
+un,u7 np
+yue,ju e
+ve,ju e
+u:e,ju e
+yuan,ju e np
+van,ju e np
+u:an,ju e np
+yun,ju np
+vn,ju np
+u:n,ju np
+u:,ui
+ang,7 Np
+yao,j7 M
+iao,j7 M
+you,jo M
+iou,jo M
+iu,jo M
+wai,oa i
+uai,oa i
+wei,ue i
+uei,ue i
+ui,ue i
+weng,ue Np
+ueng,ue Np
+yan,je np
+ian,je np
+wan,oa np
+uan,oa np
+ying,i Np
+ing,i Np
+wang,u7 Np
+uang,u7 Np
+yang,j7 Np
+iang,j7 Np
+ba,b a
+pa,p a
+ma,m a
+fa,f a
+da,d a
+ta,t a
+na,n a
+la,l a
+ga,g a
+ka,k a
+ha,h a
+zha,c a
+cha,ch a
+sha,sh a
+za,d s a
+ca,t s a
+sa,s a
+bo,b o
+po,p o
+mo,m o
+fo,f o
+lo,l o
+me,m 7
+de,d 7
+te,t 7
+ne,n 7
+le,l 7
+ge,g 7
+ke,k 7
+he,h 7
+zhe,c 7
+che,ch 7
+she,sh 7
+re,r 7
+ze,d s 7
+ce,t s 7
+se,s 7
+zhi,c M
+chi,ch M
+shi,sh M
+ri,r M
+zi,d s M
+ci,t s M
+si,s M
+bu,b u
+pu,p u
+mu,m u
+fu,f u
+du,d u
+tu,t u
+nu,n u
+lu,l u
+gu,g u
+ku,k u
+hu,h u
+zhu,c u
+chu,ch u
+shu,sh u
+ru,r u
+zu,d s u
+cu,t s u
+su,s u
+bei,b e i
+pei,p e i
+mei,m e i
+fei,f e i
+dei,d e i
+nei,n e i
+lei,l e i
+gei,g e i
+kei,k e i
+hei,h e i
+zhei,c e i
+shei,sh e i
+zei,d s e i
+bao,b 7 M
+pao,p 7 M
+mao,m 7 M
+dao,d 7 M
+tao,t 7 M
+nao,n 7 M
+lao,l 7 M
+gao,g 7 M
+kao,k 7 M
+hao,h 7 M
+zhao,c 7 M
+chao,ch 7 M
+shao,sh 7 M
+rao,r 7 M
+zao,d s 7 M
+cao,t s 7 M
+sao,s 7 M
+pou,p o M
+mou,m o M
+fou,f o M
+dou,d o M
+tou,t o M
+nou,n o M
+lou,l o M
+gou,g o M
+kou,k o M
+hou,h o M
+zhou,c o M
+chou,ch o M
+shou,sh o M
+rou,r o M
+zou,d s o M
+cou,t s o M
+sou,s o M
+ban,b a np
+pan,p a np
+man,m a np
+fan,f a np
+dan,d a np
+tan,t a np
+nan,n a np
+lan,l a np
+gan,g a np
+kan,k a np
+han,h a np
+zhan,c a np
+chan,ch a np
+shan,sh a np
+ran,r a np
+zan,d s a np
+can,t s a np
+san,s a np
+ben,b 7 np
+pen,p 7 np
+men,m 7 np
+fen,f 7 np
+den,d 7 np
+nen,n 7 np
+gen,g 7 np
+ken,k 7 np
+hen,h 7 np
+zhen,c 7 np
+chen,ch 7 np
+shen,sh 7 np
+ren,r 7 np
+zen,d s 7 np
+cen,t s 7 np
+sen,s 7 np
+dong,d U Np
+tong,t U Np
+nong,n U Np
+long,l U Np
+gong,g U Np
+kong,k U Np
+hong,h U Np
+zhong,c U Np
+chong,ch U Np
+rong,r U Np
+zong,d s U Np
+cong,t s U Np
+song,s U Np
+bi,b i
+pi,p i
+mi,m i
+di,d i
+ti,t i
+ni,n i
+li,l i
+ji,c i
+qi,ch i
+xi,sh i
+gua,g oa
+kua,k oa
+hua,h oa
+zhua,c oa
+chua,ch oa
+shua,sh oa
+dun,d u7 np
+tun,t u7 np
+lun,l u7 np
+gun,g u7 np
+kun,k u7 np
+hun,h u7 np
+zhun,c u7 np
+chun,ch u7 np
+shun,sh u7 np
+run,r u7 np
+zun,d s u7 np
+cun,t s u7 np
+sun,s u7 np
+nu:,n ui
+lu:,l ui
+nv,n ui
+lv,l ui
+ju,c ui
+qu,ch ui
+xu,sh ui
+bai,b a i
+pai,p a i
+mai,m a i
+dai,d a i
+tai,t a i
+nai,n a i
+lai,l a i
+gai,g a i
+kai,k a i
+hai,h a i
+zhai,c a i
+chai,ch a i
+shai,sh a i
+zai,d s a i
+cai,t s a i
+sai,s a i
+duo,d u7
+tuo,t u7
+nuo,n u7
+luo,l u7
+guo,g u7
+kuo,k u7
+huo,h u7
+zhuo,c u7
+chuo,ch u7
+shuo,sh u7
+ruo,r u7
+zuo,d s u7
+cuo,t s u7
+suo,s u7
+biao,b j7 M
+piao,p j7 M
+miao,m j7 M
+diao,d j7 M
+tiao,t j7 M
+niao,n j7 M
+liao,l j7 M
+jiao,c j7 M
+qiao,ch j7 M
+xiao,sh j7 M
+miu,m jo M
+diu,d jo M
+niu,n jo M
+liu,l jo M
+jiu,c jo M
+qiu,ch jo M
+xiu,sh jo M
+guai,g oa i
+kuai,k oa i
+huai,h oa i
+zhuai,c oa i
+chuai,ch oa i
+shuai,sh oa i
+dui,d ue i
+tui,t ue i
+gui,g ue i
+kui,k ue i
+hui,h ue i
+zhui,c ue i
+chui,ch ue i
+shui,sh ue i
+rui,r ue i
+zui,d s ue i
+cui,t s ue i
+sui,s ue i
+bang,b 7 Np
+pang,p 7 Np
+mang,m 7 Np
+fang,f 7 Np
+dang,d 7 Np
+tang,t 7 Np
+nang,n 7 Np
+lang,l 7 Np
+gang,g 7 Np
+kang,k 7 Np
+hang,h 7 Np
+zhang,c 7 Np
+chang,ch 7 Np
+shang,sh 7 Np
+rang,r 7 Np
+zang,d s 7 Np
+cang,t s 7 Np
+sang,s 7 Np
+beng,b e Np
+peng,p e Np
+meng,m e Np
+feng,f e Np
+deng,d e Np
+teng,t e Np
+neng,n e Np
+leng,l e Np
+geng,g e Np
+keng,k e Np
+heng,h e Np
+zheng,c e Np
+cheng,ch e Np
+sheng,sh e Np
+reng,r e Np
+zeng,d s e Np
+ceng,t s e Np
+seng,s e Np
+dia,d ja
+lia,l ja
+jia,c ja
+qia,ch ja
+xia,sh ja
+bie,b je
+pie,p je
+mie,m je
+die,d je
+tie,t je
+nie,n je
+lie,l je
+jie,c je
+qie,ch je
+xie,sh je
+bin,b i np
+pin,p i np
+min,m i np
+nin,n i np
+lin,l i np
+jin,c i np
+qin,ch i np
+xin,sh i np
+juan,c ju e np
+quan,ch ju e np
+xuan,sh ju e np
+nve,n ju e
+lve,l ju e
+jue,c ju e
+que,ch ju e
+xue,sh ju e
+nu:e,n ju e
+lu:e,l ju e
+duan,d oa np
+tuan,t oa np
+nuan,n oa np
+luan,l oa np
+guan,g oa np
+kuan,k oa np
+huan,h oa np
+zhuan,c oa np
+chuan,ch oa np
+shuan,sh oa np
+ruan,r oa np
+zuan,d s oa np
+cuan,t s oa np
+suan,s oa np
+jun,c ju np
+qun,ch ju np
+xun,sh ju np
+bing,b i Np
+ping,p i Np
+ming,m i Np
+ding,d i Np
+ting,t i Np
+ning,n i Np
+ling,l i Np
+jing,c i Np
+qing,ch i Np
+xing,sh i Np
+jiong,c ju Np
+qiong,ch ju Np
+xiong,sh ju Np
+guang,g u7 Np
+kuang,k u7 Np
+huang,h u7 Np
+zhuang,c u7 Np
+chuang,ch u7 Np
+shuang,sh u7 Np
+bian,b je np
+pian,p je np
+mian,m je np
+dian,d je np
+tian,t je np
+nian,n je np
+lian,l je np
+jian,c je np
+qian,ch je np
+xian,sh je np
+niang,n j7 Np
+liang,l j7 Np
+jiang,c j7 Np
+qiang,ch j7 Np
+xiang,sh j7 Np

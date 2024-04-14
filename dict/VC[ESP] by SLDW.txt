@@ -18,6 +18,9 @@
 1,t,t_h
 1,T,ts
 1,tS,ts`
+2,- I,- ei
+2,- U,- @U
+2,- N,- @N
 2,a I,aI
 2,a U,AU
 2,B a,ua

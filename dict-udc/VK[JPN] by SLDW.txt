@@ -1,0 +1,602 @@
+ア,a
+イ,i
+ウ,M
+エ,e
+オ,o
+a,a
+i,i
+u,M
+e,e
+o,o
+カ,k a
+キ,k i
+ク,k M
+ケ,k e
+コ,k o
+ka,k a
+ki,k i
+ku,k M
+ke,k e
+ko,k o
+サ,s a
+シ,sh i
+ス,s M
+セ,s e
+ソ,s o
+sa,s a
+shi,sh i
+su,s M
+se,s e
+so,s o
+タ,t a
+チ,ch i
+ツ,ch M
+テ,t e
+ト,t o
+ta,t a
+chi,ch i
+tsu,ch M
+te,t e
+to,t o
+ナ,n a
+ニ,n i
+ヌ,n M
+ネ,n e
+ノ,n o
+na,n a
+ni,n i
+nu,n M
+ne,n e
+no,n o
+ハ,h a
+ヒ,h i
+フ,h M
+ヘ,h e
+ホ,h o
+ha,h a
+hi,h i
+fu,h M
+he,h e
+ho,h o
+マ,m a
+ミ,m i
+ム,m M
+メ,m e
+モ,m o
+ma,m a
+mi,m i
+mu,m M
+me,m e
+mo,m o
+ラ,r a
+リ,r i
+ル,r M
+レ,r e
+ロ,r o
+ra,r a
+ri,r i
+ru,r M
+re,r e
+ro,r o
+ガ,g a
+ギ,g i
+グ,g M
+ゲ,g e
+ゴ,g o
+ga,g a
+gi,g i
+gu,g M
+ge,g e
+go,g o
+ザ,c a
+ジ,c i
+ズ,c M
+ゼ,c e
+ゾ,c o
+za,c a
+ji,c i
+zu,c M
+ze,c e
+zo,c o
+ダ,d a
+ヂ,c i
+ヅ,c M
+デ,d e
+ド,d o
+da,d a
+ji,c i
+zu,c M
+de,d e
+do,d o
+バ,b a
+ビ,b i
+ブ,b M
+ベ,b e
+ボ,b o
+ba,b a
+bi,b i
+bu,b M
+be,b e
+bo,b o
+パ,p a
+ピ,p i
+プ,p M
+ペ,p e
+ポ,p o
+pa,p a
+pi,p i
+pu,p M
+pe,p e
+po,p o
+ヤ,ja
+ユ,ju
+ヨ,jo
+ya,ja
+yu,ju
+yo,jo
+ワ,oa
+ヰ,ui
+ヱ,ue
+ヲ,o
+wa,oa
+wi,ui
+we,ue
+wo,u7
+あ,a
+い,i
+う,M
+え,e
+お,o
+か,k a
+き,k i
+く,k M
+け,k e
+こ,k o
+さ,s a
+し,sh i
+す,s M
+せ,s e
+そ,s o
+た,t a
+ち,ch i
+つ,ch M
+て,t e
+と,t o
+な,n a
+に,n i
+ぬ,n M
+ね,n e
+の,n o
+は,h a
+ひ,h i
+ふ,h M
+へ,h e
+ほ,h o
+ま,m a
+み,m i
+む,m M
+め,m e
+も,m o
+ら,r a
+り,r i
+る,r M
+れ,r e
+ろ,r o
+が,g a
+ぎ,g i
+ぐ,g M
+げ,g e
+ご,g o
+ざ,c a
+じ,c i
+ず,c M
+ぜ,c e
+ぞ,c o
+だ,d a
+ぢ,c i
+づ,c M
+で,d e
+ど,d o
+ば,b a
+び,b i
+ぶ,b M
+べ,b e
+ぼ,b o
+ぱ,p a
+ぴ,p i
+ぷ,p M
+ぺ,p e
+ぽ,p o
+や,ja
+ゆ,ju
+よ,jo
+わ,oa
+ゐ,ui
+ゑ,ue
+を,o
+ぁ,a
+ぃ,i
+ぅ,M
+ぇ,e
+ぉ,o
+ゃ,ja
+ゅ,ju
+ょ,jo
+ゎ,oa
+ァ,a
+ィ,i
+ゥ,M
+ェ,e
+ォ,o
+ャ,ja
+ュ,ju
+ョ,jo
+ヮ,oa
+ヵ,k a
+ヶ,k e
+ヴ,b M
+っ,Sil
+ッ,Sil
+ltu,Sil
+ltsu,Sil
+xtu,Sil
+xtsu,Sil
+ファ,h a
+ツァ,ch a
+ふぁ,h a
+つぁ,ch a
+フぁ,h a
+ツぁ,ch a
+ふァ,h a
+つァ,ch a
+fa,h a
+tsa,ch a
+ウィ,ui
+スィ,s i
+ズィ,c i
+ツィ,ch i
+ティ,t i
+ディ,d i
+フィ,h i
+うぃ,ui
+すぃ,s i
+ずぃ,c i
+つぃ,ch i
+てぃ,t i
+でぃ,d i
+ふぃ,h i
+ウぃ,ui
+スぃ,s i
+ズぃ,c i
+ツぃ,ch i
+テぃ,t i
+デぃ,d i
+フぃ,h i
+うィ,ui
+すィ,s i
+ずィ,c i
+つィ,ch i
+てィ,t i
+でィ,d i
+ふィ,h i
+si,s i
+zi,c i
+tsi,ch i
+ti,t i
+di,d i
+fi,h i
+トゥ,t M
+ドゥ,d M
+とぅ,t M
+どぅ,d M
+トぅ,t M
+ドぅ,d M
+とゥ,t M
+どゥ,d M
+tu,t M
+du,d M
+イェ,je
+ウェ,ue
+キェ,k je
+シェ,sh e
+チェ,ch e
+ツェ,ch e
+テェ,t je
+ニェ,n je
+ヒェ,h je
+ミェ,m je
+リェ,r je
+ギェ,g je
+ジェ,c e
+デェ,d je
+ビェ,b je
+ピェ,p je
+フェ,h e
+いぇ,je
+うぇ,ue
+きぇ,k je
+しぇ,sh e
+ちぇ,ch e
+つぇ,ch e
+てぇ,t je
+にぇ,n je
+ひぇ,h je
+みぇ,m je
+りぇ,r je
+ぎぇ,g je
+じぇ,c e
+でぇ,d je
+びぇ,b je
+ぴぇ,p je
+ふぇ,h e
+イぇ,je
+ウぇ,ue
+キぇ,k je
+シぇ,sh e
+チぇ,ch e
+ツぇ,ch e
+テぇ,t je
+ニぇ,n je
+ヒぇ,h je
+ミぇ,m je
+リぇ,r je
+ギぇ,g je
+ジぇ,c e
+デぇ,d je
+ビぇ,b je
+ピぇ,p je
+フぇ,h e
+いェ,je
+うェ,ue
+きェ,k je
+しェ,sh e
+ちェ,ch e
+つェ,ch e
+てェ,t je
+にェ,n je
+ひェ,h je
+みェ,m je
+りェ,r je
+ぎェ,g je
+じェ,c e
+でェ,d je
+びェ,b je
+ぴェ,p je
+ふェ,h e
+ye,je
+kye,k je
+she,sh e
+che,ch e
+tse,ch e
+tye,t je
+nye,n je
+hye,h je
+mye,m je
+rye,r je
+gye,g je
+je,c e
+dye,d je
+bye,b je
+pye,p je
+fe,h e
+ウォ,u7
+ツォ,ch o
+フォ,h o
+うぉ,u7
+つぉ,ch o
+ふぉ,h o
+ウぉ,u7
+ツぉ,ch o
+フぉ,h o
+うォ,u7
+つォ,ch o
+ふォ,h o
+tso,ch o
+fo,h o
+キャ,k ja
+シャ,sh a
+チャ,ch a
+テャ,t ja
+ニャ,n ja
+ヒャ,h ja
+ミャ,m ja
+リャ,r ja
+ギャ,g ja
+ジャ,c a
+デャ,d ja
+ビャ,b ja
+ピャ,p ja
+フャ,h ja
+きゃ,k ja
+しゃ,sh a
+ちゃ,ch a
+てゃ,t ja
+にゃ,n ja
+ひゃ,h ja
+みゃ,m ja
+りゃ,r ja
+ぎゃ,g ja
+じゃ,c a
+でゃ,d ja
+びゃ,b ja
+ぴゃ,p ja
+ふゃ,h ja
+キゃ,k ja
+シゃ,sh a
+チゃ,ch a
+テゃ,t ja
+ニゃ,n ja
+ヒゃ,h ja
+ミゃ,m ja
+リゃ,r ja
+ギゃ,g ja
+ジゃ,c a
+デゃ,d ja
+ビゃ,b ja
+ピゃ,p ja
+フゃ,h ja
+きャ,k ja
+しャ,sh a
+ちャ,ch a
+てャ,t ja
+にャ,n ja
+ひャ,h ja
+みャ,m ja
+りャ,r ja
+ぎャ,g ja
+じャ,c a
+でャ,d ja
+びャ,b ja
+ぴャ,p ja
+ふャ,h ja
+kya,k ja
+sha,sh a
+cha,ch a
+tya,t ja
+nya,n ja
+hya,h ja
+mya,m ja
+rya,r ja
+gya,g ja
+ja,c a
+dya,d ja
+bya,b ja
+pya,p ja
+fya,h ja
+キュ,k ju
+シュ,sh M
+チュ,ch M
+テュ,t ju
+ニュ,n ju
+ヒュ,h ju
+ミュ,m ju
+リュ,r ju
+ギュ,g ju
+ジュ,c M
+デュ,d ju
+ビュ,b ju
+ピュ,p ju
+フュ,h ju
+きゅ,k ju
+しゅ,sh M
+ちゅ,ch M
+てゅ,t ju
+にゅ,n ju
+ひゅ,h ju
+みゅ,m ju
+りゅ,r ju
+ぎゅ,g ju
+じゅ,c M
+でゅ,d ju
+びゅ,b ju
+ぴゅ,p ju
+ふゅ,h ju
+キゅ,k ju
+シゅ,sh M
+チゅ,ch M
+テゅ,t ju
+ニゅ,n ju
+ヒゅ,h ju
+ミゅ,m ju
+リゅ,r ju
+ギゅ,g ju
+ジゅ,c M
+デゅ,d ju
+ビゅ,b ju
+ピゅ,p ju
+フゅ,h ju
+きュ,k ju
+しュ,sh M
+ちュ,ch M
+てュ,t ju
+にュ,n ju
+ひュ,h ju
+みュ,m ju
+りュ,r ju
+ぎュ,g ju
+じュ,c M
+でュ,d ju
+びュ,b ju
+ぴュ,p ju
+ふュ,h ju
+kyu,k ju
+shu,sh M
+chu,ch M
+tyu,t ju
+nyu,n ju
+hyu,h ju
+myu,m ju
+ryu,r ju
+gyu,g ju
+ju,c M
+dyu,d ju
+byu,b ju
+pyu,p ju
+fyu,h ju
+キョ,k jo
+ショ,sh o
+チョ,ch o
+テョ,t jo
+ニョ,n jo
+ヒョ,h jo
+ミョ,m jo
+リョ,r jo
+ギョ,g jo
+ジョ,c o
+デョ,d jo
+ビョ,b jo
+ピョ,p jo
+きょ,k jo
+しょ,sh o
+ちょ,ch o
+てょ,t jo
+にょ,n jo
+ひょ,h jo
+みょ,m jo
+りょ,r jo
+ぎょ,g jo
+じょ,c o
+でょ,d jo
+びょ,b jo
+ぴょ,p jo
+キょ,k jo
+シょ,sh o
+チょ,ch o
+テょ,t jo
+ニょ,n jo
+ヒょ,h jo
+ミょ,m jo
+リょ,r jo
+ギょ,g jo
+ジょ,c o
+デょ,d jo
+ビょ,b jo
+ピょ,p jo
+きョ,k jo
+しョ,sh o
+ちョ,ch o
+てョ,t jo
+にョ,n jo
+ひョ,h jo
+みョ,m jo
+りョ,r jo
+ぎョ,g jo
+じョ,c o
+でョ,d jo
+びョ,b jo
+ぴョ,p jo
+kyo,k jo
+sho,sh o
+cho,ch o
+tyo,t jo
+nyo,n jo
+hyo,h jo
+myo,m jo
+ryo,r jo
+gyo,g jo
+jo,c o
+dyo,d jo
+byo,b jo
+pyo,p jo
+n,Np
+ん,Np
