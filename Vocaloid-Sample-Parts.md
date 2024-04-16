@@ -1,5 +1,4 @@
 ---
-parent: Phoneme / 音素表
 has_children: true
 ---
 
