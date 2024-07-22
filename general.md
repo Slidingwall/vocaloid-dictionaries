@@ -70,3 +70,6 @@ After adding, save and re-add the Job-Plugin and now you can finish converting.
 
 Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7736635/) by [atonyxu](https://github.com/atonyxu).  
 `/dict-udc`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[用户词典插件](https://www.bilibili.com/read/cv7732403/)相兼容。
+
+For languages like Chinese and Japanese, it is relatively easier to use the user dictionary plugin.This project offer user dictionary which can let other voicebanks singing Chinese and Japanese.  
+对于像中文和日语这样的语言来说，采用用户词典插件会相对好用一些。本项目提供使其他声库唱出中文和日语的用户词典。
