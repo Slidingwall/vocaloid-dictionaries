@@ -1,5 +1,5 @@
 ---
-parent: Vocaloid Sample Parts Powered by ddb-extraction
+parent: Vocaloid Sample Parts
 nav_order: 4
 ---
 
