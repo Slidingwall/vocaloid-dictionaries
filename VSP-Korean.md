@@ -3,7 +3,9 @@ parent: Vocaloid Sample Parts Powered by ddb-extraction
 nav_order: 3
 ---
 
-# Korean (Extracted from UNI, 1310 in total)
+# Korean
+
+(Extracted from UNI, 1310 in total)
 
 ## stationary(17)
 
