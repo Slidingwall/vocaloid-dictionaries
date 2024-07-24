@@ -2,14 +2,14 @@
 nav_order: 3
 ---
 
-# General Job-Plugin support / 通用插件支持
+# General Job-Plugin support 通用插件支持
 
 {: .new }
 > We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 > 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
 
 
-## General cross-lingual Job Plugin / 通用跨语种插件
+## General cross-lingual Job Plugin 通用跨语种插件
 
 Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu).  
 `/dict`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[通用跨语种插件](https://www.bilibili.com/read/cv7732403/)相兼容。  
@@ -66,7 +66,7 @@ line 122:
 After adding, save and re-add the Job-Plugin and now you can finish converting.  
 添加完这些后，保存并重新添加工作插件，现在就可以完成转换了。
 
-## General user dictionary Job Plugin / 用户词典插件
+## General user dictionary Job Plugin 用户词典插件
 
 Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7736635/) by [atonyxu](https://github.com/atonyxu).  
 `/dict-udc`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[用户词典插件](https://www.bilibili.com/read/cv7732403/)相兼容。

@@ -2,7 +2,7 @@
 nav_order: 2
 ---
 
-# How to use / 如何使用
+# How to use 如何使用
 
 {: .warning}
 > Job Plugin is no longer supported in Vocaloid 5 , the project needs to be converted in Vocaloid 3 or 4 first.  
@@ -12,7 +12,7 @@ nav_order: 2
 > 形如`a_0`的音素并不能被插件转换。可能需要参考[音素表](/vocaloid-dictionaries/phoneme)进行手动转换。
 
 
-## Install and use the plugin / 安装并使用插件
+## Install and use the plugin 安装并使用插件
 
 Click on `Job`->`Manage Job Plugins` or press the shortcut `Crtl+Shift+J` to open the `Job Plugin Manager` window.  
 点击`任务`-->`管理任务插件`，或按下快捷键`Crtl+Shift+J`，打开`任务插件管理`窗口。  
@@ -30,7 +30,7 @@ After entering the lyrics in the original language singer, first select the Job 
 在用原始语言的歌手输入完歌词后，先在`任务`-->`任务插件`中选择要执行的任务插件并执行，再切换歌手。  
 ![select the Job Plugin you want to execute](/assets/install4.png)
 
-## Install and use the dictionary / 安装并使用字典
+## Install and use the dictionary 安装并使用字典
 
 Click on `Lyrics`-->`User Dictionary` to open the `User Word Dictionary` window.  
 点击`歌词`-->`用户字典`，打开`用户词注册`窗口。  

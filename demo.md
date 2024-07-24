@@ -1,7 +1,7 @@
 ---
 nav_order: 5
 ---
-# Demos / 演示
+# Demos 演示
 
 | Chinese 中文 |Korean 韩语 |
 |:----:|:----:|

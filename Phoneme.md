@@ -3,7 +3,7 @@ nav_order: 6
 has_children: true
 ---
 
-# Phoneme / 音素表
+# Phoneme 音素表
 
 {: .important-title }
 > See also / 参见
@@ -20,7 +20,7 @@ has_children: true
 > `ESP` = Spanish X-SAMPA  
 > `MAI` = Extended Spanish X-SAMPA for Maika
 
-- [Phoneme / 音素表](#phoneme--音素表)
+- [Phoneme 音素表](#phoneme-音素表)
   - [Chinese](#chinese)
   - [Korean](#korean)
 
