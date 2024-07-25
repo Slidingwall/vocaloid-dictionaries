@@ -11,7 +11,7 @@ nav_order: 5
 
 `@` ; `@U` ; `@r` ; `I` ; `I@` ; `N` ; `O:` ; `O@` ; `OI` ; `Q` ; `Q@` ; `U` ; `U@` ; `V` ; `aI` ; `aU` ; `e` ; `e@` ; `eI` ; `i:` ; `l` ; `l0` ; `m` ; `n` ; `r` ; `u:` ; `{`
 
-## articulation(2974)
+## articulation(2944)
 
 ### Beginning(52)
 
