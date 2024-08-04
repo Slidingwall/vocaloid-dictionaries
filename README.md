@@ -35,8 +35,8 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 ### General Plugin Dictionaries 通用插件字典
 
-> `CLG` = Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典
-> `UDC` = Dictionaries for General user dictionary Job Plugin / 用户字典插件字典
+> `CLG` = Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典  
+> `UDC` = Dictionaries for General user dictionary Job Plugin / 用户字典插件字典  
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
