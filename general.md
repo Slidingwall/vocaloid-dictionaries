@@ -14,57 +14,25 @@ nav_order: 3
 Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu).  
 `/dict`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[通用跨语种插件](https://www.bilibili.com/read/cv7732403/)相兼容。  
 
-However, there are a few more operations that need to be done for some of the inter-language conversions(mostly when converted to Chinese).  
-然而，对于一些语言之间的转换，还有一些步骤需要完成（多数为转换至中文时）。
+We have newly added a cross-language syllable splitting function on top of its existing capabilities. For this newly added feature, the corresponding dictionary rules are as follows:  
+我们在其基础上新增加了跨语种拆音功能。对于新增加的功能，它对应的字典规则如下：  
 
-First, open `通用跨语种插件.lua` and add lines after these contents:  
-首先，打开 `通用跨语种插件.lua` 并在这些内容后添加行：  
+1. The first column indicates the number of phonemes to match: 1 represents matching one phoneme, 2 represents two, and 3 represents three. L and R represent left and right syllable splitting respectively, and will add a 1/64 note at the corresponding position.  
+第一列表示匹配音素个数：1表示匹配1个音素，2表示2个，3表示3个。L和R分别代表左拆音和右拆音，会在对应位置增加一个1/64音符。  
+2. The second column indicates the phonemes that need to be matched and replaced.  
+第二列表示需要匹配替换的音素。  
+3. The third column indicates the phonemes that will replace the matched ones. If syllable splitting is required, replace the space at the syllable splitting point with `#`.  
+第三列表示将要替换成的音素。如果需要拆音，则将拆音点位置的空格替换为`#`。  
 
-line 34:
+For example:  例如：  
 
-```lua
-    local mapping3 = {}
+```csv
+L2,s i:,s i\#i
+R2,r U,z` UN#-
+L3,k j o,k 7#i@U
+R3,a n k,a_n#k 7_0
 ```
-
-![line 34](/assets/line34.png)
-
-line 72:
-
-```lua
-        elseif lineData[1] == '3' then
-            mapping3[lineData[2]] = lineData[3]
-```
-
-![line 72](/assets/line72.png)
-
-line 103:
-
-```lua
-            if i + 2 <= table.getn(phns) then
-                threephn = phns[i] .. " " .. phns[i + 1] .. " " .. phns[i + 2]
-                if mapping3[threephn] then
-                    phns[i] = mapping3[threephn]
-                    phns[i + 1] = ""
-                    phns[i + 2] = ""
-                    mapped = true
-                end
-            end
-
-            if not mapped then
-```
-
-![line 103](/assets/line103.png)
-
-line 122:
-
-```lua
-            end
-```
-
-![line 122](/assets/line122.png)
-
-After adding, save and re-add the Job-Plugin and now you can finish converting.  
-添加完这些后，保存并重新添加工作插件，现在就可以完成转换了。
+![Effect in the Editor](/assets/general.png)
 
 ## General user dictionary Job Plugin 用户词典插件
 
