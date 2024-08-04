@@ -32,10 +32,10 @@
 2,D i,s\ i
 2,e I,ei
 2,e U,@U
-2,f i,f o_0 i
+L2,f i,f o#i
 2,f o,f o
-2,g i,k 7_0 i
-2,G i,x 7_0 i
+L2,g i,k 7#i
+L2,G i,x 7#i
 2,J a,n ia
 2,j a,ia
 2,J e,n iE_r
@@ -50,7 +50,7 @@
 2,j\ i,i
 2,j\ o,iAU
 2,j\ u,i@U
-2,k i,k_h 7_0 i
+L2,k i,k_h 7#i
 2,L a,ia
 2,L e,iE_r
 2,L i,i
@@ -70,7 +70,7 @@
 2,w e,uei
 2,w i,u i
 2,w o,uo
-2,x i,x 7_0 i
+L2,x i,x 7#i
 3,B a I,uaI
 3,B a U,u AU
 3,B e I,uei
@@ -96,17 +96,17 @@
 3,D j u,s\ i@U
 3,f a I,f a ai
 3,f a U,f a AU
-3,f j a,f o_0 ia
-3,f j e,f o_0 iE_r
-3,f j o,f o_0 iAU
-3,f j u,f o_0 i@U
+L3,f j a,f o#ia
+L3,f j e,f o#iE_r
+L3,f j o,f o#iAU
+L3,f j u,f o#i@U
 3,f o I,f o i
 3,f w e,f u ei
 3,f w o,f uo
-3,G j a,x 7_0 ia
-3,G j e,x 7_0 iE_r
-3,G j o,x 7_0 iAU
-3,G j u,x 7_0 i@U
+L3,G j a,x 7#ia
+L3,G j e,x 7#iE_r
+L3,G j o,x 7#iAU
+L3,G j u,x 7#i@U
 3,g w a,k ua
 3,G w a,x ua
 3,j a I,ia aI
@@ -131,10 +131,10 @@
 3,j\ w e,iE_r
 3,j\ w i,y
 3,j\ w o,i uo
-3,k j a,k_h 7_0 ia
-3,k j e,k_h 7_0 iE_r
-3,k j o,k_h 7_0 iAU
-3,k j u,k_h 7_0 i@U
+L3,k j a,k_h 7#ia
+L3,k j e,k_h 7#iE_r
+L3,k j o,k_h 7#iAU
+L3,k j u,k_h 7#i@U
 3,k w a,k_h ua
 3,L a I,ia aI
 3,L a U,iAU
@@ -177,8 +177,8 @@
 3,tS j u,ts\ i@U
 3,w a I,uaI
 3,w e I,uei
-3,x j a,x 7_0 ia
-3,x j e,x 7_0 iE_r
-3,x j o,x 7_0 iAU
-3,x j u,x 7_0 i@U
+L3,x j a,x 7#ia
+L3,x j e,x 7#iE_r
+L3,x j o,x 7#iAU
+L3,x j u,x 7#i@U
 3,x w a,x ua
