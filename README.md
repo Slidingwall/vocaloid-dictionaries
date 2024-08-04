@@ -19,8 +19,8 @@ Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese
 
 ## How to use 如何使用
 
-Traditional Plugins are now in `archived` folder. The first language in the file name represents the language used in the project file, i.e. the language you want the voicebank to sing in; the second language is the language used by the voicebank.
-传统插件现已移至`archived`文件夹中。文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。
+Due to the update of new features, the traditional plugins have now been moved to the `archived` folder. The first language in the file name represents the language used in the project file, i.e. the language you want the voicebank to sing in; the second language is the language used by the voicebank.
+由于新功能的更新，传统插件现已移至`archived`文件夹中。文件名里的第一个语言代表工程文件所使用的语言，即你想让语音库唱出的语言；第二个语言则是语音库所使用的语言。
 
 `*.lua`is Job-Plugin file for VOCALOID, and `*.udc`is User word dictionary file for VOCALOID (English Voice Library only).  
  `*.lua`文件可作为VOCALOID的任务插件导入，`*.udc`文件可作为VOCALOID的用户字典导入（仅支持英文声库）。  
@@ -50,6 +50,8 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 ### Traditional Dictionaries 传统字典
 
+> Discontinued on August 4, 2024.  
+> 自2024年8月4日起弃用。  
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成  
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
