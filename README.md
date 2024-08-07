@@ -38,11 +38,12 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 > `CLG` = Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典  
 > `UDC` = Dictionaries for General user dictionary Job Plugin / 用户字典插件字典  
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成
+> Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。  
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|CHN VB|N/A| |UDC|CLG|CLG|
-|ENG VB|CLG UDC|N/A|UDC|CLG|CLG|
+|CHN VB|N/A| |**CLG** UDC|**CLG**|**CLG**|
+|ENG VB|CLG UDC|N/A||CLG|CLG|
 |JPN VB|UDC|FBO|N/A|FBO|FBO|
 |KOR VB|UDC| |UDC|N/A| |
 |ESP VB|CLG UDC|CLG|UDC|CLG|N/A|
