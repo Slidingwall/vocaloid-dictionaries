@@ -11,8 +11,8 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
 
-Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu). We have newly added a cross-language syllable splitting function on top of its existing capabilities. [See here for details.](https://slidingwall.github.io/vocaloid-dictionaries/general)  
-`/dict`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[通用跨语种插件](https://www.bilibili.com/read/cv7732403/)相兼容。我们在其基础上新增加了跨语种拆音功能。[详情见此。](https://slidingwall.github.io/vocaloid-dictionaries/general)  
+Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu). **We have newly added a cross-language syllable splitting function on top of its existing capabilities. [See here for details.](https://slidingwall.github.io/vocaloid-dictionaries/general)**  
+`/dict`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[通用跨语种插件](https://www.bilibili.com/read/cv7732403/)相兼容。**我们在其基础上新增加了跨语种拆音功能。[详情见此。](https://slidingwall.github.io/vocaloid-dictionaries/general)**  
 
 Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7736635/) by [atonyxu](https://github.com/atonyxu).  
 `/dict-udc`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[用户词典插件](https://www.bilibili.com/read/cv7732403/)相兼容。
@@ -37,8 +37,8 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 > `CLG` = Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典  
 > `UDC` = Dictionaries for General user dictionary Job Plugin / 用户字典插件字典  
-> `FBO` = **F**inished **B**y **O**thers / 由他人完成
-> Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。  
+> `FBO` = **F**inished **B**y **O**thers / 由他人完成  
+> **Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。**  
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
