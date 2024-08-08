@@ -13,13 +13,13 @@ nav_order: 4
 {: .note }
 > `CLG` = [Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict)  
 > `UDC` = [Dictionaries for General user dictionary Job Plugin / 用户字典插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict-udc)  
-> `FBO` = **F**inished **B**y **O**thers / 由他人完成
-> Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。
+> `FBO` = **F**inished **B**y **O**thers / 由他人完成  
+> **Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。**
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |CHN VB|N/A| |**CLG** UDC|**CLG**|**CLG**|
-|ENG VB|CLG UDC|N/A|UDC|CLG|CLG|
+|ENG VB|CLG UDC|N/A||CLG|CLG|
 |JPN VB|UDC|FBO|N/A|FBO|FBO|
 |KOR VB|UDC| |UDC|N/A| |
 |ESP VB|CLG UDC|CLG|UDC|CLG|N/A|
