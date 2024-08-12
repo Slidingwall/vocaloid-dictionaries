@@ -27,6 +27,13 @@ nav_order: 3
 
 ## Download traditional Job-Plugins or User Dictionary 下载传统插件或用户字典
 
+{: .warning }
+> Discontinued on August 4, 2024.  
+> 自2024年8月4日起弃用。  
+
+{: .note }
+> `FBO` = **F**inished **B**y **O**thers / 由他人完成  
+
 | **VB \ Lyrics** | CHN Lyrics | ENG Lyrics | KOR Lyrics | ESP Lyrics |
 |:---:|:---:|:---:|:---:|:---:|
 | **CHN VB** | N/A | [Eng2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/archived/Eng2Chn.lua) | [Kor2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/archived/Kor2Chn.lua) | [Esp2Chn.lua](https://github.com/Slidingwall/vocaloid-dictionaries/blob/main/archived/Esp2Chn.lua) |
