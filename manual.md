@@ -52,7 +52,7 @@ Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)
 
 For example:  例如：  
 
-```csv
+```
 L2,s i:,s i\#i
 R2,r U,z` UN#-
 L3,k j o,k 7#i@U
