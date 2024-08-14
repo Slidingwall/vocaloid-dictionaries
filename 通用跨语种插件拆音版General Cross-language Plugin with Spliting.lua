@@ -17,38 +17,37 @@ function split(str, delimiter)
 end
 
 function loadDicts(file)
-    local mp1 = {}  
-    local mp2 = {}  
-    local mp3 = {}  
-    local l2 = {}
-    local r2 = {}
-    local l3 = {}
-    local r3 = {}
-  
+    local dicts = {  
+        mp1 = {},  
+        mp2 = {},  
+        mp3 = {},  
+        l2 = {},  
+        r2 = {},  
+        l3 = {},  
+        r3 = {}  
+    }
+    local prefixToDict = {  
+        "1" = dicts.mp1,  
+        "2" = dicts.mp2,  
+        "3" = dicts.mp3,  
+        "L2" = dicts.l2,  
+        "R2" = dicts.r2,  
+        "L3" = dicts.l3,  
+        "R3" = dicts.r3  
+    } 
     for line in io.lines(file) do  
-        local lineData = split(line,",")  
-        if lineData[1] == '1' then  
-            mp1[lineData[2]] = lineData[3]  
-        elseif lineData[1] == '2' then  
-            mp2[lineData[2]] = lineData[3]  
-        elseif lineData[1] == '3' then  
-            mp3[lineData[2]] = lineData[3] 
-        elseif lineData[1] == 'L2' then  
-            l2[lineData[2]] = lineData[3]
-        elseif lineData[1] == 'L3' then  
-            l3[lineData[2]] = lineData[3]
-        elseif lineData[1] == 'R2' then  
-            r2[lineData[2]] = lineData[3]  
-        elseif lineData[1] == 'R3' then  
-            r3[lineData[2]] = lineData[3] 
-        end  
+        local lineData = split(line,",")
+        if prefixToDict[lineData[1]] then  
+            local dict = prefixToDict[lineData[1]]  
+            dict[lineData[2]] = lineData[3]
+        end    
     end  
-    local dicts ={mp1=mp1, mp2=mp2, mp3=mp3, l2=l2, r2=r2, l3=l3, r3=r3}
+
     return   dicts
 end  
 
 function splitNote(str,phn,dictphn)  
-    splited = split(string.gsub(str, phn, dictphn),"#")
+    local splited = split(string.gsub(str, phn, dictphn),"#")
     return splited[1],splited[2]  
 end
 
