@@ -1,35 +1,59 @@
-function convert() {  
-    // 这里我们假设convert函数处理粘贴的文本，而不是文件上传  
-    const inputText = document.getElementById('inputText').value;  
-    let lines = inputText.split(/\r\n|\n/);  
+function convert() {   
+    const lines = document.getElementById('inputText').value.split(/\r\n|\n/);  
     let csv = 'Index,Key,Value\n';  
     let index = 1;  
   
+    let mapping = {};  
+    let mapping2 = {};  
+    let mapping3 = {};  
+  
     lines.forEach(line => {  
-        // 匹配第一种格式：mapping["key"]="value"  
-        const simpleMatch = line.match(/mapping\d*\[\"([^\"]*)\"\]\s*=\s*\"([^\"]*)\"/);  
+        // 处理简单的键值对映射  
+        const simpleMatch = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);  
         if (simpleMatch) {  
             const key = simpleMatch[1];  
             const value = simpleMatch[2];  
-            csv += `${index++},${key},${value}\n`;  
+            mapping[key] = value;  
         }  
   
-        // 匹配第二种格式：mappingN["key"]="{value1, value2, ...}"  
-        const complexMatch = line.match(/mapping\d*\[\"([^\"]*)\"\]\s*=\s*\{([^\}]*)\}/);  
+        // 处理映射到值数组的映射（mapping2 和 mapping3）  
+        const complexMatch = line.match(/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);  
         if (complexMatch) {  
-            const key = complexMatch[1];  
-            const values = complexMatch[2].split(/,\s*/); // 分割值和去除多余的空格  
-            values.forEach(value => {  
-                csv += `${index++},${key},${value.replace(/\"/g, '')}\n`; // 去除可能的引号  
-            });  
-            // 如果需要每个mappingN作为一个整体只占用一行索引，可以重置index  
-            // 但通常我们不会在这里重置，除非有特别需求  
+            const type = complexMatch[1]; // 区分是 mapping2 还是 mapping3  
+            const key = complexMatch[2];  
+            const valuesStr = complexMatch[3];  
+            const values = valuesStr.split(/,\s*/).map(value => value.replace(/\"/g, '').replace(/I0/g, 'I')); // 替换 "I0" 为 "I"（如果需要）  
+            if (type === 'mapping2') {  
+                mapping2[key] = values;  
+            } else if (type === 'mapping3') {  
+                mapping3[key] = values;  
+            }  
         }  
+    });  
+  
+    // 处理简单的键值对映射  
+    Object.keys(mapping).forEach(key => {  
+        csv += `${index++},${key},${mapping[key]}\n`;  
+    });  
+  
+    // 处理映射到值数组的映射（mapping2）  
+    Object.keys(mapping2).forEach(key => {  
+        mapping2[key].forEach(value => {  
+            csv += `${index++},${key},${value}\n`;  
+        });  
+    });  
+  
+    // 处理映射到值数组的映射（mapping3）  
+    Object.keys(mapping3).forEach(key => {  
+        mapping3[key].forEach(value => {  
+            csv += `${index++},${key},${value}\n`;  
+        });  
     });  
   
     document.getElementById('outputText').value = csv;  
 }  
-  
+
+
 function uploadAndConvert() {  
     const file = document.getElementById('fileInput').files[0];  
     if (!file) {  
