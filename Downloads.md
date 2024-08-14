@@ -8,7 +8,9 @@ nav_order: 3
 
 {: .new }
 > We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
-> 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。 
+> 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
+> You can use [converter](/vocaloid-dictionaries/converter) to convert traditional Job-Plugin's Mapping part to Grneral Job-Plugin's dictionary.  
+> 您可以用[转换器](/vocaloid-dictionaries/converter)将传统插件的Mapping部分转换为通用插件可用的字典。  
 
 {: .note }
 > `CLG` = [Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict)  
