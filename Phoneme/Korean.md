@@ -8,11 +8,13 @@ parent: Phoneme 音素表
 {: .new-title }
 > List of Abbreviations / 简称列表
 >
+> `KOR` = Korean X-SAMPA 
 > `CHN` = Chinese X-SAMPA  
-> `ENG` = English X-SAMPA  
-> `KOR` = Korean X-SAMPA  
+> `ENG` = English X-SAMPA   
 > `ESP` = Spanish X-SAMPA  
 > `MAI` = Extended Spanish X-SAMPA for Maika
+
+## Vowels
 
 | KOR | CHN | ENG | ESP | MAI |
 | :--------: | :--: | :--: | :-: | :-: |
@@ -33,11 +35,16 @@ parent: Phoneme 音素表
 | **ue** | uei | w e | w e | w e |
 | **ui** | u i | u: i: | u i | u i |
 | **Mi** | u i | U i: | U i | U i |
+
+## Consonants
+
+| KOR | CHN | ENG | ESP | MAI |
+| :--------: | :--: | :--: | :-: | :-: |
 | **l** | l | l0 | l | l |
 | **g** | k | gh | g | g |
 | **gp** | k ? | g | g | g |
 | **n** | n | n | n | n |
-| **np** | [^]  | n | n | n |
+| **np** | [^2]  | n | n | n |
 | **d** | d | dh | d | d |
 | **dp** | d ? | d | d | d |
 | **r** | l | r | r | r |
