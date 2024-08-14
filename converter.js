@@ -1,8 +1,12 @@
+function setOutputText(text) {  
+    document.getElementById('outputText').value = text;  
+}
+
 function convert() {  
     var inputText = document.getElementById('inputText').value;  
     var outputText = document.getElementById('outputText');  
     if (!inputText) {  
-        outputText.value = 'Input cannot be empty.';  
+        setOutputText('Input cannot be empty.');  
         return;  
     }  
     let csv = '';  
@@ -21,19 +25,19 @@ function convert() {
             csv += `${type === 'mapping2' ? '2' : '3'},${key},${values}\n`;  
         }  
     });
-    outputText.value = csv;  
+    setOutputText(csv);  
 }
 
 
 function uploadAndConvert() {  
     const file = document.getElementById('fileInput').files[0];  
     if (!file) {  
-        document.getElementById('outputText').value ='Please select a file to upload.';  
+        setOutputText('Please select a file to upload.');  
         return;  
     }  
     const fileName = file.name.toLowerCase();  
     if (!fileName.endsWith('.lua')) {  
-        document.getElementById('outputText').value ='Unsupported file type. Please upload a Lua file.';  
+        setOutputText('Unsupported file type. Please upload a Lua file.');  
         return;  
     }
     const reader = new FileReader();  
@@ -45,9 +49,8 @@ function uploadAndConvert() {
     reader.readAsText(file); 
 }
 
-function downloadResult() {  
-    const csvContent = document.getElementById('outputText').value;  
-    const blob = new Blob([csvContent], { type: 'text/plain' });  
+function downloadResult() {   
+    const blob = new Blob([document.getElementById('outputText').value], { type: 'text/plain' });  
     const downloadLink = document.createElement('a');  
     downloadLink.href = URL.createObjectURL(blob);  
     downloadLink.download = 'output.txt';  
