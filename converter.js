@@ -1,57 +1,34 @@
-function convert() {   
-    const lines = document.getElementById('inputText').value.split(/\r\n|\n/);  
-    let csv = 'Index,Key,Value\n';  
-    let index = 1;  
-  
-    let mapping = {};  
-    let mapping2 = {};  
-    let mapping3 = {};  
-  
-    lines.forEach(line => {  
-        // 处理简单的键值对映射  
+function convert() {  
+    var inputText = document.getElementById('inputText').value;  
+    var outputTextElement = document.getElementById('outputText');  
+    if (!inputText) {  
+        outputTextElement.value = 'Input cannot be empty.';  
+        return;  
+    }  
+    let csv = '';  
+    const lines = inputText.split(/\r\n|\n/);  
+    lines.forEach((line) => {  
+        line=line.trim()
         const simpleMatch = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);  
         if (simpleMatch) {  
-            const key = simpleMatch[1];  
-            const value = simpleMatch[2];  
-            mapping[key] = value;  
+            const key = simpleMatch[1]; 
+            const value = simpleMatch[2].replace(/\\\\/g, '\\').replace(/\"/g, '');
+            csv += `1,${key},${value}\n`;  
         }  
-  
-        // 处理映射到值数组的映射（mapping2 和 mapping3）  
         const complexMatch = line.match(/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);  
         if (complexMatch) {  
-            const type = complexMatch[1]; // 区分是 mapping2 还是 mapping3  
+            const type = complexMatch[1];  
             const key = complexMatch[2];  
             const valuesStr = complexMatch[3];  
-            const values = valuesStr.split(/,\s*/).map(value => value.replace(/\"/g, '').replace(/I0/g, 'I')); // 替换 "I0" 为 "I"（如果需要）  
-            if (type === 'mapping2') {  
-                mapping2[key] = values;  
-            } else if (type === 'mapping3') {  
-                mapping3[key] = values;  
-            }  
-        }  
+            const values = valuesStr.split(/,\s*/).map(value => value.replace(/\\\\/g, '\\').replace(/\"/g, '').trim());  
+          
+            values.forEach(value => {  
+                csv += `${type === 'mapping2' ? '2' : '3'},${key},${value}\n`;  
+            });  
+        }   
     });  
-  
-    // 处理简单的键值对映射  
-    Object.keys(mapping).forEach(key => {  
-        csv += `${index++},${key},${mapping[key]}\n`;  
-    });  
-  
-    // 处理映射到值数组的映射（mapping2）  
-    Object.keys(mapping2).forEach(key => {  
-        mapping2[key].forEach(value => {  
-            csv += `${index++},${key},${value}\n`;  
-        });  
-    });  
-  
-    // 处理映射到值数组的映射（mapping3）  
-    Object.keys(mapping3).forEach(key => {  
-        mapping3[key].forEach(value => {  
-            csv += `${index++},${key},${value}\n`;  
-        });  
-    });  
-  
-    document.getElementById('outputText').value = csv;  
-}  
+    outputTextElement.value = csv;  
+}
 
 
 function uploadAndConvert() {  
