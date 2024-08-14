@@ -3,7 +3,7 @@ nav_order: 2
 parent: Phoneme 音素表
 ---
 
-# Korean
+# Korean 韩语
 {: .new-title }
 > List of Abbreviations / 简称列表
 >
