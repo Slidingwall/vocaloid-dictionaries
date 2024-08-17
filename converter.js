@@ -1,60 +1,51 @@
 function setOutputText(text) {  
     document.getElementById('outputText').value = text;  
-}
-
+}  
+  
 function convert() {  
-    var inputText = document.getElementById('inputText').value;  
-    var outputText = document.getElementById('outputText');  
+    const inputText = document.getElementById('inputText').value;  
     if (!inputText) {  
         setOutputText('Input cannot be empty.');  
         return;  
     }  
     let csv = '';  
-    const lines = inputText.split(/\r\n|\n/);  
-    lines.forEach((line) => {  
-        line=line.trim()
-        const simpleMatch = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);  
-        if (simpleMatch) {  
-            const [_, key, value] = simpleMatch;  
-            csv += `1,${key.replace(/\\\\/g, '\\').replace(/\"/g, '')},${value.replace(/\\\\/g, '\\').replace(/\"/g, '')}\n`;  
+    inputText.split(/\r\n|\n/).forEach(line => {  
+        line = line.trim();  
+        if (line.startsWith('mapping["')) {  
+            const [_, key, value] = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);  
+            csv += `1,"${key.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}","${value.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"\n`;  
+        } else if (line.startsWith(('mapping2' || 'mapping3') + '[')) {  
+            const [_, type, key, valuesStr] = line.match(/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);  
+            const values = valuesStr.split(/,\s*/).map(v => v.trim().replace(/\\/g, '\\\\').replace(/"/g, '\\"')).join(' ');  
+            csv += `${type === 'mapping2' ? '2' : '3'},"${key}","${values}"\n`;  
         }  
-        const complexMatch = line.match(/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);  
-        if (complexMatch) {  
-            const [_, type, key, valuesStr] = complexMatch;  
-            const values = valuesStr.split(/,\s*/).map(value => value.trim().replace(/\\\\/g, '\\').replace(/\"/g, '')).join(' ');  
-            csv += `${type === 'mapping2' ? '2' : '3'},${key},${values}\n`;  
-        }  
-    });
+    });  
     setOutputText(csv);  
-}
-
-
+}  
+  
 function uploadAndConvert() {  
     const file = document.getElementById('fileInput').files[0];  
-    if (!file) {  
-        setOutputText('Please select a file to upload.');  
+    if (!file || !file.name.toLowerCase().endsWith('.lua')) {  
+        setOutputText(file ? 'Unsupported file type. Please upload a Lua file.' : 'Please select a file to upload.');  
         return;  
     }  
-    const fileName = file.name.toLowerCase();  
-    if (!fileName.endsWith('.lua')) {  
-        setOutputText('Unsupported file type. Please upload a Lua file.');  
-        return;  
-    }
     const reader = new FileReader();  
-    reader.onload = function(e) {  
-        console.log('File loaded:', e.target.result); 
+    reader.onload = e => {  
         document.getElementById('inputText').value = e.target.result;  
-        convert(); 
+        convert();  
     };  
-    reader.readAsText(file); 
-}
-
-function downloadResult() {   
+    reader.readAsText(file);  
+}  
+  
+function downloadResult() {  
     const blob = new Blob([document.getElementById('outputText').value], { type: 'text/plain' });  
     const downloadLink = document.createElement('a');  
     downloadLink.href = URL.createObjectURL(blob);  
     downloadLink.download = 'output.txt';  
-    document.body.appendChild(downloadLink);  
-    downloadLink.click();  
-    document.body.removeChild(downloadLink);  
-}  
+    downloadLink.dispatchEvent(new MouseEvent('click', {  
+        'view': window,  
+        'bubbles': true,  
+        'cancelable': true  
+    }));  
+    URL.revokeObjectURL(downloadLink.href);  
+}
