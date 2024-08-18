@@ -19,7 +19,7 @@ function convert(inputText) {
 }  
   
 function escapeCsvValue(value) {  
-    return value.trim().replace(/\\/g, '\\\\').replace(/"/g, '');  
+    return value.trim().replace(/\\/g, '\\').replace(/"/g, '');  
 }   
   
 function uploadAndConvert() {  
