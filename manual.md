@@ -22,19 +22,19 @@ nav_order: 2
 
 Click on `Job`->`Manage Job Plugins` or press the shortcut `Crtl+Shift+J` to open the `Job Plugin Manager` window.  
 点击`任务`-->`管理任务插件`，或按下快捷键`Crtl+Shift+J`，打开`任务插件管理`窗口。  
-![open the Job Plugin Manager window](/assets/install1.png)
+![open the Job Plugin Manager window](/assets/install1.webp)
 
 Click `Add` and select the task plugin you want to add in the window and click `Open`.  
 点击`添加`，并在窗口中选中要添加的任务插件，点击`打开`。  
-![select the task plugin you want to add](/assets/install2.png)
+![select the task plugin you want to add](/assets/install2.webp)
 
 When you have finished adding, click `OK` to close the `Job Plugin Manager` window.  
 添加完成后，点击`确定`关闭`任务插件管理`窗口。  
-![finished adding](/assets/install3.png)
+![finished adding](/assets/install3.webp)
 
 After entering the lyrics in the original language singer, first select the Job Plugin you want to execute in `Job`->`Job Plugin` and execute it, then switch the singer.  
 在用原始语言的歌手输入完歌词后，先在`任务`-->`任务插件`中选择要执行的任务插件并执行，再切换歌手。  
-![select the Job Plugin you want to execute](/assets/install4.png)
+![select the Job Plugin you want to execute](/assets/install4.webp)
 
 
 ## General cross-lingual Job Plugin 通用跨语种插件
@@ -71,15 +71,15 @@ R3,a n k,a_n#k 7_0
 
 Click on `Lyrics`-->`User Dictionary` to open the `User Word Dictionary` window.  
 点击`歌词`-->`用户字典`，打开`用户词注册`窗口。  
-![open the User Word Dictionary window](/assets/udc1.png)
+![open the User Word Dictionary window](/assets/udc1.webp)
 
 Click on `Import` and select the user dictionary to be added in the window and click on `Open`.  
 点击`导入`，并在窗口中选中要添加的用户字典，点击`打开`。  
-![select the user dictionary](/assets/udc2.png)
+![select the user dictionary](/assets/udc2.webp)
 
 Once the import is complete, the dictionary can be selected in the list and used.  
 导入完成后，即可在列表中选中字典并使用。  
-![dictionary can be selected in the list](/assets/udc3.png)
+![dictionary can be selected in the list](/assets/udc3.webp)
 
 ## General user dictionary Job Plugin 用户词典插件
 
