@@ -37,12 +37,12 @@ parent: Phoneme 音素表
 | **g'** |gʲ| k i | g | g j\ | g j |
 | **s** |s| s | s | s | s |
 | **S** |ɕ or ʃʲ| s&#96; s\ | sh | s | S |
-| **z dz** |z ʣ| ts | c | s; D s | z dz |
-| **Z dZ** |ʑ or ʒʲ ʥ| ts&#96; z&#96; | c | s; D s | Z dZ |
+| **z dz** |z dz| ts | c | s; D s | z dz |
+| **Z dZ** |ʑ or ʒʲ dʑ| ts&#96; z&#96; | c | s; D s | Z dZ |
 | **t** |t| t_h | t | t | t |
 | **t'** |tʲ| t_h i | t | t j\ | t j |
-| **ts** |ʦ| ts_h | c | t s | ts |
-| **tS** |ʨ| ts&#96;_h ts\ | c | tS | tS |
+| **ts** |ts| ts_h | c | t s | ts |
+| **tS** |tɕ| ts&#96;_h ts\ | c | tS | tS |
 | **d** |d| t | d | d | d |
 | **d'** |dʲ| t i | d | d j\ | d j |
 | **n** |n| n | n | n | n |

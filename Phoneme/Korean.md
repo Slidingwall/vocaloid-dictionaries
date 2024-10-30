@@ -64,10 +64,10 @@ parent: Phoneme 音素表
 | **s'** |s͈| ts | s | s | s |
 | **sh** |ɕ| ts_h | S | s | S |
 | **sh'** |ɕ͈| ts\ | S | tS | S |
-| **N** || n | N | n | N |
+| **N** |ŋ| n | N | n | N |
 | **Np** |ŋ| [^2]  | N | n | N |
-| **ch** |ʨʰ| ts`_h | tS | t s | tS |
-| **c** |ʨ~dʑ| ts | t s | t s | ts |
+| **ch** |tɕʰ| ts`_h | tS | t s | tS |
+| **c** |tɕ~dʑ| ts | t s | t s | ts |
 | **c'** |t͈ɕ| ts | t s | tS | ts |
 | **h** |[^3]| x | h | h | h |
 | **D [^1]** |ŋ| n | n | D | D |

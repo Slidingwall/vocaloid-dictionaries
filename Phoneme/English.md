@@ -49,7 +49,7 @@ parent: Phoneme 音素表
 | **b bh** |b bʰ| p | b B |
 | **d dh** |d dʰ| t | d D |
 | **g gh** |g gʰ| k | g G |
-| **dZ** |ʤ| ts` | d s |
+| **dZ** |dʒ| ts` | d s |
 | **v** |v| u | B |
 | **D** |ð| s | D |
 | **z** |z| ts | d s |
@@ -63,7 +63,7 @@ parent: Phoneme 音素表
 | **p ph** |p pʰ| p_h | p |
 | **t th** |t tʰ| t_h | t |
 | **k kh** |k kʰ| k_h | k |
-| **tS** |ʧ| ts` | tS |
+| **tS** |tʃ| ts` | tS |
 | **f** |f| f | f |
 | **T** |θ| s | T |
 | **s** |s| s | s |
