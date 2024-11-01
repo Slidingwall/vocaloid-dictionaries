@@ -20,7 +20,7 @@ parent: Phoneme 音素表
 | CHN | IPA | ENG | JPN | ESP | MAI |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | **a** |ä| { | a | a | a |
-| **o** |ɔ / u̯ɔ| O: | o | o | o |
+| **o** |o̞ / u̯o̞| O: | o | o | o |
 | **7** |ɤ~ɯ̯ɤ| V | o | o | @ |
 | **i** |i| i: | i | i | i |
 | **u** |u| u: | M | u | u |
@@ -31,32 +31,32 @@ parent: Phoneme 音素表
 | **ei** |eɪ̯| eI | e j | e I | e I |
 | **AU** |ɑʊ̯| aU | a w | a U | a U |
 | **@U** |ɤʊ̯| @U | o w | o U | o U |
-| **ia** |i̯ä| j { | j a | j a | j a |
-| **ua** |u̯ä| w { | w a | w a | w a |
-| **iE_r** |i̯e̞| j e | j e | j e | j E |
-| **yE_r** |y̯e̞| j u: e | j M e | j u e | j u E |
-| **@`** |ɑɻ~ɚ| @r | a 4 | a l | @ r\ |
-| **uo** |u̯ɔ| w O: | w o | w o | w o |
-| **iAU** |i̯ɑʊ̯| j aU | j a w | j a U | j a U |
-| **i@U** |i̯ɤʊ̯~i̯oʊ̯| j @U | j o w | j o U | j o U |
-| **uaI** |u̯aɪ̯| w aI | w a j | u a I | w a I |
-| **uei** |u̯eɪ̯| w eI | w e j | u e I | w e I |
-| **a_n** |an| { n | a n | a n | a n |
-| **AN** |ɑŋ| Q N | a N | a n | a N |
-| **@_n** |ən| @ n | e n | e n | @ n |
-| **@N** |əŋ~ɤŋ| @ N | e N | o n | @ N |
-| **i_n** |in| i: n | i n | i n | i n |
-| **iN** |iŋ| i: N | i N | i n | i N |
-| **iE_n** |i̯ɛn| i: e n | j e n | j e n | j E n |
-| **iAN** |i̯ɑŋ| j Q N | j a N | j a n | j a N |
-| **ua_n** |u̯an| w { n | w a n | u a n | w a n |
-| **uAN** |u̯ɑŋ| w Q N | w a N | u a n | w a N |
-| **u@_n** |u̯ən| w @ n | w e n | u e n | w @ n |
-| **u@N** |u̯əŋ~uɤŋ| w @ N | w e N | u o n | w @ N |
-| **y_n** |yn| j u: n | j M n | j u n | j u n |
-| **UN** |ʊŋ| @U N | M N | o U n | o U N |
-| **y{_n** |y̯ɛn~yan| j u: { n | j M e n | j u e n | j u E n |
-| **iUN** |i̯ʊŋ| j @U N | j M N | j o U n | j o U N |
+| **ia** |jä| j { | j a | j a | j a |
+| **ua** |wä| w { | w a | w a | w a |
+| **iE_r** |je̞| j e | j e | j e | j E |
+| **yE_r** |ɥe̞| j u: e | j M e | j u e | j u E |
+| **@`** |ä˞~ɚ| @r | a 4 | a l | @ r\ |
+| **uo** |wo̞| w O: | w o | w o | w o |
+| **iAU** |jɑʊ̯| j aU | j a w | j a U | j a U |
+| **i@U** |jɤʊ̯~joʊ̯| j @U | j o w | j o U | j o U |
+| **uaI** |waɪ̯| w aI | w a j | u a I | w a I |
+| **uei** |weɪ̯| w eI | w e j | u e I | w e I |
+| **a_n** |ã̠n| { n | a n | a n | a n |
+| **AN** |ɑ̃ŋ| Q N | a N | a n | a N |
+| **@_n** |ə̃n| @ n | e n | e n | @ n |
+| **@N** |ə̃ŋ~ɤ̞̃ŋ| @ N | e N | o n | @ N |
+| **i_n** |ĩn| i: n | i n | i n | i n |
+| **iN** |ĩŋ| i: N | i N | i n | i N |
+| **iE_n** |jɛ̃n| i: e n | j e n | j e n | j E n |
+| **iAN** |jɑ̃ŋ| j Q N | j a N | j a n | j a N |
+| **ua_n** |wã̠n| w { n | w a n | u a n | w a n |
+| **uAN** |wɑ̃ŋ| w Q N | w a N | u a n | w a N |
+| **u@_n** |wə̃n| w @ n | w e n | u e n | w @ n |
+| **u@N** |wə̃ŋ| w @ N | w e N | u o n | w @ N |
+| **y_n** |ỹn| j u: n | j M n | j u n | j u n |
+| **UN** |ʊ̃ŋ| @U N | M N | o U n | o U N |
+| **y{_n** |ɥæ̈̃n| j u: { n | j M e n | j u e n | j u E n |
+| **iUN** |jʊ̃ŋ| j @U N | j M N | j o U n | j o U N |
 
 ## Consonants
 
