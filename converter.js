@@ -1,7 +1,11 @@
 function setOutputText(text) {  
     document.getElementById('outputText').value = text;  
 }  
-  
+
+function escapeCsvValue(value) {  
+    return value.trim().replace(/\\\\/g, '\\').replace(/"/g, '');  
+}     
+
 function convert(inputText) {  
     let csv = '';  
     inputText.split(/\r\n|\n/).forEach(line => {  
@@ -18,10 +22,7 @@ function convert(inputText) {
     setOutputText(csv);  
 }  
   
-function escapeCsvValue(value) {  
-    return value.trim().replace(/\\\\/g, '\\').replace(/"/g, '');  
-}   
-  
+let uploadName = '';
 function uploadAndConvert() {  
     const file = document.getElementById('fileInput').files[0];  
     const inputText = document.getElementById('inputText').value.trim()
@@ -34,6 +35,7 @@ function uploadAndConvert() {
         return;  
     }
     if (file) {  
+        uploadName = file.name.split('.').slice(0, -1).join('.');
         const reader = new FileReader();  
         reader.onload = e => {convert(e.target.result); document.getElementById('inputText').value=e.target.result;}; 
         reader.readAsText(file);  
@@ -46,7 +48,7 @@ function downloadResult() {
     const blob = new Blob([document.getElementById('outputText').value], { type: 'text/plain' });  
     const downloadLink = document.createElement('a');  
     downloadLink.href = URL.createObjectURL(blob);  
-    downloadLink.download = 'output.txt';  
+    downloadLink.download = uploadName ? `${uploadName}.txt` : 'output.txt';  
     downloadLink.click();  
     URL.revokeObjectURL(downloadLink.href);  
 }
