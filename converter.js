@@ -24,9 +24,10 @@ function uploadAndConvert() {
     const inputText = document.getElementById('inputText').value.trim();
     if (!file && !inputText) setOutputText('Please select a file to upload or enter text.');
     if (file && !file.name.toLowerCase().endsWith('.lua')) return setOutputText('Unsupported file type. Please upload a Lua file.');
-    (file ? new FileReader().readAsText(file).then(result => document.getElementById('inputText').value = result && result) : Promise.resolve(inputText))
-        .then(convert)
-        .catch(error => setOutputText(`An error occurred: ${error.message}`));
+    (file ? new FileReader().readAsText(file).then(result => {
+        document.getElementById('inputText').value = result;
+        return result;
+    }) : Promise.resolve(inputText)).then(convert);
 }  
 function downloadResult() {  
     const blob = new Blob([document.getElementById('outputText').value], { type: 'text/plain' });  
