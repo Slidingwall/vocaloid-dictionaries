@@ -10,6 +10,8 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 
 We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
+We also provide a [converter](https://slidingwall.github.io/vocaloid-dictionaries/converter) for you to convert traditional plugins to general plugin's dictionaries.  
+此外，我们还提供了一个[转换器](https://slidingwall.github.io/vocaloid-dictionaries/converter)以便您将传统插件转换为通用插件的字典。  
 
 Folder `/dict`is compatible with [General cross-lingual Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7732403/) by [atonyxu](https://github.com/atonyxu).  
 **We have newly added a cross-language syllable splitting function on top of its existing capabilities. [See here for details.](https://slidingwall.github.io/vocaloid-dictionaries/manual)**  
