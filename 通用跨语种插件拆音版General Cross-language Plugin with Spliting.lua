@@ -79,12 +79,11 @@ function main(processParam, envParam)
     dlgStatus = VSDlgDoModal()
     if (dlgStatus == 2) then
         return 0
-    end
-    if ((dlgStatus ~= 1) and (dlgStatus ~= 2)) then
+    elseif ((dlgStatus ~= 1) and (dlgStatus ~= 2)) then
         return 1
     end
     
-    local r, chosen_table = VSDlgGetStringValue("table")
+    local _, chosen_table = VSDlgGetStringValue("table")
     local dicts = loadDicts("dict/" .. chosen_table)
     
     VSSeekToBeginNote()
@@ -99,52 +98,38 @@ function main(processParam, envParam)
         return 0
     end
 
-    for idx = 1, #noteExList do
-        local updNoteEx = noteExList[idx]
+    for _, updNoteEx in ipairs(noteExList) do
         local splphn, updphn
         local splitflag = 0
         local phns = split(updNoteEx.phonemes, " ")
         
         for i = 1, #phns do
-            local mapped = false
-            if #phns - i >= 2 then
+            if i + 2 <= #phns then
                 local threephn = table.concat(phns, " ",i,i+2)
                 if dicts.l3[threephn] then
                     splphn,updphn=splitNote(updNoteEx.phonemes,threephn,dicts.l3[threephn]) 
                     splitflag = 1
-                    mapped = true
-                end
-                if dicts.r3[threephn] then
+                elseif dicts.r3[threephn] then
                     updphn,splphn=splitNote(updNoteEx.phonemes,threephn,dicts.r3[threephn]) 
                     splitflag = 2
-                    mapped = true
-                end
-                if dicts.mp3[threephn] then
+                elseif dicts.mp3[threephn] then
                     phns[i] = dicts.mp3[threephn]
                     phns[i + 1] = ""
                     phns[i + 2] = ""
-                    mapped = true
                 end
-            end
-            if not mapped and #phns - i >= 1 then
+            elseif i + 1 <= #phns then
                 local twophn = table.concat(phns, " ",i,i+1)
                 if dicts.l2[twophn] then
                     splphn,updphn=splitNote(updNoteEx.phonemes,twophn,dicts.l2[twophn]) 
                     splitflag = 1
-                    mapped = true
-                end
-                if dicts.r2[twophn] then
+                elseif dicts.r2[twophn] then
                     updphn,splphn=splitNote(updNoteEx.phonemes,twophn,dicts.r2[twophn])
                     splitflag = 2
-                    mapped = true
-                end
-                if dicts.mp2[twophn] then
+                elseif dicts.mp2[twophn] then
                     phns[i] = dicts.mp2[twophn]
                     phns[i + 1] = ""
-                    mapped = true
                 end
-            end
-            if not mapped and dicts.mp1[phns[i]] then
+            elseif dicts.mp1[phns[i]] then
                 phns[i] = dicts.mp1[phns[i]]
             end
         end
