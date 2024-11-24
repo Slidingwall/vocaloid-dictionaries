@@ -10,9 +10,9 @@ function manifest()
     return myManifest
 end
 
-function split(str, delimiter)  
+function split(str, delim)  
     local result = {}  
-    for word in string.gmatch(str, '[^' .. delimiter .. ']+') do  
+    for word in string.gmatch(str, '[^' .. delim .. ']+') do  
         table.insert(result, word)  
     end  
     return result  
@@ -29,13 +29,13 @@ function loadDicts(file)
         r3 = {}  
     }
     local prefixToDict = {  
-        "1" = dicts.mp1,  
-        "2" = dicts.mp2,  
-        "3" = dicts.mp3,  
-        "L2" = dicts.l2,  
-        "R2" = dicts.r2,  
-        "L3" = dicts.l3,  
-        "R3" = dicts.r3  
+        ["1"] = dicts.mp1,  
+        ["2"] = dicts.mp2,  
+        ["3"] = dicts.mp3,  
+        ["L2"] = dicts.l2,  
+        ["R2"] = dicts.r2,  
+        ["L3"] = dicts.l3,  
+        ["R3"] = dicts.r3  
     } 
     for line in io.lines(file) do  
         local lineData = split(line,",")
@@ -53,49 +53,29 @@ end
 
 function copyNoteEx(src)
     local new = {}
-    --Normal Note Properties
-    new.posTick = src.posTick
-    new.durTick = src.durTick
-    new.noteNum = src.noteNum
-    new.velocity = src.velocity
-    new.phonemes = src.phonemes
-    new.lyric = src.lyric
-    --Extended Note Properties
-    new.bendDepth = src.bendDepth
-    new.bendLength = src.bendLength
-    new.risePort = src.risePort
-    new.fallPort = src.fallPort
-    new.decay = src.decay
-    new.accent = src.accent
-    new.opening = src.opening
-    new.vibratoLength = src.vibratoLength
-    new.vibratoType = src.vibratoType
+    for key, value in pairs(src) do
+        new[key] = value
+    end
     return new
 end
 
-function main(processParam, envParam) 
-    local noteEx = {}
-    local noteExList = {}
-    local retCode
-    local idx
-    
+function main(processParam, envParam)    
     os.execute("CMD /C dir dict /on/b> dictlist.txt")
-
-    local table_file = ""
+    local lines = {}
     for line in io.lines("dictlist.txt") do
-        if string.find(line, ".txt") then
-            table_file = table_file .. "," .. line
+        if string.find(line, "%.txt$") then
+            table.insert(lines, line)
         end
     end
+    local table_file = table.concat(lines, ",")
     
     VSDlgSetDialogTitle("通用跨语种插件 General Cross-language Plugin")
-    local dlgStatus
-    local field = {}
-    field.name = "table"
-    field.caption = "选择跨语种表 Select Dictionaries\n文件名需为非中文 File name should be English."
-    field.initialVal = table_file
-    field.type = 4
-    dlgStatus = VSDlgAddField(field)
+    local dlgStatus = VSDlgAddField({
+        name = "table",
+        caption = "选择跨语种表 Select Dictionaries\n文件名需为非中文 File name should be English.",
+        initialVal = table_file,
+        type = 4
+    })
     dlgStatus = VSDlgDoModal()
     if (dlgStatus == 2) then
         return 0
@@ -105,73 +85,67 @@ function main(processParam, envParam)
     end
     
     local r, chosen_table = VSDlgGetStringValue("table")
-    
     local dicts = loadDicts("dict/" .. chosen_table)
     
     VSSeekToBeginNote()
-    idx = 1
-    retCode, noteEx = VSGetNextNoteEx()
-    while (retCode == 1) do
-        noteExList[idx] = noteEx
+    local noteExList = {}
+    local retCode, noteEx = VSGetNextNoteEx()
+    while retCode == 1 do
+        table.insert(noteExList, noteEx)
         retCode, noteEx = VSGetNextNoteEx()
-        idx = idx + 1
     end
-    
-    if (#noteExList == 0) then
+    if #noteExList == 0 then
         VSMessageBox("No notes to process!", 0)
         return 0
     end
-    
+
     for idx = 1, #noteExList do
         local updNoteEx = noteExList[idx]
-        local splphn
-        local updphn
+        local splphn, updphn
         local splitflag = 0
         local phns = split(updNoteEx.phonemes, " ")
         
-        for phnIdx = 1, #phns do
+        for i = 1, #phns do
             local mapped = false
-            if phnIdx + 2 <= #phns then
-                threephn = table.concat(phns[phnIdx:phnIdx+2], " ")
+            if #phns - i >= 2 then
+                local threephn = table.concat(phns, " ",i,i+2)
                 if dicts.l3[threephn] then
                     splphn,updphn=splitNote(updNoteEx.phonemes,threephn,dicts.l3[threephn]) 
                     splitflag = 1
                     mapped = true
                 end
-                if not mapped and dicts.r3[threephn] then
+                if dicts.r3[threephn] then
                     updphn,splphn=splitNote(updNoteEx.phonemes,threephn,dicts.r3[threephn]) 
                     splitflag = 2
                     mapped = true
                 end
-                if not mapped and dicts.mp3[threephn] then
-                    phns[phnIdx] = dicts.mp3[threephn]
-                    phns[phnIdx + 1] = ""
-                    phns[phnIdx + 2] = ""
+                if dicts.mp3[threephn] then
+                    phns[i] = dicts.mp3[threephn]
+                    phns[i + 1] = ""
+                    phns[i + 2] = ""
                     mapped = true
                 end
             end
-
-            if not mapped and phnIdx + 1 <= #phns then
-                twophn = table.concat(phns[phnIdx:phnIdx+1], " ")
+            if not mapped and #phns - i >= 1 then
+                local twophn = table.concat(phns, " ",i,i+1)
                 if dicts.l2[twophn] then
                     splphn,updphn=splitNote(updNoteEx.phonemes,twophn,dicts.l2[twophn]) 
                     splitflag = 1
                     mapped = true
                 end
-                if not mapped and dicts.r2[twophn] then
+                if dicts.r2[twophn] then
                     updphn,splphn=splitNote(updNoteEx.phonemes,twophn,dicts.r2[twophn])
                     splitflag = 2
                     mapped = true
                 end
-                if not mapped and dicts.mp2[twophn] then
-                    phns[phnIdx] = dicts.mp2[twophn]
-                    phns[phnIdx + 1] = ""
+                if dicts.mp2[twophn] then
+                    phns[i] = dicts.mp2[twophn]
+                    phns[i + 1] = ""
                     mapped = true
                 end
             end
-
-            if not mapped and dicts.mp1[phns[phnIdx]] then
-                phns[phnIdx] = dicts.mp1[phns[phnIdx]]
+            if not mapped and dicts.mp1[phns[i]] then
+                phns[i] = dicts.mp1[phns[i]]
             end
         end
         
