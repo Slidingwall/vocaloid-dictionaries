@@ -1,36 +1,31 @@
 function output(text) {document.getElementById('outputText').value = text}  
-function csvClean(value) {return value.trim().replace(/\\\\/g, '\\').replace(/"/g, '')}    
-function convert(inputText) {  
-    const csvLines = [];
-    inputText.split(/\r\n|\n/).forEach(line => {  
+function convert(input) {  
+    const clean = value => value.trim().replace(/\\\\/g, '\\').replace(/"/g, '');
+    const csv = input.split(/\r\n|\n/).map(line => {  
         line = line.trim();  
-        if (line.startsWith('mapping["')) {  
-            const [, key, value] = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);  
-            csvLines.push(`1,${csvClean(key)},${csvClean(value)}`);  
-        } else if (/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/.test(line)) {  
-            const [, type, key, value] = line.match(/^(mapping2|mapping3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);  
-            const values = value.split(/,\s*/).map(csvClean).join(' ');
-            csvLines.push(`${type === 'mapping2' ? '2' : '3'},${csvClean(key)},${values}`);  
-        }  
-    });  
-    output(csvLines.join('\n'));  
+        const match1 = line.match(/^mapping\["([^"]*)"\]\s*=\s*"([^"]*)"/);
+        const match23 = line.match(/^mapping(2|3)\["([^"]*)"\]\s*=\s*\{([^}]*)\}/);
+        if (match1) {return `1,${clean(match1[1])},${clean(match1[2])}`} 
+        else if (match23) {return `${match23[1]},${clean(match23[2])},${match23[3].split(/,\s*/).map(clean).join(' ')}`}  
+        else {return null}
+    }).filter(Boolean);  
+    output(csv.join('\n'));  
   } 
 function uploadAndConvert() {
     const file = document.getElementById('fileInput').files[0];
-    const inputText = document.getElementById('inputText').value.trim();
-    if (!file && !inputText) output('Please select a file to upload or enter text.');
-    if (file && !/\.lua$/i.test(file.name)) return output('Unsupported file type. Please upload a Lua file.');
-    if (file) {  
+    const input = document.getElementById('inputText').value.trim();
+    if (!file && !input) {return output('Please select a file to upload or enter text.')}
+    else if (file && /\.lua$/.test(file.name.toLowerCase())){  
         const reader = new FileReader();  
-        reader.onload = e => {convert(e.target.result); document.getElementById('inputText').value=e.target.result;}; 
-        reader.readAsText(file);  
-    } else convert(inputText); 
+        reader.onload = e => {convert(e.target.result); document.getElementById('inputText').value=e.target.result}; 
+        reader.readAsText(file) 
+    } else if (input) {convert(input)} else {return output('Unsupported file type. Please upload a Lua file.')}
 }  
 function downloadResult() {  
     const blob = new Blob([document.getElementById('outputText').value], { type: 'text/plain' });  
-    const downloadLink = document.createElement('a');  
-    downloadLink.href = URL.createObjectURL(blob);  
-    downloadLink.download = `${(document.getElementById('fileInput').files[0]?.name.split('.')[0] || 'output')}.txt`;  
-    downloadLink.click();  
-    URL.revokeObjectURL(downloadLink.href);  
+    const link = document.createElement('a');  
+    link.href = URL.createObjectURL(blob);  
+    link.download = `${(document.getElementById('fileInput').files[0]?.name.split('.')[0] || 'output')}.txt`;  
+    link.click();  
+    URL.revokeObjectURL(link.href)
 }
