@@ -15,7 +15,7 @@ nav_order: 1
 
 ### Beginning(38)
 
-`Sil 4` ; `Sil 4'` ; `Sil C` ; `Sil J` ; `Sil M` ; `Sil N` ; `Sil N'` ; `Sil N\` ; `Sil S` ; `Sil a` ; `Sil b` ; `Sil b'` ; `Sil d` ; `Sil d'` ; `Sil dZ` ; `Sil dz` ; `Sil e` ; `Sil g` ; `Sil g'` ; `Sil h` ; `Sil i` ; `Sil j` ; `Sil k` ; `Sil k'` ; `Sil m` ; `Sil m'` ; `Sil n` ; `Sil o` ; `Sil p` ; `Sil p'` ; `Sil p\` ; `Sil p\'` ; `Sil s` ; `Sil t` ; `Sil t'` ; `Sil tS` ; `Sil ts` ; `Sil w`
+`Sil 4` ; `Sil 4'` ; `Sil C` ; `Sil J` ; `Sil M` ; `Sil N` ; `Sil N'` ; `Sil N\` ; `Sil S` ; `Sil a` ; `Sil b` ; `Sil b'` ; `Sil d` ; `Sil d'` ; `Sil dZ` ; `Sil dz` ; `Sil e` ; `Sil g` ; `Sil g'` ; `Sil h` ; `Sil i` ; `Sil j` ; `Sil k` ; `Sil k'` ; `Sil m` ; `Sil m'` ; `Sil n` ; `Sil o` ; `Sil p` ; `Sil p'` ; `Sil p\` ; `Sil p\\'` ; `Sil s` ; `Sil t` ; `Sil t'` ; `Sil tS` ; `Sil ts` ; `Sil w`
 
 ### C-C(43)
 
@@ -23,7 +23,7 @@ nav_order: 1
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **J** | J J | N\ J |  |  |  |  | n J |
 | **p\\** |  | N\ p\ |  |  |  |  | n p\ |
-| **p\\'** |  | N\ p\' |  |  |  |  | n p\' |
+| **p\\\'** |  | N\ p\\' |  |  |  |  | n p\\' |
 | **C** |  | N\ C |  |  |  |  |  |
 | **h** |  | N\ h |  |  |  |  |  |
 | **h\\** |  | N\ h\ |  |  |  |  |  |
@@ -57,7 +57,7 @@ nav_order: 1
 | **Z** |  |  |  |  |  |  | n Z |
 | **z** |  |  |  |  |  |  | n z |
 
-`J J` ; `N N` ; `N g` ; `N k` ; `N' N'` ; `N' g'` ; `N' k'` ; `N\ C` ; `N\ S` ; `N\ h` ; `N\ h\` ; `N\ j` ; `N\ p\` ; `N\ p\'` ; `N\ s` ; `N\ w` ; `m b` ; `m m` ; `m p` ; `m' b'` ; `m' m'` ; `m' p'` ; `n 4` ; `n 4'` ; `n J` ; `n N` ; `n N'` ; `n N\` ; `n Z` ; `n d` ; `n d'` ; `n dZ` ; `n dz` ; `n m` ; `n m'` ; `n n` ; `n p\` ; `n p\'` ; `n t` ; `n t'` ; `n tS` ; `n ts` ; `n z`
+`J J` ; `N N` ; `N g` ; `N k` ; `N' N'` ; `N' g'` ; `N' k'` ; `N\ C` ; `N\ S` ; `N\ h` ; `N\ h\` ; `N\ j` ; `N\ p\` ; `N\ p\\'` ; `N\ s` ; `N\ w` ; `m b` ; `m m` ; `m p` ; `m' b'` ; `m' m'` ; `m' p'` ; `n 4` ; `n 4'` ; `n J` ; `n N` ; `n N'` ; `n N\` ; `n Z` ; `n d` ; `n d'` ; `n dZ` ; `n dz` ; `n m` ; `n m'` ; `n n` ; `n p\` ; `n p\\'` ; `n t` ; `n t'` ; `n tS` ; `n ts` ; `n z`
 
 ### C-V(151)
 
@@ -91,7 +91,7 @@ nav_order: 1
 | **p** | p a |  | p M | p e | p o |
 | **p'** | p' a | p' i | p' M | p' e | p' o |
 | **p\\** | p\ a |  | p\ M | p\ e | p\ o |
-| **p\'** |  | p\' i | p\' M |  |  |
+| **p\\\'** |  | p\\\' i | p\\\' M |  |  |
 | **s** | s a | s i | s M | s e | s o |
 | **t** | t a |  | t M | t e | t o |
 | **t'** |  | t' i | t' M |  |  |
@@ -100,7 +100,7 @@ nav_order: 1
 | **w** | w a | w i |  | w e | w o |
 | **z** | z a |  | z M | z e | z o |
 
-`4 M` ; `4 a` ; `4 e` ; `4 o` ; `4' M` ; `4' a` ; `4' i` ; `4' o` ; `C M` ; `C a` ; `C e` ; `C i` ; `C o` ; `J M` ; `J a` ; `J e` ; `J i` ; `J o` ; `N M` ; `N a` ; `N e` ; `N o` ; `N' M` ; `N' a` ; `N' e` ; `N' i` ; `N' o` ; `N\ M` ; `N\ a` ; `N\ e` ; `N\ i` ; `N\ o` ; `S M` ; `S a` ; `S e` ; `S i` ; `S o` ; `Z M` ; `Z a` ; `Z e` ; `Z i` ; `Z o` ; `b M` ; `b a` ; `b e` ; `b o` ; `b' M` ; `b' a` ; `b' e` ; `b' i` ; `b' o` ; `d M` ; `d a` ; `d e` ; `d o` ; `d' M` ; `d' i` ; `d' o` ; `dZ M` ; `dZ a` ; `dZ e` ; `dZ i` ; `dZ o` ; `dz M` ; `dz a` ; `dz e` ; `dz i` ; `dz o` ; `g M` ; `g a` ; `g e` ; `g o` ; `g' M` ; `g' a` ; `g' i` ; `g' o` ; `h a` ; `h e` ; `h o` ; `h\ a` ; `h\ e` ; `h\ o` ; `j M` ; `j a` ; `j e` ; `j o` ; `k M` ; `k a` ; `k e` ; `k o` ; `k' M` ; `k' a` ; `k' i` ; `k' o` ; `m M` ; `m a` ; `m e` ; `m o` ; `m' M` ; `m' a` ; `m' e` ; `m' i` ; `m' o` ; `n M` ; `n a` ; `n e` ; `n o` ; `p M` ; `p a` ; `p e` ; `p o` ; `p' M` ; `p' a` ; `p' e` ; `p' i` ; `p' o` ; `p\ M` ; `p\ a` ; `p\ e` ; `p\ o` ; `p\' M` ; `p\' i` ; `s M` ; `s a` ; `s e` ; `s i` ; `s o` ; `t M` ; `t a` ; `t e` ; `t o` ; `t' M` ; `t' i` ; `tS M` ; `tS a` ; `tS e` ; `tS i` ; `tS o` ; `ts M` ; `ts a` ; `ts e` ; `ts i` ; `ts o` ; `w a` ; `w e` ; `w i` ; `w o` ; `z M` ; `z a` ; `z e` ; `z o` 
+`4 M` ; `4 a` ; `4 e` ; `4 o` ; `4' M` ; `4' a` ; `4' i` ; `4' o` ; `C M` ; `C a` ; `C e` ; `C i` ; `C o` ; `J M` ; `J a` ; `J e` ; `J i` ; `J o` ; `N M` ; `N a` ; `N e` ; `N o` ; `N' M` ; `N' a` ; `N' e` ; `N' i` ; `N' o` ; `N\ M` ; `N\ a` ; `N\ e` ; `N\ i` ; `N\ o` ; `S M` ; `S a` ; `S e` ; `S i` ; `S o` ; `Z M` ; `Z a` ; `Z e` ; `Z i` ; `Z o` ; `b M` ; `b a` ; `b e` ; `b o` ; `b' M` ; `b' a` ; `b' e` ; `b' i` ; `b' o` ; `d M` ; `d a` ; `d e` ; `d o` ; `d' M` ; `d' i` ; `d' o` ; `dZ M` ; `dZ a` ; `dZ e` ; `dZ i` ; `dZ o` ; `dz M` ; `dz a` ; `dz e` ; `dz i` ; `dz o` ; `g M` ; `g a` ; `g e` ; `g o` ; `g' M` ; `g' a` ; `g' i` ; `g' o` ; `h a` ; `h e` ; `h o` ; `h\ a` ; `h\ e` ; `h\ o` ; `j M` ; `j a` ; `j e` ; `j o` ; `k M` ; `k a` ; `k e` ; `k o` ; `k' M` ; `k' a` ; `k' i` ; `k' o` ; `m M` ; `m a` ; `m e` ; `m o` ; `m' M` ; `m' a` ; `m' e` ; `m' i` ; `m' o` ; `n M` ; `n a` ; `n e` ; `n o` ; `p M` ; `p a` ; `p e` ; `p o` ; `p' M` ; `p' a` ; `p' e` ; `p' i` ; `p' o` ; `p\ M` ; `p\ a` ; `p\ e` ; `p\ o` ; `p\\' M` ; `p\\' i` ; `s M` ; `s a` ; `s e` ; `s i` ; `s o` ; `t M` ; `t a` ; `t e` ; `t o` ; `t' M` ; `t' i` ; `tS M` ; `tS a` ; `tS e` ; `tS i` ; `tS o` ; `ts M` ; `ts a` ; `ts e` ; `ts i` ; `ts o` ; `w a` ; `w e` ; `w i` ; `w o` ; `z M` ; `z a` ; `z e` ; `z o` 
 
 ### V-V(25)
 
@@ -146,7 +146,7 @@ nav_order: 1
 | **p** | a p | i p | M p | e p | o p |
 | **p'** | a p' | i p' | M p' | e p' | o p' |
 | **p\\** | a p\ | i p\ | M p\ | e p\ | o p\ |
-| **p\'** | a p\' | i p\' | M p\' | e p\' | o p\' |
+| **p\\'** | a p\\' | i p\\' | M p\\' | e p\\' | o p\\' |
 | **s** | a s | i s | M s | e s | o s |
 | **t** | a t | i t | M t | e t | o t |
 | **t'** | a t' | i t' | M t' | e t' | o t' |
@@ -155,7 +155,7 @@ nav_order: 1
 | **w** | a w | i w | M w | e w | o w |
 | **z** | a z | i z | M z | e z | o z |
 
-`M 4` ; `M 4'` ; `M C` ; `M J` ; `M N` ; `M N'` ; `M N\` ; `M S` ; `M Z` ; `M b` ; `M b'` ; `M d` ; `M d'` ; `M dZ` ; `M dz` ; `M g` ; `M g'` ; `M h` ; `M h\` ; `M j` ; `M k` ; `M k'` ; `M m'` ; `M n` ; `M p` ; `M p'` ; `M p\` ; `M p\'` ; `M s` ; `M t` ; `M t'` ; `M tS` ; `M ts` ; `M w` ; `M z` ; `a 4` ; `a 4'` ; `a C` ; `a J` ; `a N` ; `a N'` ; `a N\` ; `a S` ; `a Z` ; `a b` ; `a b'` ; `a d` ; `a d'` ; `a dZ` ; `a dz` ; `a g` ; `a g'` ; `a h` ; `a h\` ; `a j` ; `a k` ; `a k'` ; `a m'` ; `a n` ; `a p` ; `a p'` ; `a p\` ; `a p\'` ; `a s` ; `a t` ; `a t'` ; `a tS` ; `a ts` ; `a w` ; `a z` ; `e 4` ; `e 4'` ; `e C` ; `e J` ; `e N` ; `e N'` ; `e N\` ; `e S` ; `e Z` ; `e b` ; `e b'` ; `e d` ; `e d'` ; `e dZ` ; `e dz` ; `e g` ; `e g'` ; `e h` ; `e h\` ; `e j` ; `e k` ; `e k'` ; `e m'` ; `e n` ; `e p` ; `e p'` ; `e p\` ; `e p\'` ; `e s` ; `e t` ; `e t'` ; `e tS` ; `e ts` ; `e w` ; `e z` ; `i 4` ; `i 4'` ; `i C` ; `i J` ; `i N` ; `i N'` ; `i N\` ; `i S` ; `i Z` ; `i b` ; `i b'` ; `i d` ; `i d'` ; `i dZ` ; `i dz` ; `i g` ; `i g'` ; `i h` ; `i h\` ; `i j` ; `i k` ; `i k'` ; `i m'` ; `i n` ; `i p` ; `i p'` ; `i p\` ; `i p\'` ; `i s` ; `i t` ; `i t'` ; `i tS` ; `i ts` ; `i w` ; `i z` ; `m b` ; `m p` ; `o 4` ; `o 4'` ; `o C` ; `o J` ; `o N` ; `o N'` ; `o N\` ; `o S` ; `o Z` ; `o b` ; `o b'` ; `o d` ; `o d'` ; `o dZ` ; `o dz` ; `o g` ; `o g'` ; `o h` ; `o h\` ; `o j` ; `o k` ; `o k'` ; `o m'` ; `o n` ; `o p` ; `o p'` ; `o p\` ; `o p\'` ; `o s` ; `o t` ; `o t'` ; `o tS` ; `o ts` ; `o w` ; `o z`
+`M 4` ; `M 4'` ; `M C` ; `M J` ; `M N` ; `M N'` ; `M N\` ; `M S` ; `M Z` ; `M b` ; `M b'` ; `M d` ; `M d'` ; `M dZ` ; `M dz` ; `M g` ; `M g'` ; `M h` ; `M h\` ; `M j` ; `M k` ; `M k'` ; `M m'` ; `M n` ; `M p` ; `M p'` ; `M p\` ; `M p\\'` ; `M s` ; `M t` ; `M t'` ; `M tS` ; `M ts` ; `M w` ; `M z` ; `a 4` ; `a 4'` ; `a C` ; `a J` ; `a N` ; `a N'` ; `a N\` ; `a S` ; `a Z` ; `a b` ; `a b'` ; `a d` ; `a d'` ; `a dZ` ; `a dz` ; `a g` ; `a g'` ; `a h` ; `a h\` ; `a j` ; `a k` ; `a k'` ; `a m'` ; `a n` ; `a p` ; `a p'` ; `a p\` ; `a p\\'` ; `a s` ; `a t` ; `a t'` ; `a tS` ; `a ts` ; `a w` ; `a z` ; `e 4` ; `e 4'` ; `e C` ; `e J` ; `e N` ; `e N'` ; `e N\` ; `e S` ; `e Z` ; `e b` ; `e b'` ; `e d` ; `e d'` ; `e dZ` ; `e dz` ; `e g` ; `e g'` ; `e h` ; `e h\` ; `e j` ; `e k` ; `e k'` ; `e m'` ; `e n` ; `e p` ; `e p'` ; `e p\` ; `e p\\'` ; `e s` ; `e t` ; `e t'` ; `e tS` ; `e ts` ; `e w` ; `e z` ; `i 4` ; `i 4'` ; `i C` ; `i J` ; `i N` ; `i N'` ; `i N\` ; `i S` ; `i Z` ; `i b` ; `i b'` ; `i d` ; `i d'` ; `i dZ` ; `i dz` ; `i g` ; `i g'` ; `i h` ; `i h\` ; `i j` ; `i k` ; `i k'` ; `i m'` ; `i n` ; `i p` ; `i p'` ; `i p\` ; `i p\\'` ; `i s` ; `i t` ; `i t'` ; `i tS` ; `i ts` ; `i w` ; `i z` ; `m b` ; `m p` ; `o 4` ; `o 4'` ; `o C` ; `o J` ; `o N` ; `o N'` ; `o N\` ; `o S` ; `o Z` ; `o b` ; `o b'` ; `o d` ; `o d'` ; `o dZ` ; `o dz` ; `o g` ; `o g'` ; `o h` ; `o h\` ; `o j` ; `o k` ; `o k'` ; `o m'` ; `o n` ; `o p` ; `o p'` ; `o p\` ; `o p\\'` ; `o s` ; `o t` ; `o t'` ; `o tS` ; `o ts` ; `o w` ; `o z`
 
 ### Ending(12)
 

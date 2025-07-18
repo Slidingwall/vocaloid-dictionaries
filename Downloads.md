@@ -9,23 +9,40 @@ nav_order: 3
 {: .new }
 > We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 > 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
+> 
 > You can use [converter](/vocaloid-dictionaries/converter) to convert traditional Job-Plugin's Mapping part to Grneral Job-Plugin's dictionary.  
 > 您可以用[转换器](/vocaloid-dictionaries/converter)将传统插件的Mapping部分转换为通用插件可用的字典。  
 
 {: .note }
 > `CLG` = [Dictionaries for General cross-lingual Job Plugin / 通用跨语种插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict)  
-> `UDC` = [Dictionaries for General user dictionary Job Plugin / 用户字典插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict-udc)  
 > `FBO` = **F**inished **B**y **O**thers / 由他人完成  
 > **Bold Dictionaries are now support spliting. 加粗的字典现已支持拆音。**
 
 |VB \ Lyrics |CHN Lyrics|ENG Lyrics|JPN Lyrics|KOR Lyrics|ESP Lyrics|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|CHN VB|N/A| |**CLG** UDC|**CLG**|**CLG**|
-|ENG VB|CLG UDC|N/A||CLG|CLG|
-|JPN VB|UDC|FBO|N/A|FBO|FBO|
-|KOR VB|UDC| |UDC|N/A| |
-|ESP VB|CLG UDC|CLG|UDC|CLG|N/A|
-|MAIKA|CLG UDC|FBO|UDC|CLG|N/A|
+|CHN VB|N/A| |**CLG** |**CLG**|**CLG**|
+|ENG VB|CLG |N/A||CLG|CLG|
+|JPN VB|FBO|FBO|N/A|FBO|FBO|
+|KOR VB|||FBO|N/A||
+|ESP VB|CLG|CLG|FBO|CLG|N/A|
+|MAIKA|CLG|FBO|FBO|CLG|N/A|
+
+## Download Dictionaries for General user dictionary Job Plugin  为用户字典插件下载字典
+
+{: .new }
+> We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
+> 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。   
+> 
+> The native user dictionary only supports English. For other languages, you should use General user dictionary Job plugin.  
+> 原生的用户字典仅支持英文。对于其他语言，您应该采用用户字典插件。
+
+{: .note }
+> `UDC` = [Dictionaries for General user dictionary Job Plugin / 用户字典插件字典](https://github.com/Slidingwall/vocaloid-dictionaries/tree/main/dict-udc)  
+
+|Lyrics \ VB| CHN VB | ENG VB | JPN VB | KOR VB | ESP VB | MAIKA |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| CHN Lyrics | N/A | UDC | UDC | UDC | UDC | UDC |
+| JPN Lyrics | UDC | FBO | N/A | UDC | UDC | UDC |
 
 ## Download traditional Job-Plugins or User Dictionary 下载传统插件或用户字典
 
