@@ -3,6 +3,11 @@ nav_order: 3
 ---
 # User dictionaries & Job Plugin 用户字典&插件
 
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
 1. TOC
 {:toc}
 
