@@ -1,0 +1,45 @@
+1,a,{
+1,ja,j {
+1,7,V
+1,j7,j V
+1,o,O:
+1,jo,j O:
+1,u,u:
+1,ju,j u:
+1,M,U
+1,i,i:
+1,je,j e
+1,oa,w {
+1,u7,w V
+1,ue,w e
+1,ui,u: i:
+1,Mi,U i:
+1,g,gh
+1,g',g
+1,k,kh
+1,D,n
+1,d,dh
+1,d',d
+1,t,th
+1,l,l0
+1,r,l
+1,b,bh
+1,b',b
+1,p,ph
+1,sh,S
+1,s,th s
+1,s',s
+1,sh',S
+1,c,t s
+1,c',t s
+1,ch,tS
+1,gp,k_0
+1,dp,t_0
+1,rp,l
+1,bp,p_0
+1,np,n
+1,mp,m
+1,Np,N
+1,@r,@r
+1,C,S
+2,D e,D e

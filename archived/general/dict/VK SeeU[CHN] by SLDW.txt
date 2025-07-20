@@ -1,0 +1,59 @@
+1,7,7
+1,@U,7 u
+1,AN,7 Np
+1,@`,@r
+1,AU,7 o
+1,a,a
+1,aI,a i
+1,a_n,a np
+1,p,b'
+1,ts,c'
+1,ts\,c'
+1,ts`,c'
+1,ts\_h,ch
+1,ts_h,ch
+1,ts`_h,ch
+1,t,d'
+1,ei,e i
+1,@_n,e np
+1,@N,e Np
+1,k,g'
+1,x,h
+1,i,i
+1,iN,i Np
+1,i_n,i np 
+1,iAN,j7 Np
+1,iAU,j7 o
+1,ia,ja
+1,iE_r,je
+1,iE_n,je np
+1,i@U,jo u
+1,iUN,jo Np
+1,y{_n,ju e np
+1,yE_r,ju e
+1,y_n,ju np
+1,k_h,k
+1,l,l
+1,i\,M
+1,i`,M
+1,m,m
+1,n,n
+1,o,o
+1,uo,o
+1,UN,o Np
+1,ua,oa
+1,uaI,oa i
+1,ua_n,oa np
+1,f,f
+1,p_h,p
+1,z`,z
+1,s,s'
+1,s\,sh'
+1,s`,sh'
+1,t_h,t
+1,u,u 
+1,uAN,u7 Np
+1,uei,ue i
+1,u@_n,ue np
+1,u@N,ue Np
+1,y,ui
