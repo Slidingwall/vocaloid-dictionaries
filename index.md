@@ -26,8 +26,12 @@ nav_order: 1
 Vocaloid's Interlingual user dictionary and Job Plugins, originally started in December 2020.  
 Vocaloid的跨语言用户词典和插件，最初开始于2020年12月。
 
-By then there were already many excellent cross-language plugins circulating in the community, like VoctroLabs, who developed this plugin, or users such as pastro99 and GobouP who have contributed greatly to this series of plugins. Despite this, there are still many cross-language conversion plugins that have not been created. So, after completing `synthv-dictionaries`, I started this project. in September 2021, I noticed the plugins phQli:glQt developed by sae. these plugins fill in nicely the gaps of Korean voice libraries that want to sing other languages, which inspired me a lot and gave me more motivation to continue developing the remaining plugins.  
-那时已经有许多优秀的跨语种插件在社区中流传，像是开发这款插件的VoctroLabs，或是pastro99、GobouP等对这系列插件做出巨大贡献的用户。尽管如此，仍然有许多语言之间的转换插件没有建立。因此，在完成`synthv-dictionaries`后，我便开始了这个计划。2021年9月，我注意到了sae开发的插件phQli:glQt。这些插件很好的填补了韩语语音库想要唱出其他语言的空白，给了我很大的启发，也让我有更多的动力去继续开发剩余的插件。
+By then there were already many excellent cross-language plugins circulating in the community, like VoctroLabs, who developed this plugin, or users such as pastro99 and GobouP who have contributed greatly to this series of plugins.   
+那时已经有许多优秀的跨语种插件在社区中流传，像是开发这款插件的VoctroLabs，或是pastro99、GobouP等对这系列插件做出巨大贡献的用户。  
+Despite this, there are still many cross-language conversion plugins that have not been created. So, after completing `synthv-dictionaries`, I started this project.  
+尽管如此，仍然有许多语言之间的转换插件没有建立。因此，在完成`synthv-dictionaries`后，我便开始了这个计划。  
+In September 2021, I noticed the plugins phQli:glQt developed by sae. These plugins fill in nicely the gaps of Korean voice libraries that want to sing other languages, which inspired me a lot and gave me more motivation to continue developing the remaining plugins.  
+2021年9月，我注意到了sae开发的插件phQli:glQt。这些插件很好的填补了韩语语音库想要唱出其他语言的空白，给了我很大的启发，也让我有更多的动力去继续开发剩余的插件。
 
 ---
 

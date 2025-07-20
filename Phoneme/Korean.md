@@ -29,11 +29,11 @@ parent: Phoneme 音素表
 | **je** |je̞| i ei | j e | j e | j e |
 | **ue** |we̞| uei | w e | w e | w e |
 | **i** |i| i | i : | i | i |
-| **ui** |wi| u i | u: i: | u i | u i |
+| **ui** |wi| y | u: i: | u i | u i |
 | **o** |o| @U | O: | o | o |
 | **jo** |jo| i@U | j O: | j o | j o |
 | **u** |u| u | u: | u | u |
-| **ju** |ju| y | j u: | j u | j u |
+| **ju** |ju| j u | j u: | j u | j u |
 | **M** |ɯ| u | u: | U | U |
 | **Mi** |ɰi| u i | U i: | U i | U i |
 

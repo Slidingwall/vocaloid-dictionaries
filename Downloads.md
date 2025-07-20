@@ -30,9 +30,6 @@ nav_order: 3
 ## Download Dictionaries for General user dictionary Job Plugin  为用户字典插件下载字典
 
 {: .new }
-> We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
-> 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。   
-> 
 > The native user dictionary only supports English. For other languages, you should use General user dictionary Job plugin.  
 > 原生的用户字典仅支持英文。对于其他语言，您应该采用用户字典插件。
 
