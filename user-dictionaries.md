@@ -11,8 +11,6 @@ New
 Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese Page)](https://www.bilibili.com/read/cv7736635/) by [atonyxu](https://github.com/atonyxu).  
 `/dict-udc`文件夹中的文件与[atonyxu](https://github.com/atonyxu)制作的[用户词典插件](https://www.bilibili.com/read/cv7732403/)相兼容。
 
-The native user dictionary only supports English. For other languages, you should use General user dictionary Job plugin.  
-原生的用户字典仅支持英文。对于其他语言，您应该采用用户字典插件。  
 For languages like Chinese and Japanese, it is relatively easier to use the user dictionary plugin.  
 对于像中文和日语这样的语言来说，采用用户词典插件会相对好用一些。  
 This project offer user dictionary which can let other voicebanks singing Chinese and Japanese.  
