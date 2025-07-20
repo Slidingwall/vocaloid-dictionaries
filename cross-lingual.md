@@ -4,6 +4,9 @@ nav_order: 2
 
 # Cross-lingual Job-Plugin 跨语种插件
 
+1. TOC
+{:toc}
+
 {: .new }
 > We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 > 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  

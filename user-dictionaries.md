@@ -3,6 +3,9 @@ nav_order: 3
 ---
 # User dictionaries & Job Plugin 用户字典&插件
 
+1. TOC
+{:toc}
+
 ## General user dictionary Job Plugin 用户词典插件
 {: .d-inline-block }
 New
