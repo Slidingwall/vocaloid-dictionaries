@@ -107,7 +107,7 @@ return function(idx)
             jo={"j o","j O:","j o","j o","i@U"},
             u={"M","u:","u","u","u"},
             ju={"j M","j u:","j u","j u","j u"},
-            M={"M","U","u","u","u"},
+            M={"M","U","u","u","u i\\"},
             Mi={"M i","U i","u i","u i","u i"},
             k={"k","kh","k","k","k_h"},
             g={"g","gh","g","g","k"},
@@ -241,6 +241,6 @@ return function(idx)
         [3]={["g'"]=result.gp,np=result.n,["d'"]=result.dp,mp=result.m,["b'"]=result.bp,["s'"]=result.s,
             ["sh'"]=result.sh,["c'"]=result.c,["ch'"]=result.ch,D=result.Np,C=result.s,}, --Korean
         [4]={["j\\"]=result.j,L=result.j,G=result.g,rr=result.r,I0=result.I,O=result.o,h=result.x,v=result.B},  --Spanish
-        [5]={["i`"]=result["i`"],["ts`"]=result["ts\\"],["ts`_h"]=result["ts\\_h"],["s`"]=result["s\\"]} --Chinese
+        [5]={["i`"]=result["i\\"],["ts`"]=result["ts\\"],["ts`_h"]=result["ts\\_h"],["s`"]=result["s\\"]} --Chinese
     }[idx]})
     return result

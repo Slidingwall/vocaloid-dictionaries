@@ -11,6 +11,9 @@ Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictio
 
 ## Universal Lyric Fliiling Plugin 万能填词插件
 
+(WIP)Because I forgot the development progress, support for some languages may not be complete yet.  
+(开发中)由于我忘记了开发进度，部分语言的支持可能尚未完成。  
+
 This plugin is modified from the user dictionary plugin and serves as an implementation of a third-party Grapheme-to-Phoneme system. It enables cross-lingual conversion directly during the lyrics input process.   
 这个插件基于用户字典插件修改而来，是一个第三方单词到音素系统的实现，用于直接在填词的过程中完成跨语种转换的操作。  
 
@@ -49,6 +52,11 @@ Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | CHN Lyrics | N/A | √ | √ | √ | √ | √ |
 | JPN Lyrics | √ | FBO | N/A | √ | √ | √ |
+
+## Find & Replace Phonemes Job Plugin 音素查找与替换插件
+
+Based on the official Yamaha `convertPhonemes.lua`, an option for perfect matching has been added.
+基于Yamaha官方的`convertPhonemes.lua`，增加了一个用于完全匹配的选项。
 
 **Any contributions are welcome. / 欢迎任何形式的贡献**  
 
