@@ -36,7 +36,6 @@
 1,iUN,j o U n
 1,p_h,p
 1,t_h,t
-1,n,n
 1,k,g
 1,k_h,k
 1,ts\,t s

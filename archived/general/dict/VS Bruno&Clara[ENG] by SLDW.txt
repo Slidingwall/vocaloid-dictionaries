@@ -1,6 +1,5 @@
 1,@,a
 1,V,a
-1,e,e
 1,I,i
 1,i:,i
 1,{,e
@@ -19,37 +18,20 @@
 1,OI,o I
 1,@U,o U
 1,aU,a U
-1,m,m
-1,n,n
 1,N,n
-1,w,w
-1,j,j
-1,r,r
-1,l,l
 1,l0,l
-1,p,p
-1,t,t
-1,k,k
 1,ph,p
-1,gh,G
+1,gh,g
 1,th,t
 1,kh,k
-1,bh,B
-1,dh,D
-1,b,b
-1,d,d
-1,g,g
-1,tS,tS
+1,bh,b
+1,dh,d
 1,dZ,d s
-1,f,f
-1,T,T
-1,s,s
 1,S,s
 1,h,x
 1,v,B
 1,z,d s
 1,Z,L
-1,D,D
 1,R,rr
 2,w @,w a
 2,w V,w a
@@ -66,9 +48,9 @@
 2,w Q@,w a r
 2,w eI,w e I
 2,w aI,w a I
-2,w OI,w o I r
-2,w @U,w o U r
-2,w aU,w a U r
+2,w OI,w o I 
+2,w @U,w o U 
+2,w aU,w a U 
 2,j @,j a
 2,j V,j a
 2,j e,j e
@@ -86,6 +68,6 @@
 2,j Q@,j a r
 2,j eI,j e I
 2,j aI,j a I
-2,j OI,j o I r
-2,j @U,j o U r
-2,j aU,j a U r
+2,j OI,j o I 
+2,j @U,j o U 
+2,j aU,j a U 

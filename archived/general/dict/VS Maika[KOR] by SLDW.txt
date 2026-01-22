@@ -8,10 +8,9 @@
 1,oa,w a
 1,u7,w Q
 1,ue,w e
-1,ui,u i
+1,ui,w i
 1,Mi,u i
 1,g',g
-1,D,D
 1,d',d
 1,b',b
 1,sh,S
@@ -29,3 +28,4 @@
 1,Np,N
 1,@r,@ r\
 1,C,S
+1,D,N

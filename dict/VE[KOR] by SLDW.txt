@@ -12,7 +12,7 @@
 1,oa,w {
 1,u7,w V
 1,ue,w e
-1,ui,u: i:
+1,ui,w i:
 1,Mi,U i:
 1,g,gh
 1,g',g
@@ -33,13 +33,12 @@
 1,c,t s
 1,c',t s
 1,ch,tS
-1,gp,k_0
-1,dp,t_0
+1,gp,g
+1,dp,d
 1,rp,l
-1,bp,p_0
+1,bp,b
 1,np,n
 1,mp,m
 1,Np,N
 1,@r,@r
-1,C,S
-2,D e,D e
+1,C,s

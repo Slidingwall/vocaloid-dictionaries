@@ -1,0 +1,27 @@
+1,V,@
+1,I,I0
+1,i:,i
+1,{,E
+1,O:,O
+1,U,u
+1,u:,u
+1,@r,@ r\
+1,I@,I0 r\
+1,e@,e r\
+1,U@,u r\
+1,O@,O r\
+1,Q@,Q r\
+1,eI,e I
+1,aI,a I
+1,OI,o I
+1,@U,@ U
+1,aU,a U
+1,r,r\
+1,l0,l
+1,ph,p
+1,gh,g
+1,th,t
+1,kh,k
+1,bh,b
+1,dh,d
+1,R,rr

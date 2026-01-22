@@ -600,3 +600,4 @@ byo,b j o
 pyo,p j o
 ん,N
 n,N
+ー,-

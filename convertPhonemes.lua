@@ -11,41 +11,22 @@ function manifest()
 end
 
 local function update(note, newPhonemes)
-    note.phonemes = newPhonemes
-    note.phLock = 1
-    local ret = VSupdateEx(note)
-    return ret == 1
+    note.phonemes, note.phLock = newPhonemes, 1
+    return VSUpdateNote(note)
 end
 
 function main(processParam, envParam)    
     
     VSDlgSetDialogTitle("Convert Phonemes 替换音素")
-    VSDlgAddField({
-        name = "find",
-        caption = "From 查找",
-        initialVal = "a",
-        type = 3
-    })
-    VSDlgAddField({
-        name = "replace",
-        caption = "To 替换",
-        initialVal = "i",
-        type = 3
-    })
-    VSDlgAddField({
-        name = "match",
-        caption = "Perfect Match 完全匹配",
-        initialVal = 0,
-        type = 1
-    })
+    VSDlgAddField({name="find", caption="From 查找", initialVal="a", type=3})
+    VSDlgAddField({name="replace", caption="To 替换", initialVal="i", type=3})
+    VSDlgAddField({name="match", caption="Perfect Match 完全匹配", initialVal=0, type=1})
     dlgRet = VSDlgDoModal()
-    if dlgRet == 2 then return 0 end
-    if dlgRet ~= 1 then return 1 end
-    end
+    if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
 
-    _, find  = VSDlgGetStringValue("find")
-    _, replace    = VSDlgGetStringValue("replace")
-    _, match    = VSDlgGetBoolValue("match")
+    local _, find = VSDlgGetStringValue("find")
+    local _, replace = VSDlgGetStringValue("replace")
+    local _, match = VSDlgGetBoolValue("match")
 
     VSSeekToBeginNote()
     local notes = {}
@@ -55,32 +36,17 @@ function main(processParam, envParam)
         ret, note = VSGetNextNoteEx()
     end
     if #notes == 0 then
-        VSMessageBox("No notes to process!", 0)
+        VSMessageBox("你需要选择一个音符 No notes to process!", 0)
         return 0
     end
 
     local convCount = 0
-    local status = 0
-
     for _, note in ipairs(notes) do
-        local updated = false
-        if match == 0 then
-        local newPhonemes, replaceCount = string.gsub(note.phonemes, find, replace)
-            if replaceCount > 0 then
-                updated = update(note, newPhonemes)
-            end
-        else
-        elseif note.phonemes == find then
-                updated = update(note, replace)
-            end
-        end
-        if updated then
+        local newPhonemes = match == 0 and string.gsub(note.phonemes, find, replace) or (note.phonemes == find and replace or note.phonemes)
+        if newPhonemes ~= note.phonemes and update(note, newPhonemes) then
             convCount = convCount + 1
-        else
-            status = 1
-            break
         end
     end
     VSMessageBox("Converted " .. convCount .. " note(s)", 0)
-    return status
+    return convCount > 0 and 0 or 1
 end

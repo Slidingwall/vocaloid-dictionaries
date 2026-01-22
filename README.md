@@ -9,6 +9,14 @@ Visit our [GitHub Pages](https://slidingwall.github.io/vocaloid-dictionaries), o
 Demos can be listened right [here](https://slidingwall.github.io/vocaloid-dictionaries/demo).
 音频样本可以在[这里](https://slidingwall.github.io/vocaloid-dictionaries/demo)听到。
 
+## Universal Lyric Fliiling Plugin 万能填词插件
+
+This plugin is modified from the user dictionary plugin and serves as an implementation of a third-party Grapheme-to-Phoneme system. It enables cross-lingual conversion directly during the lyrics input process.   
+这个插件基于用户字典插件修改而来，是一个第三方单词到音素系统的实现，用于直接在填词的过程中完成跨语种转换的操作。  
+
+The plugin will automatically detect the singer's language and the number of available notes for lyrics input. After entering the lyrics, you need to manually select the language of the entered lyrics. The plugin will then handle the remaining conversion tasks.  
+插件将会自动识别歌手语言和可填词音符的个数。填入歌词后，您需要手动选择填入歌词的语言，随后由插件完成剩余的转换工作。  
+
 ## General Plugin Dictionaries SE 通用插件字典SE
 
 We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  

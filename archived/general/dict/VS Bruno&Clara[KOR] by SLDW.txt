@@ -8,13 +8,12 @@
 1,oa,w a
 1,u7,w o
 1,ue,w e
-1,ui,u i
+1,ui,w i
 1,Mi,u i
 1,h,x
 1,g',g
 1,d',d
 1,b',b
-1,p,p
 1,sh,s
 1,s',s
 1,sh',tS
@@ -32,4 +31,5 @@
 1,@r,a l
 1,C,s
 1,z,t s
-1,v,w
+1,v,B
+1,D,n

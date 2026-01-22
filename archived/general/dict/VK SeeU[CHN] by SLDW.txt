@@ -1,9 +1,7 @@
-1,7,7
 1,@U,7 u
 1,AN,7 Np
 1,@`,@r
 1,AU,7 o
-1,a,a
 1,aI,a i
 1,a_n,a np
 1,p,b'
@@ -33,25 +31,19 @@
 1,yE_r,ju e
 1,y_n,ju np
 1,k_h,k
-1,l,l
 1,i\,M
 1,i`,M
-1,m,m
-1,n,n
-1,o,o
 1,uo,o
 1,UN,o Np
 1,ua,oa
 1,uaI,oa i
 1,ua_n,oa np
-1,f,f
 1,p_h,p
 1,z`,z
 1,s,s'
 1,s\,sh'
 1,s`,sh'
 1,t_h,t
-1,u,u 
 1,uAN,u7 Np
 1,uei,ue i
 1,u@_n,ue np

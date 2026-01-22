@@ -10,6 +10,111 @@ function manifest()
     return myManifest
 end
 
+local comp={
+    VC={
+        ["a i"]="aI"
+        ["e i"]="ei"
+        ["a u"]="AU"
+        ["e u"]="@U"
+        ["i a"]="ia"
+        ["u a"]="ua"
+        ["i e"]="iE_r"
+        ["y e"]="yE_r"
+        ["u o"]="uo"
+        ["i a u"]="iAU"
+        ["i e u"]="i@U"
+        ["u a i"]="uai"
+        ["u e i"]="uei"
+        ["a n"]="a_n"
+        ["a N"]="AN"
+        ["e n"]="@_n"
+        ["e N"]="@N"
+        ["i n"]="i_n"
+        ["i N"]="iN"
+        ["i a n"]="iE_n"
+        ["i e n"]="iE_n"
+        ["i a N"]="iAN"
+        ["u a n"]="ua_n"
+        ["u a N"]="uAN"
+        ["u e n"]="u@_n"
+        ["u e N"]="u@N"
+        ["y n"]="y_n"
+        ["u N"]="UN"
+        ["y a n"]="y{_n"
+        ["y e n"]="y{_n"
+        ["i u N"]="iUN"
+    },
+    VJ={
+        ["t s"]="ts"
+        ["w M"]="M"
+        ["j i"]="i"
+        ["k j"]="k'"
+        ["g j"]="g'"
+        ["s j"]="S"
+        ["z j"]="Z"
+        ["dz j"]="dZ"
+        ["t j"]="t'"
+        ["d j"]="d'"
+        ["ts j"]="tS"
+        ["n j"]="J"
+        ["h j"]="C"
+        ["h\\ j"]="C"
+        ["p j"]="p'"
+        ["b j"]="b'"
+        ["p\\ j"]="p\\'"
+        ["m j"]="m'"
+        ["4 j"]="4'"
+        ["k i"]="k' i"
+        ["g i"]="g' i"
+        ["s i"]="S i"
+        ["z i"]="Z i"
+        ["dz i"]="dZ i"
+        ["t i"]="t' i"
+        ["d i"]="d' i"
+        ["ts i"]="tS i"
+        ["n i"]="J i"
+        ["h i"]="C i"
+        ["h\\ i"]="C i"
+        ["p i"]="p' i"
+        ["b i"]="b' i"
+        ["p\\ i"]="p\\' i"
+        ["m i"]="m' i"
+        ["4 i"]="4' i"
+    }
+    VK={
+        ["j i"]="i"
+        ["j a"]="ja"
+        ["j 7"]="j7"
+        ["j e"]="je"
+        ["j o"]="jo"
+        ["j u"]="ju"
+        ["w o"]="o"
+        ["w u"]="u"
+        ["w M"]="M"
+        ["w a"]="oa"
+        ["w 7"]="u7"
+        ["w e"]="ue"
+        ["w i"]="ui"
+        ["M i"]="Mi"
+        ["sh a"]="sh ja"
+        ["sh 7"]="sh j7"
+        ["sh e"]="sh je"
+        ["sh o"]="sh jo"
+        ["sh u"]="sh ju"
+        ["s ja"]="sh ja"
+        ["s j7"]="sh j7"
+        ["s je"]="sh je"
+        ["s jo"]="sh jo"
+        ["s ju"]="sh ju"
+    },
+    VS={
+        ["g j i"]="g i"
+        ["g j"]="G j"
+        ["j i"]="i"
+        ["w u"]="u"
+    }
+}
+
 function split(str, delim)  
     local result = {}  
     for word in string.gmatch(str, '[^' .. delim .. ']+') do  
@@ -24,15 +129,12 @@ function loadDicts(file)
         mp2 = {},  
         mp3 = {},  
     }
-    local prefixToDict = {  
-        ["1"] = dicts.mp1,  
-        ["2"] = dicts.mp2,  
-        ["3"] = dicts.mp3,   
-    } 
     for line in io.lines(file) do  
-        local lineData = split(line,",")
-        if prefixToDict[lineData[1]] then  
-            prefixToDict[lineData[1]][lineData[2]] = lineData[3]
+        local lineData = split(line, ",")
+        local prefix = lineData[1]
+        if prefix == "1" or prefix == "2" or prefix == "3" then
+            local dictKey = "mp" .. prefix
+            dicts[dictKey][lineData[2]] = lineData[3]
         end    
     end  
     return dicts
@@ -52,43 +154,30 @@ function copyNoteEx(src)
 end
 
 function main(processParam, envParam)    
-    os.execute("CMD /C dir dict /on/b> dictlist.txt")
-    local lines = {}
-    for line in io.lines("dictlist.txt") do
-        if string.find(line, "%.txt$") then
-            table.insert(lines, line)
-        end
-    end
-    local table_file = table.concat(lines, ",")
-    
-    VSDlgSetDialogTitle("通用跨语种插件 General Cross-language Plugin")
-    local dlgStatus = VSDlgAddField({
-        name = "table",
-        caption = "选择跨语种表 Select Dictionaries\n文件名需为非中文 File name should be English.",
-        initialVal = table_file,
-        type = 4
-    })
-    dlgStatus = VSDlgDoModal()
-    if (dlgStatus == 2) then
-        return 0
-    elseif ((dlgStatus ~= 1) and (dlgStatus ~= 2)) then
-        return 1
-    end
-    
-    local _, chosen_table = VSDlgGetStringValue("table")
-    local dicts = loadDicts("dict/" .. chosen_table)
-    
     VSSeekToBeginNote()
-    local noteExList = {}
-    local retCode, noteEx = VSGetNextNoteEx()
-    while retCode == 1 do
-        table.insert(noteExList, noteEx)
-        retCode, noteEx = VSGetNextNoteEx()
+    local notes = {}
+    local ret, note = VSGetNextNoteEx()
+    while ret == 1 do
+        table.insert(notes, note)
+        ret, note = VSGetNextNoteEx()
     end
-    if #noteExList == 0 then
-        VSMessageBox("No notes to process!", 0)
+    if #notes == 0 then
+        VSMessageBox("你需要选择一个音符 No notes to process!", 0)
         return 0
     end
+
+    VSDlgSetDialogTitle("通用跨语种插件 General Cross-language Plugin")
+    local cfg={{"Japanese","English,Korean,Spanish,Chinese,Korean(Seeu),Spanish(Maika)"},{"English","Japanese,Korean,Spanish,Chinese,Korean(Seeu),Spanish(Maika)"},{"Korean","Japanese,English,Spanish,Chinese,Spanish(Maika)"},{"Spanish","Japanese,English,Korean,Chinese,Korean(Seeu)"},{"Chinese","Japanese,English,Korean,Spanish,Korean(Seeu),Spanish(Maika)"}}
+    local idx = (select(2, VSGetMusicalPartSinger())).vBS + 1
+
+    VSDlgAddField{name="singer", caption="源语言（自动） Original Language(Auto)", initialVal=cfg[idx][1], type=3}
+    VSDlgAddField{name="language", caption="目标语言 Target Language", initialVal=cfg[idx][2], type=4}
+    dlgRet = VSDlgDoModal()
+    if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
+    
+    local lang = {"Japanese"=1,"English"=2,"Korean"=3,"Spanish"=4,"Chinese"=5,"Korean(SeeU)"=function(idx) return idx == 4 and 4 or 6 end,"Spanish(Maika)"=function(idx) return ({[1]=1, [2]=2, [3]=3, [5]=5})[idx] end}[select(2, VSDlgGetStringValue("language"))]
+    if type(lang) == "function" then lang = lang(idx) end
+    local dicts = require("dict")(idx) 
 
     for _, updNoteEx in ipairs(noteExList) do
         local splphn, updphn
@@ -96,21 +185,8 @@ function main(processParam, envParam)
         local phns = split(updNoteEx.phonemes, " ")
         
         for i = 1, #phns do
-            if i + 2 <= #phns then
-                local threephn = table.concat(phns, " ",i,i+2)
-                if dicts.mp3[threephn] then
-                    phns[i] = dicts.mp3[threephn]
-                    phns[i + 1] = ""
-                    phns[i + 2] = ""
-                end
-            elseif i + 1 <= #phns then
-                local twophn = table.concat(phns, " ",i,i+1)
-                if dicts.mp2[twophn] then
-                    phns[i] = dicts.mp2[twophn]
-                    phns[i + 1] = ""
-                end
-            elseif dicts.mp1[phns[i]] then
-                phns[i] = dicts.mp1[phns[i]]
+            if dicts[phns[i]] then
+                phns[i] = dicts[phns[i]][lang]
             end
         end
         

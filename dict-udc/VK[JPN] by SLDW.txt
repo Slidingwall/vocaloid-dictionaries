@@ -298,7 +298,7 @@ du,d M
 イェ,je
 ウェ,ue
 キェ,k je
-シェ,sh e
+シェ,sh je
 チェ,ch e
 ツェ,ch e
 テェ,t je
@@ -315,7 +315,7 @@ du,d M
 いぇ,je
 うぇ,ue
 きぇ,k je
-しぇ,sh e
+しぇ,sh je
 ちぇ,ch e
 つぇ,ch e
 てぇ,t je
@@ -332,7 +332,7 @@ du,d M
 イぇ,je
 ウぇ,ue
 キぇ,k je
-シぇ,sh e
+シぇ,sh je
 チぇ,ch e
 ツぇ,ch e
 テぇ,t je
@@ -349,7 +349,7 @@ du,d M
 いェ,je
 うェ,ue
 きェ,k je
-しェ,sh e
+しェ,sh je
 ちェ,ch e
 つェ,ch e
 てェ,t je
@@ -365,7 +365,7 @@ du,d M
 ふェ,h e
 ye,je
 kye,k je
-she,sh e
+she,sh je
 che,ch e
 tse,ch e
 tye,t je
@@ -394,7 +394,7 @@ fe,h e
 tso,ch o
 fo,h o
 キャ,k ja
-シャ,sh a
+シャ,sh ja
 チャ,ch a
 テャ,t ja
 ニャ,n ja
@@ -408,7 +408,7 @@ fo,h o
 ピャ,p ja
 フャ,h ja
 きゃ,k ja
-しゃ,sh a
+しゃ,sh ja
 ちゃ,ch a
 てゃ,t ja
 にゃ,n ja
@@ -422,7 +422,7 @@ fo,h o
 ぴゃ,p ja
 ふゃ,h ja
 キゃ,k ja
-シゃ,sh a
+シゃ,sh ja
 チゃ,ch a
 テゃ,t ja
 ニゃ,n ja
@@ -436,7 +436,7 @@ fo,h o
 ピゃ,p ja
 フゃ,h ja
 きャ,k ja
-しャ,sh a
+しャ,sh ja
 ちャ,ch a
 てャ,t ja
 にャ,n ja
@@ -450,7 +450,7 @@ fo,h o
 ぴャ,p ja
 ふャ,h ja
 kya,k ja
-sha,sh a
+sha,sh ja
 cha,ch a
 tya,t ja
 nya,n ja
@@ -464,7 +464,7 @@ bya,b ja
 pya,p ja
 fya,h ja
 キュ,k ju
-シュ,sh M
+シュ,sh ju
 チュ,ch M
 テュ,t ju
 ニュ,n ju
@@ -478,7 +478,7 @@ fya,h ja
 ピュ,p ju
 フュ,h ju
 きゅ,k ju
-しゅ,sh M
+しゅ,sh ju
 ちゅ,ch M
 てゅ,t ju
 にゅ,n ju
@@ -492,7 +492,7 @@ fya,h ja
 ぴゅ,p ju
 ふゅ,h ju
 キゅ,k ju
-シゅ,sh M
+シゅ,sh ju
 チゅ,ch M
 テゅ,t ju
 ニゅ,n ju
@@ -506,7 +506,7 @@ fya,h ja
 ピゅ,p ju
 フゅ,h ju
 きュ,k ju
-しュ,sh M
+しュ,sh ju
 ちュ,ch M
 てュ,t ju
 にュ,n ju
@@ -520,7 +520,7 @@ fya,h ja
 ぴュ,p ju
 ふュ,h ju
 kyu,k ju
-shu,sh M
+shu,sh ju
 chu,ch M
 tyu,t ju
 nyu,n ju
@@ -534,7 +534,7 @@ byu,b ju
 pyu,p ju
 fyu,h ju
 キョ,k jo
-ショ,sh o
+ショ,sh jo
 チョ,ch o
 テョ,t jo
 ニョ,n jo
@@ -547,7 +547,7 @@ fyu,h ju
 ビョ,b jo
 ピョ,p jo
 きょ,k jo
-しょ,sh o
+しょ,sh jo
 ちょ,ch o
 てょ,t jo
 にょ,n jo
@@ -560,7 +560,7 @@ fyu,h ju
 びょ,b jo
 ぴょ,p jo
 キょ,k jo
-シょ,sh o
+シょ,sh jo
 チょ,ch o
 テょ,t jo
 ニょ,n jo
@@ -573,7 +573,7 @@ fyu,h ju
 ビょ,b jo
 ピょ,p jo
 きョ,k jo
-しョ,sh o
+しョ,sh jo
 ちョ,ch o
 てョ,t jo
 にョ,n jo
@@ -586,7 +586,7 @@ fyu,h ju
 びョ,b jo
 ぴョ,p jo
 kyo,k jo
-sho,sh o
+sho,sh jo
 cho,ch o
 tyo,t jo
 nyo,n jo
@@ -600,3 +600,4 @@ byo,b jo
 pyo,p jo
 n,Np
 ん,Np
+ー,-
