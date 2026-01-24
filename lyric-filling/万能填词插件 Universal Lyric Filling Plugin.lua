@@ -23,15 +23,6 @@ function split(str, delim)
     return result  
 end
 
-local function loadDict(name)
-    local dict={}
-    for line in io.lines("dicts/"..name..".txt") do
-        local k,v = split(line,",")
-        dict[k] = v
-    end
-    return dict
-end
-
 function main(processParam, envParam) 
     VSSeekToBeginNote()
     local notes = {}
@@ -57,7 +48,7 @@ function main(processParam, envParam)
     VSDlgAddField{name="lyrics", caption="歌词 Lyrics", initialVal="", type=3}
     VSDlgAddField{name="flag", caption="按字符隔开（CJK） Separate into Characters(CJK)", initialVal=0, type=1}
 
-    dlgRet = VSDlgDoModal()
+    local dlgRet = VSDlgDoModal()
     if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
 
     local _, language = VSDlgGetStringValue("language")
