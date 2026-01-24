@@ -20,7 +20,7 @@ This plugin is modified from the user dictionary plugin and serves as an impleme
 The plugin will automatically detect the singer's language and the number of available notes for lyrics input. After entering the lyrics, you need to manually select the language of the entered lyrics. The plugin will then handle the remaining conversion tasks.  
 插件将会自动识别歌手语言和可填词音符的个数。填入歌词后，您需要手动选择填入歌词的语言，随后由插件完成剩余的转换工作。  
 
-## General Plugin Dictionaries SE 通用插件字典SE
+## General Cross-language Plugin SE 通用跨语种插件SE
 
 We strongly recommend that you use general Job-Plugin to simplify operations, General Job-Plugin greatly simplified usage.  
 我们强烈建议您使用通用插件以简化操作，通用插件的出现大大简化了操作步骤。  
@@ -53,7 +53,8 @@ Folder `/dict-udc`is compatible with [General user dictionary Job Plugin(Chinese
 | CHN Lyrics | N/A | √ | √ | √ | √ | √ |
 | JPN Lyrics | √ | FBO | N/A | √ | √ | √ |
 
-## Find & Replace Phonemes Job Plugin 音素查找与替换插件
+## Other Plugins 其他插件
+### Find & Replace Phonemes Job Plugin 音素查找与替换插件
 
 Based on the official Yamaha `convertPhonemes.lua`, an option for perfect matching has been added.
 基于Yamaha官方的`convertPhonemes.lua`，增加了一个用于完全匹配的选项。

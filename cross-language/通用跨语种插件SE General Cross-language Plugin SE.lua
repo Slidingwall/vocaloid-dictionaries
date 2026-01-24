@@ -16,33 +16,46 @@ local comp={
         ["e i"]="ei"
         ["a u"]="AU"
         ["e u"]="@U"
-        ["i a"]="ia"
-        ["u a"]="ua"
-        ["i e"]="iE_r"
+        ["j a"]="ia"
+        ["w a"]="ua"
+        ["j e"]="iE_r"
         ["y e"]="yE_r"
-        ["u o"]="uo"
-        ["i a u"]="iAU"
-        ["i e u"]="i@U"
-        ["u a i"]="uai"
-        ["u e i"]="uei"
+        ["w o"]="uo"
+        ["j a u"]="iAU"
+        ["j e u"]="i@U"
+        ["w a i"]="uai"
+        ["w e i"]="uei"
+        ["j AU"]="iAU"
+        ["j @U"]="i@U"
+        ["w aI"]="uai"
+        ["w ei"]="uei"
         ["a n"]="a_n"
         ["a N"]="AN"
         ["e n"]="@_n"
         ["e N"]="@N"
         ["i n"]="i_n"
         ["i N"]="iN"
-        ["i a n"]="iE_n"
-        ["i e n"]="iE_n"
-        ["i a N"]="iAN"
-        ["u a n"]="ua_n"
-        ["u a N"]="uAN"
-        ["u e n"]="u@_n"
-        ["u e N"]="u@N"
+        ["j a n"]="iE_n"
+        ["j e n"]="iE_n"
+        ["j a N"]="iAN"
+        ["w a n"]="ua_n"
+        ["w a N"]="uAN"
+        ["w e n"]="u@_n"
+        ["w e N"]="u@N"
+        ["iE_r n"]="iE_n"
+        ["ia N"]="iAN"
+        ["iAU N"]="iAN"
+        ["ua n"]="ua_n"
+        ["ua N"]="uAN"
+        ["uei n"]="u@_n"
+        ["uei N"]="u@N"
         ["y n"]="y_n"
         ["u N"]="UN"
         ["y a n"]="y{_n"
         ["y e n"]="y{_n"
-        ["i u N"]="iUN"
+        ["j u N"]="iUN"
+        ["yE_r n"]="y{_n"
+        ["i@U N"]="iUN"
     },
     VJ={
         ["t s"]="ts"
@@ -80,7 +93,7 @@ local comp={
         ["p\\ i"]="p\\' i"
         ["m i"]="m' i"
         ["4 i"]="4' i"
-    }
+    },
     VK={
         ["j i"]="i"
         ["j a"]="ja"
@@ -123,27 +136,10 @@ function split(str, delim)
     return result  
 end
 
-function loadDicts(file)
-    local dicts = {  
-        mp1 = {},  
-        mp2 = {},  
-        mp3 = {},  
-    }
-    for line in io.lines(file) do  
-        local lineData = split(line, ",")
-        local prefix = lineData[1]
-        if prefix == "1" or prefix == "2" or prefix == "3" then
-            local dictKey = "mp" .. prefix
-            dicts[dictKey][lineData[2]] = lineData[3]
-        end    
-    end  
-    return dicts
-end  
-
-function splitNote(str,phn,dictphn)  
-    local splited = split(string.gsub(str, phn, dictphn),"#")
-    return splited[1],splited[2]  
-end
+--function splitNote(str,phn,dictphn)  
+--    local splited = split(string.gsub(str, phn, dictphn),"#")
+--    return splited[1],splited[2]  
+--end
 
 function copyNoteEx(src)
     local new = {}
@@ -167,7 +163,7 @@ function main(processParam, envParam)
     end
 
     VSDlgSetDialogTitle("通用跨语种插件 General Cross-language Plugin")
-    local cfg={{"Japanese","English,Korean,Spanish,Chinese,Korean(Seeu),Spanish(Maika)"},{"English","Japanese,Korean,Spanish,Chinese,Korean(Seeu),Spanish(Maika)"},{"Korean","Japanese,English,Spanish,Chinese,Spanish(Maika)"},{"Spanish","Japanese,English,Korean,Chinese,Korean(Seeu)"},{"Chinese","Japanese,English,Korean,Spanish,Korean(Seeu),Spanish(Maika)"}}
+    local cfg={{"Japanese","English,Korean,Spanish,Chinese,Korean(SeeU),Spanish(Maika)"},{"English","Japanese,Korean,Spanish,Chinese,Korean(SeeU),Spanish(Maika)"},{"Korean","Japanese,English,Spanish,Chinese,Spanish(Maika)"},{"Spanish","Japanese,English,Korean,Chinese,Korean(SeeU)"},{"Chinese","Japanese,English,Korean,Spanish,Korean(SeeU),Spanish(Maika)"}}
     local idx = (select(2, VSGetMusicalPartSinger())).vBS + 1
 
     VSDlgAddField{name="singer", caption="源语言（自动） Original Language(Auto)", initialVal=cfg[idx][1], type=3}
@@ -175,58 +171,49 @@ function main(processParam, envParam)
     dlgRet = VSDlgDoModal()
     if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
     
-    local lang = {"Japanese"=1,"English"=2,"Korean"=3,"Spanish"=4,"Chinese"=5,"Korean(SeeU)"=function(idx) return idx == 4 and 4 or 6 end,"Spanish(Maika)"=function(idx) return ({[1]=1, [2]=2, [3]=3, [5]=5})[idx] end}[select(2, VSDlgGetStringValue("language"))]
+    local lang = {Japanese=1,English=2,Korean=3,Spanish=4,Chinese=5,"Korean(SeeU)"=function(idx) return idx == 4 and 4 or 6 end,"Spanish(Maika)"=idx}[select(2, VSDlgGetStringValue("language"))]
     if type(lang) == "function" then lang = lang(idx) end
-    local dicts = require("dict")(idx) 
+    local dicts = require("dict")(idx,lang) 
 
-    for _, updNoteEx in ipairs(noteExList) do
-        local splphn, updphn
-        local splitflag = 0
+    for _, updNoteEx in ipairs(notes) do
+--        local splphn, updphn
+--        local splitflag = 0
         local phns = split(updNoteEx.phonemes, " ")
         
         for i = 1, #phns do
             if dicts[phns[i]] then
-                phns[i] = dicts[phns[i]][lang]
+                phns[i] = dicts[phns[i]]
             end
         end
         
-        local newPhonemes, replaceCount = string.gsub(note.phonemes, find, replace)
-            if replaceCount > 0 then
-                note.phonemes = newPhonemes
-                note.phLock = 1
-                retCode = VSUpdateNoteEx(note)
-                if (retCode == 0) then
-					endStatus = 1
-					break
-                end
-            end
-
-        if splitflag == 0 then
+--        if splitflag == 0 then
             updNoteEx.phonemes = table.concat(phns, " ")
+            local newPhonemes, replaceCount = string.gsub(updNoteEx.phonemes, find, replace)
+            if replaceCount > 0 then updNoteEx.phonemes = newPhonemes end
             updNoteEx.phLock = 1
-            retCode = VSUpdateNoteEx(updNoteEx)
-        elseif splitflag == 1 then
-            local splNoteEx=copyNoteEx(updNoteEx)
-            updNoteEx.phonemes = updphn
-            updNoteEx.phLock = 1
-            updNoteEx.posTick = splNoteEx.posTick + 30
-            updNoteEx.durTick = splNoteEx.durTick - 30
-            splNoteEx.phonemes = splphn
-            splNoteEx.phLock = 1
-            splNoteEx.durTick = 30
-            retCode = VSUpdateNoteEx(updNoteEx) and VSInsertNoteEx(splNoteEx)
-        elseif splitflag == 2 then
-            local splNoteEx=copyNoteEx(updNoteEx)
-            updNoteEx.phonemes = updphn
-            updNoteEx.phLock = 1
-            updNoteEx.durTick = splNoteEx.durTick - 30
-            splNoteEx.phonemes = splphn
-            splNoteEx.phLock = 1
-            splNoteEx.posTick = updNoteEx.posTick + updNoteEx.durTick
-            splNoteEx.durTick = 30
-            retCode = VSUpdateNoteEx(updNoteEx) and VSInsertNoteEx(splNoteEx)
-        end
-        if (retCode ~= 1) then
+            ret = VSUpdateNoteEx(updNoteEx)
+--        elseif splitflag == 1 then
+--            local splNoteEx=copyNoteEx(updNoteEx)
+--            updNoteEx.phonemes = updphn
+--            updNoteEx.phLock = 1
+--            updNoteEx.posTick = splNoteEx.posTick + 30
+--            updNoteEx.durTick = splNoteEx.durTick - 30
+--            splNoteEx.phonemes = splphn
+--            splNoteEx.phLock = 1
+--            splNoteEx.durTick = 30
+--            ret = VSUpdateNoteEx(updNoteEx) and VSInsertNoteEx(splNoteEx)
+--        elseif splitflag == 2 then
+--            local splNoteEx=copyNoteEx(updNoteEx)
+--            updNoteEx.phonemes = updphn
+--            updNoteEx.phLock = 1
+--            updNoteEx.durTick = splNoteEx.durTick - 30
+--            splNoteEx.phonemes = splphn
+--            splNoteEx.phLock = 1
+--            splNoteEx.posTick = updNoteEx.posTick + updNoteEx.durTick
+--            splNoteEx.durTick = 30
+--            ret = VSUpdateNoteEx(updNoteEx) and VSInsertNoteEx(splNoteEx)
+--        end
+        if (ret ~= 1) then
             VSMessageBox("Failed to update note!", 0)
             return 1
         end
