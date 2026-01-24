@@ -10,123 +10,31 @@ function manifest()
     return myManifest
 end
 
-local comp={
-    VC={
-        ["a i"]="aI"
-        ["e i"]="ei"
-        ["a u"]="AU"
-        ["e u"]="@U"
-        ["j a"]="ia"
-        ["w a"]="ua"
-        ["j e"]="iE_r"
-        ["y e"]="yE_r"
-        ["w o"]="uo"
-        ["j a u"]="iAU"
-        ["j e u"]="i@U"
-        ["w a i"]="uai"
-        ["w e i"]="uei"
-        ["j AU"]="iAU"
-        ["j @U"]="i@U"
-        ["w aI"]="uai"
-        ["w ei"]="uei"
-        ["a n"]="a_n"
-        ["a N"]="AN"
-        ["e n"]="@_n"
-        ["e N"]="@N"
-        ["i n"]="i_n"
-        ["i N"]="iN"
-        ["j a n"]="iE_n"
-        ["j e n"]="iE_n"
-        ["j a N"]="iAN"
-        ["w a n"]="ua_n"
-        ["w a N"]="uAN"
-        ["w e n"]="u@_n"
-        ["w e N"]="u@N"
-        ["iE_r n"]="iE_n"
-        ["ia N"]="iAN"
-        ["iAU N"]="iAN"
-        ["ua n"]="ua_n"
-        ["ua N"]="uAN"
-        ["uei n"]="u@_n"
-        ["uei N"]="u@N"
-        ["y n"]="y_n"
-        ["u N"]="UN"
-        ["y a n"]="y{_n"
-        ["y e n"]="y{_n"
-        ["j u N"]="iUN"
-        ["yE_r n"]="y{_n"
-        ["i@U N"]="iUN"
-    },
-    VJ={
-        ["t s"]="ts"
-        ["w M"]="M"
-        ["j i"]="i"
-        ["k j"]="k'"
-        ["g j"]="g'"
-        ["s j"]="S"
-        ["z j"]="Z"
-        ["dz j"]="dZ"
-        ["t j"]="t'"
-        ["d j"]="d'"
-        ["ts j"]="tS"
-        ["n j"]="J"
-        ["h j"]="C"
-        ["h\\ j"]="C"
-        ["p j"]="p'"
-        ["b j"]="b'"
-        ["p\\ j"]="p\\'"
-        ["m j"]="m'"
-        ["4 j"]="4'"
-        ["k i"]="k' i"
-        ["g i"]="g' i"
-        ["s i"]="S i"
-        ["z i"]="Z i"
-        ["dz i"]="dZ i"
-        ["t i"]="t' i"
-        ["d i"]="d' i"
-        ["ts i"]="tS i"
-        ["n i"]="J i"
-        ["h i"]="C i"
-        ["h\\ i"]="C i"
-        ["p i"]="p' i"
-        ["b i"]="b' i"
-        ["p\\ i"]="p\\' i"
-        ["m i"]="m' i"
-        ["4 i"]="4' i"
-    },
-    VK={
-        ["j i"]="i"
-        ["j a"]="ja"
-        ["j 7"]="j7"
-        ["j e"]="je"
-        ["j o"]="jo"
-        ["j u"]="ju"
-        ["w o"]="o"
-        ["w u"]="u"
-        ["w M"]="M"
-        ["w a"]="oa"
-        ["w 7"]="u7"
-        ["w e"]="ue"
-        ["w i"]="ui"
-        ["M i"]="Mi"
-        ["sh a"]="sh ja"
-        ["sh 7"]="sh j7"
-        ["sh e"]="sh je"
-        ["sh o"]="sh jo"
-        ["sh u"]="sh ju"
-        ["s ja"]="sh ja"
-        ["s j7"]="sh j7"
-        ["s je"]="sh je"
-        ["s jo"]="sh jo"
-        ["s ju"]="sh ju"
-    },
-    VS={
-        ["g j i"]="g i"
-        ["g j"]="G j"
-        ["j i"]="i"
-        ["w u"]="u"
-    }
-}
+function comp(idx)
+    return {
+        { --Japanese
+            ["t s"] = "ts", ["w M"] = "M", ["j i"] = "i",["h j"] = "C", ["h\\ j"] = "C", 
+            ["h i"] = "C i", ["h\\ i"] = "C i", ["p\\ j"] = "p\\'", ["p\\ i"] = "p\\' i",
+            ["([kgtdbm4]) j"] = "%1'", ["([kgtdbm4]) i"] = "%1' i",
+            ["s j"] = "S", ["z j"] = "Z", ["dz j"] = "dZ", ["ts j"] = "tS", ["n j"] = "J",
+            ["s i"] = "S i", ["z i"] = "Z i", ["dz i"] = "dZ i", ["ts i"] = "tS i", ["n i"] = "J i"
+        },
+        nil, --English
+        { --Korean
+            ["j i"] = "i", ["w a"] = "oa", ["M i"] = "Mi",
+            ["w ([ouM])"] = "%1", ["w ([7ei])"] = "u%1",
+            ["j ([a7eou])"] = "j%1", ["sh ([a7eou])"] = "sh j%1", ["s j([a7eou])"] = "sh j%1"
+        },
+        { ["g j i"]="g i", ["g j"]="G j", ["j i"]="i", ["w u"]="u" }, --Spanish
+        { --Chinese
+            ["([aiy]) n"] = "%1_%2",["w a ([iI])"] = "uai",["w e ?i"] = "uei",["j ([ae]) n"] = "iE_n",["y ([ae]) n"] = "y{_n",
+            ["a i"] = "aI",["e i"] = "ei",["a u"] = "AU",["e u"] = "@U",["j a"] = "ia",["w a"] = "ua",["j e"] = "iE_r",["y e"] = "yE_r",["w o"] = "uo",
+            ["j a u"] = "iAU",["j e u"] = "i@U",["j AU"] = "iAU",["j @U"] = "i@U",["a N"] = "AN",["e n"] = "@_n",["e N"] = "@N",["i N"] = "iN",
+            ["j a N"] = "iAN",["w a n"] = "ua_n",["w a N"] = "uAN",["w e n"] = "u@_n",["w e N"] = "u@N",["iE_r n"] = "iE_n",["ia N"] = "iAN",["iAU N"] = "iAN",
+            ["ua n"] = "ua_n",["ua N"] = "uAN",["uei n"] = "u@_n",["uei N"] = "u@N",["u N"] = "UN",["j u N"] = "iUN",["yE_r n"] = "y{_n",["i@U N"] = "iUN"
+        }
+    }[idx]
+end
 
 function split(str, delim)  
     local result = {}  
@@ -168,12 +76,13 @@ function main(processParam, envParam)
 
     VSDlgAddField{name="singer", caption="源语言（自动） Original Language(Auto)", initialVal=cfg[idx][1], type=3}
     VSDlgAddField{name="language", caption="目标语言 Target Language", initialVal=cfg[idx][2], type=4}
-    dlgRet = VSDlgDoModal()
+    local dlgRet = VSDlgDoModal()
     if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
     
     local lang = {Japanese=1,English=2,Korean=3,Spanish=4,Chinese=5,"Korean(SeeU)"=function(idx) return idx == 4 and 4 or 6 end,"Spanish(Maika)"=idx}[select(2, VSDlgGetStringValue("language"))]
     if type(lang) == "function" then lang = lang(idx) end
     local dicts = require("dict")(idx,lang) 
+    local rules = comp(idx)
 
     for _, updNoteEx in ipairs(notes) do
 --        local splphn, updphn
@@ -188,8 +97,12 @@ function main(processParam, envParam)
         
 --        if splitflag == 0 then
             updNoteEx.phonemes = table.concat(phns, " ")
-            local newPhonemes, replaceCount = string.gsub(updNoteEx.phonemes, find, replace)
-            if replaceCount > 0 then updNoteEx.phonemes = newPhonemes end
+            if rules then 
+                for find,replace in pairs(rules) do
+                    local newPhonemes, replaceCount = string.gsub(updNoteEx.phonemes, find, replace)
+                    if replaceCount > 0 then updNoteEx.phonemes = newPhonemes end
+                end
+            end
             updNoteEx.phLock = 1
             ret = VSUpdateNoteEx(updNoteEx)
 --        elseif splitflag == 1 then
