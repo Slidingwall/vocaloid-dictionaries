@@ -22,7 +22,7 @@ return function(lyrics, idx, _)
             ["w a"]="ua",["w ei"]="uei",["w i"]="u i",["w @U"]="uo",
             ["a i"]="aI",["ei i"]="ei",["a u"]="AU",["ei u"]="@U",["@U u"]="@U",
             ["w a i"]="uaI",["w ei i"]="uei",["i a u"]="iAU",["i e u"]="i@U",["i @U u"]="i@U"}
-    }[idx]
+    }
     local dict = { -- Japanese,English,Korean,SeeU,Chinese
         a={"a","{","a","a","a"},b={"b","b","b","b","p"},d={"d","d","d","d","t"},e={"e","e","e","e","ei"},f={"p\\","f","h","f","f"},
         g={"g","g","g","g","k"},i={"i","i:","i","i","i"},j={"j","j","j","j","j"},k={"k","k","k","k","k_h"},l={"4","l0","l","l","l"},
@@ -96,7 +96,7 @@ return function(lyrics, idx, _)
                 local result=syllable:gsub("[áéíóú]",{["á"] = "a", ["é"] = "e", ["í"] = "i", ["ó"] = "o", ["ú"] = "u"})
                 for _, rule in ipairs(rules) do result = result:gsub(rule[1], rule[2]) end
                 result = result:gsub("%s+", " "):gsub("^%s+", ""):gsub("%s+$", ""):gsub("%S+", function(phoneme) return dict[phoneme][idx] or (idx == 2 and "u:" or "a") end)
-                for p, r in pairs(dipthong) do result = result:gsub(p, r) end
+                for p, r in pairs(dipthong[idx]) do result = result:gsub(p, r) end
                 table.insert(phonemeList,result)
             end
         end

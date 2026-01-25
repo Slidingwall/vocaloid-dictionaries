@@ -11,7 +11,7 @@ function manifest()
 end
 
 function comp(idx)
-    return {
+    local rules={
         { --Japanese
             ["t s"] = "ts", ["w M"] = "M", ["j i"] = "i",["h j"] = "C", ["h\\ j"] = "C", 
             ["h i"] = "C i", ["h\\ i"] = "C i", ["p\\ j"] = "p\\'", ["p\\ i"] = "p\\' i",
@@ -33,7 +33,8 @@ function comp(idx)
             ["j a N"] = "iAN",["w a n"] = "ua_n",["w a N"] = "uAN",["w e n"] = "u@_n",["w e N"] = "u@N",["iE_r n"] = "iE_n",["ia N"] = "iAN",["iAU N"] = "iAN",
             ["ua n"] = "ua_n",["ua N"] = "uAN",["uei n"] = "u@_n",["uei N"] = "u@N",["u N"] = "UN",["j u N"] = "iUN",["yE_r n"] = "y{_n",["i@U N"] = "iUN"
         }
-    }[idx]
+    }
+    return rules[idx]
 end
 
 function split(str, delim)  
@@ -79,7 +80,8 @@ function main(processParam, envParam)
     local dlgRet = VSDlgDoModal()
     if dlgRet ~= 1 then return (dlgRet == 2 and 0) or 1 end
     
-    local lang = {Japanese=1,English=2,Korean=3,Spanish=4,Chinese=5,"Korean(SeeU)"=function(idx) return idx == 4 and 4 or 6 end,"Spanish(Maika)"=idx}[select(2, VSDlgGetStringValue("language"))]
+    local langTable={Japanese=1,English=2,Korean=3,Spanish=4,Chinese=5,["Korean(SeeU)"]=function(idx) return idx == 4 and 4 or 6 end,["Spanish(Maika)"]=idx}
+    local lang = langTable[select(2, VSDlgGetStringValue("language"))]
     if type(lang) == "function" then lang = lang(idx) end
     local dicts = require("dict")(idx,lang) 
     local rules = comp(idx)

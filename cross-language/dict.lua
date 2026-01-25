@@ -102,7 +102,8 @@ return function(idx,lang)
             ts={"dz","dz","d s","d s","dz","z"},
             ["s\\"]={"S","S","sh","s j","S","sh"},
         }  
-    }[idx]
+    }
+    res=res[idx]
 
     dict={
         {-- idx==1, Japanese(Static)
@@ -131,7 +132,8 @@ return function(idx,lang)
             u="u", p="b", p_h="p", f="f", t="d", t_h="t",
             l="l", k="g", k_h="k", ["ts\\_h"]="tS", x="h", ts_h="t s"
         }
-    }[idx]
+    }
+    dict=dict[idx]
 
     rep={
         {-- idx==1, Japanese(replace)
@@ -194,11 +196,12 @@ return function(idx,lang)
             { x="x", ts_h="ts" }, --Maika
             { ["ts\\_h"]="ch" } --SeeU
         }
-    }[idx][lang]
+    }
+    rep=rep[idx][lang]
     for k,v in pairs(res) do dict[k]=v[lang] end
     if rep then for k,v in pairs(rep) do dict[k]=v end end
 
-    dict=setmetatable(dict,{__index={
+    sup={
         [1]={["N\\"]=dict.N,["h\\"]=dict.h}, --Japanese
         [2]={["e@0"]=dict["e@"],bh=dict.b,dh=dict.d,gh=dict.g,
             ph=dict.p,th=dict.t,kh=dict.k,["@l"]=dict.l,["h\\"]=dict.h}, --English
@@ -206,6 +209,8 @@ return function(idx,lang)
             ["sh'"]=dict.sh,["c'"]=dict.c,["ch'"]=dict.ch,D=dict.Np,C=dict.s}, --Korean
         [4]={["j\\"]=dict.j,L=dict.j,G=dict.g,rr=dict.r,I0=dict.I,O=dict.o,h=dict.x,v=dict.B},  --Spanish
         [5]={["i`"]=dict["i\\"],["ts`"]=dict["ts\\"],["ts`_h"]=dict["ts\\_h"],["s`"]=dict["s\\"]} --Chinese
-    }[idx]})
+    }
+    dict=setmetatable(dict,{__index=sup[idx]})
 
     return dict
+end
