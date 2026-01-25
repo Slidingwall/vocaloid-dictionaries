@@ -23,8 +23,8 @@ This plugin is modified from the user dictionary plugin and serves as an impleme
 The plugin will automatically detect the singer's language and the number of available notes for lyrics input. After entering the lyrics, you need to manually select the language of the entered lyrics. The plugin will then handle the remaining conversion tasks.  
 插件将会自动识别歌手语言和可填词音符的个数。填入歌词后，您需要手动选择填入歌词的语言，随后由插件完成剩余的转换工作。  
 
-The logic for Spanish is ported from [silabajs](https://github.com/nicofrem/silabajs), and the logic for Korean is ported from [hangul-sound-shift](https://github.com/QikLiang/hangul-sound-shift).  
-西班牙语逻辑基于[silabajs](https://github.com/nicofrem/silabajs)，韩语逻辑基于[hangul-sound-shift](https://github.com/QikLiang/hangul-sound-shift)。  
+The logic for Spanish is ported from [silabajs](https://github.com/nicofrem/silabajs), and the logic for Korean is ported from [g2pk3](https://github.com/kdrkdrkdr/g2pk3)(WIP).  
+西班牙语逻辑基于[silabajs](https://github.com/nicofrem/silabajs)，韩语逻辑基于[g2pk3](https://github.com/kdrkdrkdr/g2pk3)（开发中）。  
 
 ## General Cross-language Plugin SE 通用跨语种插件SE  
 

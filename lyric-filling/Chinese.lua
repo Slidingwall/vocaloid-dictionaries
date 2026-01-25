@@ -420,25 +420,28 @@ return function(lyrics, idx, f)
     }})
     if f == 0 then
         for v in lyrics:gmatch("%S+") do
-            if v == "-" or v:find("^[a-z]+:?[a-z]*$") then
-                lyricList[#lyricList+1] = v
-            end
+            if v == "-" or v:find("^[a-z]+:?[a-z]*$") then lyricList[#lyricList+1] = v end
         end
         for i, lyric in ipairs(lyricList) do
             phonemeList[i] = lyric == "-" and "-" or dict[lyric][idx] or def
         end
     else
-        for i = 1, #lyrics do
-            local v = lyrics:sub(i, i)
-            if v ~= " " and v:find("^[\u4e00-\u9fa5%-]$") then
-                lyricList[#lyricList+1] = v
+        local pos = 1
+        while pos <= #lyrics do
+            local byte = lyrics:byte(pos)
+            local len, cur = 1, lyrics:sub(pos, pos)
+            if byte >= 0xE4 and byte <= 0xE9 then
+                len, cur = 3, lyrics:sub(pos, pos + 2)
             end
+            if cur ~= "" and cur ~= " " and (len == 3 or cur == "-") then
+                lyricList[#lyricList+1] = cur
+            end
+            pos = pos + len
         end
-        local pinyin=require("pinyin")
+        local pinyin = require("pinyin")
         for i, lyric in ipairs(lyricList) do
             phonemeList[i] = lyric == "-" and "-" or pinyin[lyric][idx] or def
         end
     end
-
     return lyricList, phonemeList
 end

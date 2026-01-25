@@ -249,47 +249,46 @@ return function(lyrics, idx, f)
     }})
     if f == 0 then
         for v in lyrics:gmatch("%S+") do
-            if v == "-" or v:find("^[a-z]+$") then
-                lyricList[#lyricList + 1] = v
-            end
+            if v == "-" or v:find("^[a-z]+$") then lyricList[#lyricList + 1] = v end
         end
     else
-        local prevChar = {
-            yo = { ["キ"] = true, ["き"] = true, ["ギ"] = true, ["ぎ"] = true, ["シ"] = true, ["し"] = true, ["ジ"] = true, ["じ"] = true, ["チ"] = true, ["ち"] = true, ["テ"] = true, ["て"] = true, ["デ"] = true, ["で"] = true, ["ニ"] = true, ["に"] = true, ["ヒ"] = true, ["ひ"] = true, ["ビ"] = true, ["び"] = true, ["ピ"] = true, ["ぴ"] = true, ["ミ"] = true, ["み"] = true, ["リ"] = true, ["り"] = true },
-            a_o = { ["ツ"] = true, ["つ"] = true, ["フ"] = true, ["ふ"] = true },
-            i = { ["ウ"] = true, ["う"] = true, ["ス"] = true, ["す"] = true, ["ズ"] = true, ["ず"] = true, ["テ"] = true, ["て"] = true, ["デ"] = true, ["で"] = true },
-            u = { ["ト"] = true, ["と"] = true, ["ド"] = true, ["ど"] = true }
+        local smallKana = {
+            ["ィ"] = "ウうスすズずテてデで", ["ぃ"] = "ウうスすズずテてデで",
+            ["ェ"] = "ツつフふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり", ["ぇ"] = "ツつフふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり",
+            ["ャ"] = "フふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり", ["ゃ"] = "フふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり",
+            ["ュ"] = "フふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり", ["ゅ"] = "フふキきギぎシしジじチちテてデでニにヒひビびピぴミみリり",
+            ["ョ"] = "キきギぎシしジじチちテてデでニにヒひビびピぴミみリり", ["ょ"] = "キきギぎシしジじチちテてデでニにヒひビびピぴミみリり",
+            ["ァ"] = "ツつフふ", ["ぁ"] = "ツつフふ", ["ォ"] = "ツつフふ", ["ぉ"] = "ツつフふ",
+            ["ゥ"] = "トとドど", ["ぅ"] = "トとドど"
         }
-        prevChar.e = setmetatable({ ["ツ"] = true, ["つ"] = true, ["フ"] = true, ["ふ"] = true }, { __index = prevChar.yo })
-        prevChar.ya_yu = setmetatable({ ["フ"] = true, ["ふ"] = true }, { __index = prevChar.yo })
-        local valid = {
-            ["ィ"] = prevChar.i, ["ぃ"] = prevChar.i, ["ェ"] = prevChar.e, ["ぇ"] = prevChar.e,
-            ["ャ"] = prevChar.ya_yu, ["ゃ"] = prevChar.ya_yu, ["ュ"] = prevChar.ya_yu, ["ゅ"] = prevChar.ya_yu,
-            ["ョ"] = prevChar.yo, ["ょ"] = prevChar.yo, ["ァ"] = prevChar.a_o, ["ぁ"] = prevChar.a_o,
-            ["ォ"] = prevChar.a_o, ["ぉ"] = prevChar.a_o, ["ゥ"] = prevChar.u, ["ぅ"] = prevChar.u
-        }
-        local prev = nil
-        for i = 1, #lyrics do
-            local v = lyrics:sub(i, i)
-            if v ~= " " and v:find("^[\u3040-\u30ff%-]$") then
+        local prev, pos = nil, 1
+        while pos <= #lyrics do
+            local byte1 = lyrics:byte(pos)
+            local len, v = 1, (byte1 == string.byte("-")) and "-" or ""
+            if byte1 == 0xE3 then
+                local byte2, byte3 = lyrics:byte(pos+1), lyrics:byte(pos+2)
+                if byte2 and byte3 and (byte2 >= 0x81 and byte2 <= 0x83) and byte3 >= 0x80 and byte3 <= 0xBF then
+                    len, v = 3, lyrics:sub(pos, pos+2)
+                end
+            end
+            if v ~= "" and v ~= " " then
                 if v == "-" then
-                    lyricList[#lyricList + 1] = v
-                    prev = nil
+                    lyricList[#lyricList+1], prev = v, nil 
                 else
-                    local allowed = valid[v]
-                    if allowed and prev and allowed[prev] then
+                    local allowedChars = smallKana[v]
+                    if allowedChars and prev and allowedChars:find(prev, 1, true) then
                         lyricList[#lyricList] = prev .. v
                         prev = lyricList[#lyricList]
                     else
-                        prev = v
-                        lyricList[#lyricList + 1] = prev
+                        lyricList[#lyricList+1], prev = v, v 
                     end
                 end
             end
+            pos = pos + len
         end
     end
     for i, lyric in ipairs(lyricList) do
-            phonemeList[i] = lyric == "-" and "-" or dict[lyric][idx-1] or def
-        end
+        phonemeList[i] = lyric == "-" and "-" or dict[lyric][idx-1] or def
+    end
     return lyricList, phonemeList
 end
