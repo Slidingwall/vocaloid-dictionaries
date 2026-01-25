@@ -1,5 +1,5 @@
 function manifest()
-    myManifest = {
+    return {
         name = "万能填词插件 Universal Lyric Filling Plugin",
         comment = "根据预先配置好的词典进行音标注入，不受语种限制",
         author = "Slidingwall based on 白糖の正义铃",
@@ -7,10 +7,9 @@ function manifest()
         pluginVersion = "1.0.0.1",
         apiVersion = "3.0.0.1"
     }
-    return myManifest
 end
 
-local function update(note, lyric, phonemes)
+function update(note, lyric, phonemes)
     note.lyric,note.phonemes, note.phLock = lyric, phonemes, 1
     return VSUpdateNoteEx(note)
 end

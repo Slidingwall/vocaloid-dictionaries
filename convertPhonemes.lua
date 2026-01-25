@@ -1,5 +1,5 @@
 function manifest()
-    myManifest = {
+    return {
         name = "Find & Replace Phonemes 音素查找与替换",
         comment = "替换发音记号",
         author = "Slidingwall based on Yamaha Corporation",
@@ -7,16 +7,14 @@ function manifest()
         pluginVersion = "1.0.0.2",
         apiVersion    = "3.0.1.0"
     }
-    return myManifest
 end
 
-local function update(note, newPhonemes)
+function update(note, newPhonemes)
     note.phonemes, note.phLock = newPhonemes, 1
     return VSUpdateNote(note)
 end
 
 function main(processParam, envParam)    
-    
     VSDlgSetDialogTitle("Convert Phonemes 替换音素")
     VSDlgAddField({name="find", caption="From 查找", initialVal="a", type=3})
     VSDlgAddField({name="replace", caption="To 替换", initialVal="i", type=3})

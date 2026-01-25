@@ -1,5 +1,5 @@
 function manifest()
-    myManifest = {
+    return {
         name = "通用跨语种插件SE General Cross-language Plugin Second Edition",
         comment = "可自定义跨语种表并选择执行 Allows Customization Dictionaries and Selection for Execution.",
         author = "Slidingwall based on VoctroLabs and 白糖の正义铃 B站ID:180668218",
@@ -7,7 +7,6 @@ function manifest()
         pluginVersion = "2.0.0.0",
         apiVersion = "3.0.0.1"
     }
-    return myManifest
 end
 
 function comp(idx)

@@ -202,13 +202,17 @@ return function(idx,lang)
     if rep then for k,v in pairs(rep) do dict[k]=v end end
 
     sup={
-        [1]={["N\\"]=dict.N,["h\\"]=dict.h}, --Japanese
-        [2]={["e@0"]=dict["e@"],bh=dict.b,dh=dict.d,gh=dict.g,
-            ph=dict.p,th=dict.t,kh=dict.k,["@l"]=dict.l,["h\\"]=dict.h}, --English
-        [3]={["g'"]=dict.gp,np=dict.n,["d'"]=dict.dp,mp=dict.m,["b'"]=dict.bp,["s'"]=dict.s,
-            ["sh'"]=dict.sh,["c'"]=dict.c,["ch'"]=dict.ch,D=dict.Np,C=dict.s}, --Korean
-        [4]={["j\\"]=dict.j,L=dict.j,G=dict.g,rr=dict.r,I0=dict.I,O=dict.o,h=dict.x,v=dict.B},  --Spanish
-        [5]={["i`"]=dict["i\\"],["ts`"]=dict["ts\\"],["ts`_h"]=dict["ts\\_h"],["s`"]=dict["s\\"]} --Chinese
+        {["N\\"]=dict.N,["h\\"]=dict.h}, --Japanese
+        { --English
+            ["e@0"]=dict["e@"],bh=dict.b,dh=dict.d,gh=dict.g,
+            ph=dict.p,th=dict.t,kh=dict.k,["@l"]=dict.l,["h\\"]=dict.h
+        }, 
+        { --Korean
+            ["g'"]=dict.gp,np=dict.n,["d'"]=dict.dp,mp=dict.m,["b'"]=dict.bp,["s'"]=dict.s,
+            ["sh'"]=dict.sh,["c'"]=dict.c,["ch'"]=dict.ch,D=dict.Np,C=dict.s
+        },
+        {["j\\"]=dict.j,L=dict.j,G=dict.g,rr=dict.r,I0=dict.I,O=dict.o,h=dict.x,v=dict.B},  --Spanish
+        {["i`"]=dict["i\\"],["ts`"]=dict["ts\\"],["ts`_h"]=dict["ts\\_h"],["s`"]=dict["s\\"]} --Chinese
     }
     dict=setmetatable(dict,{__index=sup[idx]})
 

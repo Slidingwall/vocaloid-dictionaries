@@ -10,14 +10,14 @@ return function(lyrics, idx, _)
         { "y", "jj" },{ "q", "k" }
     }
     local dipthong = {
-        [1]={ --Japanese
+        { --Japanese
             ["([ktm4gdbp]) j"] = "%1'",["n j"] = "J",["h j"] = "C",["p\\ j"] = "p\\'",
             ["([ktm4gdbp]) i"] = "%1' i",["n i"] = "J i",["h i"] = "C i",["p\\ i"] = "p\\' i"
         },
-        [2]={["{ i:"]="aI",["e i:"]="eI",["O: i:"]="OI",["{ u:"]="aU",["e u:"]="@U",["O: u:"]="@U"}, --English
-        [3]={["j ([aeou])"] = "j%1",["w ([ei])"] = "u%1",["w a"] = "oa",["w o"] = "u7"}, --Korean
-        [4]={["j ([aeou])"] = "j%1",["w ([ei])"] = "u%1",["w a"] = "oa",["w o"] = "u7"}, --SeeU
-        [5]={ --Chinese
+        {["{ i:"]="aI",["e i:"]="eI",["O: i:"]="OI",["{ u:"]="aU",["e u:"]="@U",["O: u:"]="@U"}, --English
+        {["j ([aeou])"] = "j%1",["w ([ei])"] = "u%1",["w a"] = "oa",["w o"] = "u7"}, --Korean
+        {["j ([aeou])"] = "j%1",["w ([ei])"] = "u%1",["w a"] = "oa",["w o"] = "u7"}, --SeeU
+        { --Chinese
             ["j a"]="ia",["j ei"]="iE_r",["j @U"]="iAU",["j u"]="i@U",
             ["w a"]="ua",["w ei"]="uei",["w i"]="u i",["w @U"]="uo",
             ["a i"]="aI",["ei i"]="ei",["a u"]="AU",["ei u"]="@U",["@U u"]="@U",
